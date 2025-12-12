@@ -11,15 +11,19 @@ interface RenovationStatsProps {
 }
 
 const CustomTooltip = ({ active, payload, label }: any) => {
-  if (active && payload && payload.length === 2) {
+  if (active && payload && payload.length) {
+    const privateData = payload.find(p => p.dataKey === 'total');
+    const renovatedData = payload.find(p => p.dataKey === 'renovated');
+    if (!privateData || !renovatedData) return null;
+
     return (
       <div className="tooltip-custom">
         <p className="tooltip-title">{label} Arrondissement</p>
         <p className="tooltip-text text-blue">
-          Total: <span>{payload[0].value.toLocaleString()}</span>
+          Total: <span>{privateData.value.toLocaleString()}</span>
         </p>
         <p className="tooltip-text text-purple">
-          Rénovés: <span>{payload[1].value.toLocaleString()}</span>
+          Rénovés: <span>{renovatedData.value.toLocaleString()}</span>
         </p>
       </div>
     );

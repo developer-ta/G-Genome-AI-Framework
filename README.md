@@ -2,12 +2,11 @@
 
 Bienvenue sur RenovÉnergie, un tableau de bord interactif pour le suivi de la rénovation énergétique, combiné à un studio de design innovant assisté par l'IA de Google.
 
-## 🎯 Objectif du Projet
+## 🎯 Notre Objectif, Notre Mission
 
-Ce projet a deux objectifs principaux :
-
-1.  **Visualiser les Données :** Offrir une vue claire et détaillée de l'avancement des rénovations énergétiques (logements privés et sociaux) à travers différents arrondissements, avec des filtres temporels.
-2.  **Inspirer et Prototyper :** Permettre aux utilisateurs de transformer et de visualiser des modifications sur des photos de bâtiments grâce à un studio de design propulsé par l'IA, facilitant ainsi la prise de décision et la projection.
+-   **Objectif :** Offrir une plateforme claire et intuitive pour visualiser l'état de rénovation énergétique des bâtiments parisiens.
+-   **Axes de Présentation :** Notre présentation de données s'articule autour de 3 axes essentiels : le suivi de rénovation des bâtiments analysés, les types de travaux réalisés, et la visualisation des classes énergétiques DPE.
+-   **Mission :** Rendre ces données accessibles et intelligibles pour les professionnels, les collectivités et les décideurs.
 
 ---
 
@@ -20,19 +19,12 @@ Ce projet a deux objectifs principaux :
 -   **Filtre par Année :** Affinez les données en sélectionnant une année spécifique ou en affichant toutes les données cumulées.
 -   **Analyse de Volume :** Des graphiques en anneau (donut charts) montrent la répartition du volume des rénovations par arrondissement.
 
-### 2. Studio IA (Nano Banana)
 
--   **Édition d'Image par IA :** Uploadez une photo d'un bâtiment.
--   **Prompts Textuels :** Donnez des instructions en langage naturel (ex: "ajoute une isolation extérieure en bois", "mets des panneaux solaires sur le toit", "change les fenêtres").
--   **Génération Instantanée :** Le modèle **Gemini 2.5 Flash Image** génère une nouvelle version de l'image en appliquant les modifications demandées.
--   **Téléchargement :** Sauvegardez le résultat pour vos présentations ou vos dossiers.
-
----
 
 ## 🛠️ Stack Technique
 
 -   **Frontend :** React avec TypeScript
--   **API IA :** [Google Gemini API (@google/genai)](https://ai.google.dev/)
+- 
 -   **Visualisation de Données :** [Recharts](https://recharts.org/)
 -   **Icônes :** [Lucide React](https://lucide.dev/)
 -   **Styling :** CSS pur avec une approche inspirée du Neumorphisme et du Glassmorphisme.
@@ -83,19 +75,47 @@ Cette commande va :
 -   Ouvrir l'application dans votre navigateur.
 
 ### 5. Poursuivre le Développement
-Le serveur Vite recharge automatiquement la page lorsque vous modifiez un fichier (`Hot Module Replacement`). Vous pouvez maintenant commencer à développer :
-
--   **Pour modifier une page**, rendez-vous dans `presentation/pages/`.
--   **Pour ajuster un composant**, cherchez dans `presentation/components/` ou `presentation/sections/`.
--   **Pour changer la logique des données**, explorez les fichiers dans `application/services/` et `infrastructure/data/`.
+Le serveur Vite recharge automatiquement la page lorsque vous modifiez un fichier (`Hot Module Replacement`). Vous pouvez maintenant commencer à développer.
 
 ---
 
 ## 🏗️ Architecture
 
-Le projet est structuré en suivant les principes de la **Clean Architecture** pour garantir une séparation claire des responsabilités, une meilleure testabilité et une maintenance simplifiée.
+Le projet est structuré en suivant les principes de la **Clean Architecture** pour garantir une séparation claire des responsabilités, une meilleure testabilité et une maintenance simplifiée. Cette approche isole le "cœur" de l'application (le métier) des détails d'implémentation (comme l'API ou l'interface utilisateur).
 
--   **`domain`**: Contient les modèles de données et les types principaux (le cœur du métier).
--   **`application`**: Gère la logique et les cas d'usage (ex: récupérer les données pour le dashboard).
--   **`infrastructure`**: Gère les sources de données externes et les services (API Gemini, données simulées).
--   **`presentation`**: Contient tous les composants React, les hooks et les styles qui constituent l'interface utilisateur.
+### Structure du Projet
+
+```
+/
+├── domain/
+│   └── models.ts           # Types et modèles centraux
+├── application/
+│   └── services/           # Logique métier et cas d'usage
+├── infrastructure/
+│   ├── api/                # Clients pour les API externes (Gemini)
+│   └── data/               # Sources de données (simulées ou réelles)
+└── presentation/
+    ├── components/         # Petits composants UI réutilisables (Card)
+    ├── hooks/              # Logique d'état pour les vues (useDashboardController)
+    ├── layouts/            # Styles CSS pour la mise en page
+    ├── pages/              # Composants de pages complètes (DashboardPage)
+    └── sections/           # Gros composants de page (Sidebar, Topbar)
+```
+
+### Détail des Couches
+
+-   **`domain`**: La couche la plus centrale. Elle est totalement indépendante des autres et contient les modèles de données et les types qui représentent les concepts du métier (ex: `View`, `ChartData`). C'est le cœur de l'application.
+
+-   **`application`**: Gère les cas d'usage de l'application. Elle orchestre les flux de données entre le `domain` et l'`infrastructure`. C'est ici qu'on définit ce que l'application *fait* (ex: `RenovationService` qui prépare les données pour le dashboard).
+
+-   **`infrastructure`**: Gère les sources de données externes et les services techniques. C'est le point de contact avec le "monde extérieur". On y trouve les clients API (`geminiService.ts`) et les adaptateurs pour les sources de données (`renovationData.ts`).
+
+-   **`presentation`**: La couche la plus externe, **responsable de tout ce qui est lié à l'interface utilisateur**. Son rôle est d'afficher les informations récupérées via la couche `application` et de capter les interactions de l'utilisateur. Tout le code relatif à l'UI (`pages`, `sections`, `components`, et même les `hooks` qui gèrent l'état de cette UI) se trouve ici.
+
+### Avantages de cette structure
+
+Cette séparation stricte apporte plusieurs avantages majeurs :
+
+1.  **Clarté et Cohésion** : Tout le code de l'interface est regroupé. On sait immédiatement où chercher quand on veut modifier quelque chose de visuel. La logique métier est clairement séparée de l'affichage.
+2.  **Encapsulation** : La couche `presentation` devient un "module" autonome. On pourrait théoriquement la remplacer par une autre technologie (Vue, Svelte, etc.) sans jamais toucher aux couches `application` ou `domain`.
+3.  **Scalabilité et Maintenabilité** : Le projet reste propre et organisé même s'il grandit. La racine du projet n'est pas polluée par une multitude de dossiers UI, ce qui facilite grandement la maintenance à long terme.

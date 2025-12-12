@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LayoutDashboard, Building2, Wrench, Zap, Settings, Briefcase, ChevronDown, ChevronRight } from 'lucide-react';
+import { LayoutDashboard, Building2, Wrench, Zap, Settings, Briefcase, ChevronDown, ChevronRight, Wand2 } from 'lucide-react';
 import { View, YearFilter } from '../../../domain/models';
 import './Sidebar.css';
 
@@ -54,6 +54,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
           <span>Dashboard</span>
         </button>
         
+        {/* AI Studio Link */}
+        <button
+          onClick={() => handleViewChange(View.AI_STUDIO)}
+          className={`nav-item ${currentView === View.AI_STUDIO ? 'active' : ''}`}
+        >
+          <Wand2 size={20} className={currentView === View.AI_STUDIO ? 'icon-active' : 'icon-inactive'}/>
+          <span>Studio IA</span>
+        </button>
+
         {/* Renovated Buildings Section (Collapsible) */}
         <div>
           <button 

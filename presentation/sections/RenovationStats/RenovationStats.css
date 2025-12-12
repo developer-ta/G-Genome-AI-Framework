@@ -15,12 +15,12 @@
     padding: 1rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     border-radius: 0.75rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid #e2e8f0;
 }
 
 .tooltip-title {
     font-weight: 700;
-    color: var(--text-main);
+    color: #1e293b;
     margin-bottom: 0.5rem;
     margin-top: 0;
 }

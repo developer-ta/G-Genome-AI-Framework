@@ -31,7 +31,7 @@ const getArrNumber = (name: string) => parseInt(name.replace(/\D/g, ''));
 const RADIAN = Math.PI / 180;
 
 // Function to render the Arrondissement Name outside the chart
-const renderOuterLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, name, value }: any) => {
+const renderOuterLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, name }: any) => {
   const radius = outerRadius * 1.15; 
   const x = cx + radius * Math.cos(-midAngle * RADIAN);
   const y = cy + radius * Math.sin(-midAngle * RADIAN);
@@ -84,10 +84,10 @@ export const RenovationVolume: React.FC<RenovationVolumeProps> = ({ pieDataPriva
     const firstHalf = sortedList.slice(0, 10);
     const secondHalf = sortedList.slice(10, 20);
 
-    const renderRow = (item: PieData, index: number) => {
-        const percent = ((item.value / total) * 100).toFixed(1);
+    const renderRow = (item: PieData) => {
+        const percent = total > 0 ? ((item.value / total) * 100).toFixed(1) : 0;
         return (
-            <div key={index} className="list-row">
+            <div key={item.name} className="list-row">
                 <div className="dot" style={{ backgroundColor: item.fill || item.color }} />
                 <div className="row-content">
                     <span className="row-name">{item.name} Arr.</span>
@@ -100,10 +100,10 @@ export const RenovationVolume: React.FC<RenovationVolumeProps> = ({ pieDataPriva
     return (
       <div className="split-list-container">
         <div className="list-column">
-             {firstHalf.map((item, i) => renderRow(item, i))}
+             {firstHalf.map(item => renderRow(item))}
         </div>
         <div className="list-column">
-             {secondHalf.map((item, i) => renderRow(item, i))}
+             {secondHalf.map(item => renderRow(item))}
         </div>
       </div>
     );
