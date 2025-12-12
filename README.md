@@ -78,7 +78,6 @@ Le projet est structuré en suivant les principes de la **Clean Architecture** p
 ├── application/
 │   └── services/           # Logique métier et cas d'usage
 ├── infrastructure/
-│   ├── api/                # Clients pour les API externes (Gemini)
 │   └── data/               # Sources de données (simulées ou réelles)
 └── presentation/
     ├── components/         # Petits composants UI réutilisables (Card)
@@ -94,7 +93,7 @@ Le projet est structuré en suivant les principes de la **Clean Architecture** p
 
 -   **`application`**: Gère les cas d'usage de l'application. Elle orchestre les flux de données entre le `domain` et l'`infrastructure`. C'est ici qu'on définit ce que l'application *fait* (ex: `RenovationService` qui prépare les données pour le dashboard).
 
--   **`infrastructure`**: Gère les sources de données externes et les services techniques. C'est le point de contact avec le "monde extérieur". On y trouve les clients API (`geminiService.ts`) et les adaptateurs pour les sources de données (`renovationData.ts`).
+-   **`infrastructure`**: Gère les sources de données externes et les services techniques. C'est le point de contact avec le "monde extérieur". On y trouve les adaptateurs pour les sources de données (`renovationData.ts`).
 
 -   **`presentation`**: La couche la plus externe, **responsable de tout ce qui est lié à l'interface utilisateur**. Son rôle est d'afficher les informations récupérées via la couche `application` et de capter les interactions de l'utilisateur. Tout le code relatif à l'UI (`pages`, `sections`, `components`, et même les `hooks` qui gèrent l'état de cette UI) se trouve ici.
 
