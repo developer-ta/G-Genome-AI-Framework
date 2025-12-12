@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Sidebar } from './presentation/sections/Sidebar/Sidebar';
 import { Topbar } from './presentation/sections/Topbar/Topbar';
 import { DashboardPage } from './presentation/pages/DashboardPage/DashboardPage';
-import { AIStudioPage } from './presentation/pages/AIStudioPage/AIStudioPage';
 import { View, YearFilter } from './domain/models';
 import './presentation/layouts/DashboardLayout.css';
 
@@ -14,8 +13,6 @@ function App() {
     switch (currentView) {
       case View.DASHBOARD:
         return <DashboardPage yearFilter={yearFilter} />;
-      case View.AI_STUDIO:
-        return <AIStudioPage />;
       // Add other views like SETTINGS here
       default:
         return <DashboardPage yearFilter={yearFilter} />;
@@ -26,8 +23,6 @@ function App() {
     switch (currentView) {
       case View.DASHBOARD:
         return 'Bâtiments Rénovés';
-      case View.AI_STUDIO:
-        return 'Studio IA';
       default:
         return 'Dashboard';
     }

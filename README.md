@@ -1,6 +1,6 @@
 # RenovÉnergie ⚡️
 
-Bienvenue sur RenovÉnergie, un tableau de bord interactif pour le suivi de la rénovation énergétique, combiné à un studio de design innovant assisté par l'IA de Google.
+Bienvenue sur RenovÉnergie, un tableau de bord interactif pour le suivi de la rénovation énergétique.
 
 ## 🎯 Notre Objectif, Notre Mission
 
@@ -12,19 +12,18 @@ Bienvenue sur RenovÉnergie, un tableau de bord interactif pour le suivi de la r
 
 ## ✨ Fonctionnalités Clés
 
-### 1. Dashboard de Suivi
+### Dashboard de Suivi
 
 -   **Graphiques Interactifs :** Visualisez les données de rénovation (nombre total vs. nombre rénové) pour les logements privés et sociaux.
 -   **Données par Arrondissement :** Comparez facilement les performances entre les 20 arrondissements.
 -   **Filtre par Année :** Affinez les données en sélectionnant une année spécifique ou en affichant toutes les données cumulées.
 -   **Analyse de Volume :** Des graphiques en anneau (donut charts) montrent la répartition du volume des rénovations par arrondissement.
 
-
+---
 
 ## 🛠️ Stack Technique
 
 -   **Frontend :** React avec TypeScript
-- 
 -   **Visualisation de Données :** [Recharts](https://recharts.org/)
 -   **Icônes :** [Lucide React](https://lucide.dev/)
 -   **Styling :** CSS pur avec une approche inspirée du Neumorphisme et du Glassmorphisme.
@@ -33,11 +32,10 @@ Bienvenue sur RenovÉnergie, un tableau de bord interactif pour le suivi de la r
 
 ## 🚀 Démarrage et Développement
 
-Ce projet est configuré pour un développement rapide. Voici comment le lancer localement, en utilisant **Vite** comme vous le préférez.
+Ce projet est configuré pour un développement rapide. Voici comment le lancer localement, en utilisant **Vite**.
 
 ### 1. Prérequis
 -   [Node.js](https://nodejs.org/) (v18 ou supérieur)
--   Une clé API pour l'API Google Gemini, disponible depuis [Google AI Studio](https://aistudio.google.com/).
 
 ### 2. Installation
 Commencez par cloner le projet sur votre machine :
@@ -49,19 +47,7 @@ cd <NOM_DU_DOSSIER>
 
 **Note importante :** Il n'y a **pas de commande `npm install`** à exécuter. Toutes les dépendances (React, Recharts, etc.) sont chargées directement dans le navigateur via un `importmap` dans le fichier `index.html`. C'est une approche moderne qui simplifie l'environnement de développement.
 
-### 3. Configuration de la Clé API
-Pour que le Studio IA puisse fonctionner, vous devez fournir votre clé API Gemini :
-
-1.  Créez un fichier nommé `.env` à la racine du projet.
-2.  Ajoutez-y la ligne suivante en remplaçant `VOTRE_CLÉ_API_ICI` par votre clé personnelle :
-
-    ```
-    API_KEY=VOTRE_CLÉ_API_ICI
-    ```
-    
-Le fichier `.env` est ignoré par Git (`.gitignore`), donc votre clé restera privée.
-
-### 4. Lancer le Projet avec Vite
+### 3. Lancer le Projet avec Vite
 Ouvrez un terminal à la racine du projet et lancez la commande suivante :
 
 ```bash
@@ -71,10 +57,10 @@ npx vite
 Cette commande va :
 -   Démarrer un serveur de développement local.
 -   Utiliser votre fichier `index.html` comme point d'entrée.
--   Injecter automatiquement les variables d'environnement de votre fichier `.env`.
+-   Injecter automatiquement les variables d'environnement d'un éventuel fichier `.env`.
 -   Ouvrir l'application dans votre navigateur.
 
-### 5. Poursuivre le Développement
+### 4. Poursuivre le Développement
 Le serveur Vite recharge automatiquement la page lorsque vous modifiez un fichier (`Hot Module Replacement`). Vous pouvez maintenant commencer à développer.
 
 ---

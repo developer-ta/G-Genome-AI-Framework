@@ -2,7 +2,6 @@ import React from 'react';
 
 export enum View {
   DASHBOARD = 'DASHBOARD',
-  AI_STUDIO = 'AI_STUDIO',
   SETTINGS = 'SETTINGS'
 }
 
