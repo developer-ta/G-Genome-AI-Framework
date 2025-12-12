@@ -1,0 +1,8 @@
+{
+  "name": "RenovÉnergie",
+  "description": "Dashboard de suivi de la rénovation énergétique et studio de design assisté par IA (Nano Banana)",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

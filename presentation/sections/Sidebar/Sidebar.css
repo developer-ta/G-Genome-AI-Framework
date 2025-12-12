@@ -1,0 +1,199 @@
+.sidebar {
+  width: 288px; /* w-72 */
+  /* Glassmorphism: bg-background/80 backdrop-blur-sm */
+  background-color: rgba(239, 247, 255, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  
+  /* Floating Positioning */
+  position: fixed;
+  left: 16px; /* p-4 */
+  top: 16px;
+  height: calc(100vh - 32px);
+  
+  /* Neumorphic Style from model */
+  border-radius: var(--radius-lg); /* rounded-lg (32px) */
+  box-shadow: var(--shadow-soft);
+  border: none;
+  
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  overflow-y: auto;
+  z-index: 50;
+  
+  /* Hide scrollbar */
+  scrollbar-width: none;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar-header {
+  padding: 0 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-icon {
+  width: 40px;
+  height: 40px;
+  /* Gradient from model: from-primary to-secondary */
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 6px rgba(110, 168, 255, 0.25);
+}
+
+.brand-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Base Nav Item Style */
+.nav-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-full);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.nav-item:hover {
+  background-color: var(--primary-10);
+}
+
+.nav-item.active {
+    background-color: var(--primary-20);
+    box-shadow: var(--shadow-inset);
+    font-weight: 600;
+}
+
+/* Accordion Button Styles */
+.accordion-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-full);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.accordion-btn:hover {
+  background-color: var(--primary-10);
+}
+
+/* Active Accordion Parent State (Neumorphic Inset) */
+.accordion-btn.open {
+  background-color: var(--primary-20);
+  box-shadow: var(--shadow-inset);
+  font-weight: 600;
+}
+
+.accordion-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-active {
+  color: var(--primary);
+}
+
+.icon-inactive {
+  color: var(--text-subtle);
+}
+
+/* Submenu Styles */
+.submenu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.submenu-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--text-main);
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.submenu-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Selected Submenu Item (Year) */
+.submenu-item.selected {
+  background-color: var(--secondary-30);
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.show-all-btn {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--primary);
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  border-radius: var(--radius-full);
+}
+
+.show-all-btn:hover {
+  background-color: var(--primary-10);
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+}

@@ -1,0 +1,38 @@
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.chart-container {
+    height: 500px;
+    width: 100%;
+}
+
+.tooltip-custom {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-color);
+}
+
+.tooltip-title {
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.tooltip-text {
+    font-size: 0.875rem;
+    margin: 0.25rem 0;
+}
+
+.tooltip-text span {
+    font-weight: 600;
+}
+
+.text-blue { color: #3b82f6; }
+.text-purple { color: #8b5cf6; }
