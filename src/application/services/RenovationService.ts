@@ -1,6 +1,6 @@
-import { getRenovationData } from '../../infrastructure/data/renovationData';
 import { YearFilter, ChartData, PieData } from '../../domain/models';
 import { PIE_CHART_COLORS } from '../../presentation/config/chartConfig';
+import { IRenovationRepository } from '../ports/IRenovationRepository';
 
 /**
  * Converts ChartData to PieData format for pie charts
@@ -22,9 +22,11 @@ const convertToPieData = (data: ChartData[]): PieData[] => {
  * data aggregation from multiple sources, caching strategies, etc.
  * It defines the "use cases" of the application.
  */
-export const getDashboardData = (year: YearFilter) => {
-  // Get raw data from infrastructure layer
-  const { private: dataPrivate, social: dataSocial } = getRenovationData(year);
+// [RÔLE] UseCase: Orchestrates data fetching and transformation.
+// [SYNTAXE] Async function with Dependency Injection (Repository Pattern)
+export const getDashboardData = async (repository: IRenovationRepository, year: YearFilter) => {
+  // Get raw data from infrastructure layer via Port
+  const { private: dataPrivate, social: dataSocial } = await repository.getRenovationStats(year);
 
   // Transform to presentation formats
   const pieDataPrivate = convertToPieData(dataPrivate);
@@ -36,4 +38,4 @@ export const getDashboardData = (year: YearFilter) => {
     pieDataPrivate,
     pieDataSocial
   };
-};;
+};

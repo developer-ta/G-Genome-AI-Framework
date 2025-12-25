@@ -6,8 +6,18 @@
 
 ## 📥 Inbox (Dernières Tâches)
 
-### [TASK-DATE] ID: [NomDescriptif]
+### [2025-12-25] SEQ-V1.1-UPGRADE: Architecture Alignment
+- **Context**: Aligning local codebase with the new Universal DNA v1.1 standards (Ports & Adapters, Mock DTOs).
+- **Files Changed**:
+    - `src/application/ports/IRenovationRepository.ts` (New Port)
+    - `src/infrastructure/mock/MockRenovationAdapter.ts` (New Adapter)
+    - `src/data/dtos/renovation_stats.dto.json` (New Data)
+    - `src/presentation/hooks/useDashboardController.ts` (DI Implementation)
+    - Refactored directory structure to `src/`.
+- **Outcome**: Project is now compliant with Clean Architecture v1.1.
+- **Key Variable Verified**: `useDashboardController` successfully injects `MockRenovationAdapter`.
 
+### [TASK-DATE] ID: [NomDescriptif]
 - **Context**: [Description courte du problème ou de la feature]
 - **Files Changed**:
   - `src/...`
