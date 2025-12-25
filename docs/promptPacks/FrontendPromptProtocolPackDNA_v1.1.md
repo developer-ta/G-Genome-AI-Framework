@@ -31,6 +31,14 @@ _Critères non-négociables. Si une requête viole ces règles, l'IA doit rejete
 - **Atomic Design**: Components must be small, focused, and isolated.
 - **Self-Documenting**: Variable names must explain intent.
 
+### 1.3 Documentation Standard
+- **Double Annotation**: Any complex logic (Regex, File I/O, Algorithms) MUST use the following format:
+  ```typescript
+  // [SYNTAXE] Technical explanation (e.g., "Iterates over array")
+  // [RÔLE] Business context (e.g., "Filters active users")
+  ```
+- **Context**: Refer to `/docs/GUIDE_COMMENTAIRES.md` for examples.
+
 ---
 
 ## 2. 📚 Task Registry (The "Experience Engine")
