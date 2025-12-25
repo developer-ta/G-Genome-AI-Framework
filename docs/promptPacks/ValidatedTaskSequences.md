@@ -6,6 +6,15 @@
 
 ## 📥 Inbox (Dernières Tâches)
 
+### [2025-12-25] SEQ-V1.2-COMP-REFIX: Componentization Integrity
+- **Context**: Fixed "Page won't open" error after componentization. Some content was moved to the component library but styles/imports were broken and a key utility component was missing.
+- **Files Changed**:
+    - `src/presentation/components/ui/ChartContainer.tsx` (Created missing utility)
+    - `src/presentation/sections/RenovationVolume/RenovationVolume.tsx` (Updated to use library components)
+    - `src/presentation/sections/RenovationVolume/subsections/` (Deleted redundant local code)
+- **Outcome**: UI logic is now correctly decoupled. Use of `RenovationPieChart` and `RenovationVolumeList` from the shared library is verified.
+- **Key Variable Verified**: `npm run build` succeeds; `RenovationVolume` renders correctly with shared styles.
+
 ### [2025-12-25] SEQ-V1.1-UPGRADE: Architecture Alignment
 - **Context**: Aligning local codebase with the new Universal DNA v1.1 standards (Ports & Adapters, Mock DTOs).
 - **Files Changed**:
