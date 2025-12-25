@@ -55,7 +55,6 @@ Voici comment nos outils (`PromptRuler`, `Protocol`, `Sequences`) s'imbriquent p
 | **"Le code ne ressemble pas au nôtre"** | L'IA utilise ses valeurs par défaut | Le **Protocol** impose la Tech Stack (Vite/TS/CSS Modules). |
 | **"L'IA a oublié ce qu'on a dit hier"** | Amnésie contextuelle des LLM | **ValidatedTasks** sert de "Mémoire Externe" réinjectée à chaque session. |
 | **"Je ne sais pas quoi prompter"** | Manque d'expérience Prompt Engineering | **PromptRuler** fournit des phrases à copier-coller. |
-
 ---
 
 ## 4. Pour les Nouveaux : La Période de Transition
@@ -66,6 +65,11 @@ Passer au développement assisté par IA demande de l'humilité.
 
 > **En résumé** :
 > **Prompt Ruler** = La Commande.
-> **Protocol Pack** = Le Règlement.
-> **Validated Sequences** = La Mémoire.
-> **VOUS** = Le Chef d'Orchestre.
+> **Protocol Pack (DNA)** = Le Règlement / L'Héritage.
+> **Validated Sequences** = La Mémoire Épigénétique.
+> **VOUS** = Le Chef d'Orchestre / L'Architecte Évolutif.
+
+---
+
+## 🧬 Note Finale : L'approche "DNA"
+Ce projet suit la philosophie **"Prompt as DNA"**. Chaque tâche accomplie n'est pas juste du code produit, c'est un "gène" de succès qui sera transmis au prochain projet. Nous ne construisons pas seulement une application, nous cultivons une intelligence experte.

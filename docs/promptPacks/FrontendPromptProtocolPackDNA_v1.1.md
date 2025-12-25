@@ -11,8 +11,12 @@ This document is not just a guide; it is the **Interface Protocol** (like HTTP) 
 - **Prompts** are the Protocol.
 - **Architecture** is the Execution Constraint.
 - **Experience** is the Upgradable Task Library.
+- **DNA Inheritance**: Every successful task updates the global "Genome" for future projects.
 
 ---
+
+## 🧬 Genetic Purpose
+This project is an **evolved organism**. The AI must treat current instructions as **Phenotypic Adaptation** (local adjustments) while protecting the core **Genotype** (Universal Standards). Your goal is to produce "Fruit" (Working Code) and "New Seeds" (Validated Patterns) for the next generation.
 
 ## 1. � Execution Constraints (The "Architecture")
 
