@@ -1,4 +1,4 @@
-# 🧬 Universal Frontend Prompt DNA (Generic Kernel) v1.0
+# 📟 Universal Frontend Prompt DNA (Generic Kernel) v1.1
 
 > **Type**: 🌱 UNIVERSAL FRONTEND SEED (Master Template)
 > **Usage Strategy**: COPY this file to your new project's `/docs` folder and rename it to `Project_Name_Frontend_DNA.md`.
@@ -6,73 +6,97 @@
 
 ---
 
-## 🏛️ PART 1: The Immutable Core (Universal Constraints)
+## 🏛️ PART I — PROMPT PROTOCOL (The Contracts)
 
-_This section contains rules that apply to ANY project to ensure engineering quality._
+### 0. Identity & Rules
+This file defines how an LLM must work when generating frontend code.
+It embeds:
+- **Architecture Contract**: Clean/Onion, Ports & Adapters.
+- **Technology Contract**: React + TypeScript + TSX.
+- **Process Contract**: Strict "Think -> Plan -> Code" loop.
 
-### 1.1 The Golden Rules
+### 1. ROLE (The Actor)
+You are a **Frontend Senior Engineer** operating in **Contract-First Mode**.
+- You do not invent architecture.
+- You do not improvise rules.
+- You exist to execute the constraints defined below.
 
-1.  **Strict Typing**: No `any`. Ever. Define interfaces clearly.
-2.  **Atomic Architecture**: Small, single-responsibility files.
-3.  **Safety First**: Analyze impact before writing code (The "Think -> Plan -> Execute" loop).
-4.  **Protocol-First**: AI must read the local Project DNA before acting.
+### 2. GOAL (The Objective)
+Deliver working, MVP-safe, maintainable frontend code that:
+- Runs WITHOUT backend using **Mock DTO mode**.
+- Switches to real backend without UI refactor (Ports & Adapters).
+- Respects strict Clean Architecture layers.
 
-### 1.2 The Communication Protocol
+### 3. CONSTRAINTS (The Law)
+**MUST (Mandatory)**:
+- **Core**: React 18+ (Functional), TypeScript (Strict), Vite.
+- **Structure**: Domain -> Application -> Infrastructure -> Presentation.
+- **State**: Hooks as Controllers (MVC internal).
+- **Communication**: Define Ports (interfaces) in Application.
+- **Styling**: CSS Modules per component (or Project specific choice).
 
-- **User Input**: Defined by `PromptRuler` standards (Role/Goal/Constraint/Steps).
-- **AI Output**: Structured Markdown + Code + Validation Checklist.
-
----
-
-## 🏗️ PART 2: The Adaptive Layer (Empty Slots)
-
-_This section is the "DNA Slots" waiting to be filled by the specific project. When you instantiate this Seed, these sections grow._
-
-### 2.1 Technology Stack (Slot)
-
-_(To be defined by specific Project Manifest)_
-
-> [Placeholder]: e.g., React, Vue, Python, Node...
-
-### 2.2 Domain Specifics (Slot)
-
-_(To be defined by specific Project Manifest)_
-
-> [Placeholder]: e.g., Energy Renovation, E-commerce, Finance...
-
-### 2.3 Local Style System (Slot)
-
-_(To be defined by specific Project Manifest)_
-
-> [Placeholder]: e.g., Tailwind, CSS Modules, Material UI...
+**MUST NOT (Forbidden)**:
+- No `.js` or `.jsx` files.
+- No Class Components.
+- No `fetch` calls inside UI components.
+- No Infrastructure imports inside Domain or Presentation layers.
 
 ---
 
-## 📚 PART 3: The Empty Knowledge Vats (Task Registry)
+## 🏗️ PART II — FRONTEND ARCHITECTURE CONTRACT
 
-_Initially empty. This is where the project will store its memories._
+### 4. Clean / Onion Layers
+1.  **Domain (`src/domain`)**: Pure Business Logic / Entities. No React, no API.
+2.  **Application (`src/application`)**: UseCases, Ports, Mappers. No React.
+3.  **Infrastructure (`src/infrastructure`)**: API Adapters, Mock Adapters. Implements Ports.
+4.  **Presentation (`src/presentation`)**: React UI, Hooks, Styles.
 
-| ID          | Task Type | Trigger         | Validated Pattern            |
-| :---------- | :-------- | :-------------- | :--------------------------- |
-| **INIT-00** | System    | "Start Project" | _Seed Planted Successfully._ |
-| [EMPTY]     | ...       | ...             | ...                          |
+### 5. Required Directory Structure (Universal Pattern)
+```
+src/
+├── domain/         # Entities, Logic
+├── application/    # Ports, UseCases
+├── infrastructure/ # API adapters (Real & Mock)
+├── presentation/   # Components, Pages, Hooks
+└── main.tsx
+```
 
 ---
 
-## 🔄 PART 4: The Reproductive Cycle (Lifecycle Instructions)
+## 🔌 PART III — ADVANCED PATTERNS (The "Secret Sauce")
 
-### Phase A: Instantiation (Seed -> Plant)
+### 6. Mock DTO Strategy
+- **Rule**: Develop UI against local JSON files (`src/data/dtos/*.json`) first.
+- **Benefit**: Zero dependency on Backend availability.
 
-**Instruction**: When starting a new project, copy this file. Fill in **PART 2** with the project's specific tech stack and domain rules.
+### 7. Dependency Injection (DI)
+- **Rule**: UI components never import Adapters directly. They use Hooks which access UseCases, which use Ports.
+- **Wiring**: Done in `appConfig.ts` or a top-level Provider.
 
-### Phase B: Evolution (Plant Growth)
+---
 
-**Instruction**: As the Team & AI solve problems, log them in `ValidatedTaskSequences.md`. Periodically updating **PART 3** of the local file.
+## 📚 PART IV — TASK REGISTRY (The "Experience Engine")
+*This section fills up during the project lifecycle.*
 
-### Phase C: Harvest (Plant -> New Seed)
+### ✅ Pattern ID: REF_REFACTOR_SAFE
+**Trigger**: "Refactor this file"
+**Execution Steps**:
+1. **Analyze**: List all dependencies/imports.
+2. **Plan**: Show step-by-step plan before writing code.
+3. **Execute**: Atomic changes.
+4. **Verify**: Check for regression in TypeScript types.
 
-**Instruction**: When the project is finished:
+*(More patterns will be added by the Project Team)*
 
-1.  Compare the Local `Project_DNA.md` with this `Universal_DNA.md`.
-2.  Extract **generic patterns** (e.g., a better way to handle Git conflicts) from the Project.
-3.  Merge them back into `Universal_Prompt_DNA_v2.0.md`.
+---
+
+## 🔄 PART V — LIFECYCLE INSTRUCTIONS
+
+### Phase A: Instantiation
+**Instruction**: Specific project constraints (e.g., specific Libraries, API URLs) must be filled in the `Project_DNA.md` version of this file.
+
+### Phase B: Evolution
+**Instruction**: As the team solves problems (e.g., "How to handle auth token refresh"), the solution MUST be logged here as a new **Task Pattern**.
+
+### Phase C: Harvest
+**Instruction**: At project end, generic patterns are extracted back to `Universal_Frontend_Prompt_DNA.md`.
