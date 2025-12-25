@@ -1,13 +1,15 @@
 import React from 'react';
-import { PieData } from '../../../../domain/models';
+import { PieData } from '../../../domain/models';
+import './RenovationVolumeList.css';
 
-interface VolumeListProps {
+interface RenovationVolumeListProps {
   data: PieData[];
 }
 
 const getArrNumber = (name: string) => parseInt(name.replace(/\D/g, ''));
 
-export const VolumeList: React.FC<VolumeListProps> = ({ data }) => {
+// [RÔLE] Reusable list component to display detailed stats associated with the chart
+export const RenovationVolumeList: React.FC<RenovationVolumeListProps> = ({ data }) => {
   const total = data.reduce((sum, item) => sum + item.value, 0);
   const sortedList = [...data].sort((a, b) => getArrNumber(a.name) - getArrNumber(b.name));
   const firstHalf = sortedList.slice(0, 10);

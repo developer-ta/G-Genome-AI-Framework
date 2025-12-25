@@ -1,8 +1,10 @@
 import React from 'react';
-import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, LabelList } from 'recharts';
-import { PieData } from '../../../../domain/models';
+import { PieChart, Pie, Cell, Tooltip, LabelList } from 'recharts';
+import { PieData } from '../../../domain/models';
+import { ChartContainer } from '../../components/ui/ChartContainer';
+import './RenovationPieChart.css';
 
-interface VolumeChartProps {
+interface RenovationPieChartProps {
   data: PieData[];
   centerText: string;
 }
@@ -30,6 +32,7 @@ const renderOuterLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, name }: 
   );
 };
 
+// [SYNTAXE] Custom renderer for inner percentage labels
 const renderInnerLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }: any) => {
   if (percent < 0.03) return null;
 
@@ -67,10 +70,11 @@ const CustomTooltip = ({ active, payload }: any) => {
   return null;
 };
 
-export const VolumeChart: React.FC<VolumeChartProps> = ({ data, centerText }) => {
+// [RÔLE] Reusable Pie Chart component for displaying renovation volumes
+export const RenovationPieChart: React.FC<RenovationPieChartProps> = ({ data, centerText }) => {
   return (
     <div className="chart-section">
-      <ResponsiveContainer width="100%" height="100%">
+      <ChartContainer>
         <PieChart margin={{ top: 20, right: 40, bottom: 20, left: 40 }}>
           <Pie
             data={data}
@@ -95,7 +99,7 @@ export const VolumeChart: React.FC<VolumeChartProps> = ({ data, centerText }) =>
           </Pie>
           <Tooltip content={<CustomTooltip />} />
         </PieChart>
-      </ResponsiveContainer>
+      </ChartContainer>
       <div className="chart-center-label">
           <div className="chart-center-text">{centerText}</div>
       </div>
