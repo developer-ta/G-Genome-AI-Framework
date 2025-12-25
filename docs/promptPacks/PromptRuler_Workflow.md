@@ -25,7 +25,7 @@ Voici les phrases exactes à utiliser à chaque étape du développement.
 *À faire au tout début d'une conversation avec l'IA.*
 
 > **Prompt :**
-> "Avant de commencer, lis le fichier `/docs/promptPacks/FrontendPromptProtocolPack.md`.
+> "Avant de commencer, lis le fichier `/docs/promptPacks/FrontendPromptProtocolPackDNA_v1.1.md`.
 > Adopte le rôle de 'Controlled Executor' défini dans ce protocole.
 > Confirme quand tu as chargé les **Execution Constraints** et le **Task Registry**."
 
@@ -64,7 +64,7 @@ Voici les phrases exactes à utiliser à chaque étape du développement.
 > **Prompt :**
 > "Analyse `/docs/promptPacks/ValidatedTaskSequences.md`.
 > Extrais les patterns récurrents (ceux qui sont validés plusieurs fois).
-> Propose un patch pour mettre à jour `/docs/promptPacks/FrontendPromptProtocolPack.md` avec ces nouvelles règles.
+> Propose un patch pour mettre à jour `/docs/promptPacks/FrontendPromptProtocolPackDNA_v1.1.md` avec ces nouvelles règles.
 > Augmente la version du Protocole."
 
 ---

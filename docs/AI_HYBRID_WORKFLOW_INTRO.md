@@ -30,7 +30,7 @@ Voici comment nos outils (`PromptRuler`, `Protocol`, `Sequences`) s'imbriquent p
 
 ### Phase 3 : L'Exécution Guidée (IA)
 *   **Action** : L'IA génère le code.
-*   **Outil** : **`docs/promptPacks/FrontendPromptProtocolPack.md`**
+*   **Outil** : **`docs/promptPacks/FrontendPromptProtocolPackDNA_v1.1.md`**
 *   **Fonctionnement** : L'IA lit ce fichier ("Le Cerveau du Projet") *avant* d'écrire une seule ligne. Elle y trouve nos règles (Pas de `any`, CSS Modules, etc.). Sans ce fichier, l'IA coderait "à la moyenne d'internet", pas "selon nos standards".
 
 ### Phase 4 : La Review & Validation (Humain)

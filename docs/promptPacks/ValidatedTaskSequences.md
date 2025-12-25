@@ -2,7 +2,7 @@
 
 > **Role**: Raw Data Log (Raw Experience)
 > **Purpose**: Capturer "ce qui a été fait" et "ce qui a marché" avant de le distiller dans le protocole.
-> **Flow**: Tâche Terminée -> ValidatedTaskSequences.md -> (Review) -> FrontendPromptProtocolPack.md
+> **Flow**: Tâche Terminée -> ValidatedTaskSequences.md -> (Review) -> FrontendPromptProtocolPackDNA_v1.1.md
 
 ## 📥 Inbox (Dernières Tâches)
 
@@ -47,6 +47,6 @@
 
 - **Context**: Création initiale de l'architecture de mémoire externe pour l'IA.
 - **Files Changed**:
-  - `docs/promptPacks/FrontendPromptProtocolPack.md`
+  - `docs/promptPacks/FrontendPromptProtocolPackDNA_v1.1.md`
   - `docs/promptPacks/ValidatedTaskSequences.md`
 - **Outcome**: Système de gestion de connaissances mis en place.
