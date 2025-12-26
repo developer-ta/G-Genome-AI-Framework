@@ -48,7 +48,16 @@ Successful local mutations are extracted and merged back into the **Master Seed*
 
 ---
 
-## 💡 4. Broader Research Portfolio: The Interdisciplinary Horizon
+## ⚡ 4. Technical Innovation: Binary Semantic Structuring (MD + XML)
+To solve the problem of **Model Drift** (the AI ignoring instructions over time), our framework implements a hybrid syntax:
+*   **Markdown (Human Layer)**: Provides high-level readability and hierarchy for developers.
+*   **XML Tagging (AI Anchor Layer)**: Uses explicit tags (e.g., `<constraints>`, `<dna_kernel>`) to define immutable semantic boundaries. 
+
+This **Binary Structuring** forces the LLM's attention mechanism to treat tagged blocks as high-priority "Systemic Laws," drastically reducing hallucinations and improving adherence to complex Clean Architecture patterns.
+
+---
+
+## 💡 5. Broader Research Portfolio: The Interdisciplinary Horizon
 
 Beyond **Prompt as DNA**, our current research laboratory (Independent) is developing three additional high-impact concepts:
 
