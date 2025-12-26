@@ -16,7 +16,12 @@ L'arrivée de l'IA ne remplace pas le développeur, **elle change son métier**.
 ---
 
 ## 2. Le Cycle de Vie "RenovÉnergie" (Détaillé)
-Voici comment nos outils (`PromptRuler`, `Protocol`, `Sequences`) s'imbriquent pour former un workflow sécurisé.
+Voici comment nos outils s'imbriquent pour former un "Starter Kit" autonome.
+
+### 🏁 Étape 0 : L'Initialisation (BOOTSTRAP)
+**Action** : L'IA doit lire le fichier de configuration maître.
+**Outil** : **`docs/DNA_GENOTYPE/v1.0/SEED_BOOTSTRAP_PROTOCOL.md`**
+**Pourquoi ?** : C'est la "Téléportation" de l'intelligence. Ce fichier guide l'IA pas à pas pour absorber le noyau universel, la mémoire du projet, et le cahier des charges.
 
 ### Phase 1 : L'Intention (100% Humain)
 *   **Action** : Vous définissez le besoin fonctionnel.
@@ -25,12 +30,12 @@ Voici comment nos outils (`PromptRuler`, `Protocol`, `Sequences`) s'imbriquent p
 
 ### Phase 2 : La Traduction (Humain → IA)
 *   **Action** : Transformer le besoin en instructions strictes.
-*   **Outil** : **`docs/promptPacks/PromptRuler_Workflow.md`**
+*   **Outil** : **`docs/DNA_GENOTYPE/v1.0/PromptRuler_Workflow.md`**
 *   **Pourquoi ?** : Pour éviter que chacun parle "son propre langage" à l'IA. On utilise des templates standardisés pour garantir le résultat.
 
 ### Phase 3 : L'Exécution Guidée (IA)
 *   **Action** : L'IA génère le code.
-*   **Outil** : **`docs/promptPacks/FrontendPromptProtocolPackDNA_v1.1.md`**
+*   **Outil** : **`docs/PROJECT_PHENOTYPE/FrontendPromptProtocolPackDNA_v1.1.md`**
 *   **Fonctionnement** : L'IA lit ce fichier ("Le Cerveau du Projet") *avant* d'écrire une seule ligne. Elle y trouve nos règles (Pas de `any`, CSS Modules, etc.). Sans ce fichier, l'IA coderait "à la moyenne d'internet", pas "selon nos standards".
 
 ### Phase 4 : La Review & Validation (Humain)
@@ -42,7 +47,7 @@ Voici comment nos outils (`PromptRuler`, `Protocol`, `Sequences`) s'imbriquent p
 
 ### Phase 5 : La Capitalisation (Boucle de Retour)
 *   **Action** : Si vous avez résolu un problème complexe, on ne doit pas perdre cette information.
-*   **Outil** : **`docs/promptPacks/ValidatedTaskSequences.md`**
+*   **Outil** : **`docs/PROJECT_PHENOTYPE/ValidatedTaskSequences.md`**
 *   **Concept** : On "sauvegarde la partie". La prochaine fois, l'IA lira ce fichier et saura déjà comment résoudre ce problème spécifique.
 
 ---
