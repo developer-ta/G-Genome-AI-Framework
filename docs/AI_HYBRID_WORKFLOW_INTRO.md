@@ -18,37 +18,33 @@ L'arrivée de l'IA ne remplace pas le développeur, **elle change son métier**.
 ## 2. Le Cycle de Vie "RenovÉnergie" (Détaillé)
 Voici comment nos outils s'imbriquent pour former un "Starter Kit" autonome.
 
-### 🏁 Étape 0 : L'Initialisation (BOOTSTRAP)
+### 🏁 Étape 0 : L'Initialisation (G-GENOME BOOTSTRAP)
 **Action** : L'IA doit lire le fichier de configuration maître.
-**Outil** : **`docs/DNA_GENOTYPE/v1.0/SEED_BOOTSTRAP_PROTOCOL.md`**
-**Pourquoi ?** : C'est la "Téléportation" de l'intelligence. Ce fichier guide l'IA pas à pas pour absorber le noyau universel, la mémoire du projet, et le cahier des charges.
+**Outil** : **`docs/COGNITIVE_CORE/v1.0/SEED_BOOTSTRAP_PROTOCOL.md`**
+**Pourquoi ?** : C'est la "Téléportation" de l'intelligence. Ce fichier guide l'IA pour absorber le noyau universel, la mémoire du projet, et le cahier des charges.
 
-### Phase 1 : L'Intention (100% Humain)
-*   **Action** : Vous définissez le besoin fonctionnel.
-*   **Outil** : Votre cerveau + Cahier des charges.
-*   **Défi** : Si votre idée est floue, le code sera buggé (" Garbage In, Garbage Out ").
+### Phase 1 : L'Intention (Humain + Substrat)
+*   **Action** : Définir le besoin et préparer les nutriments.
+*   **Outil** : **`docs/CONTEXT_SUBSTRATE/`** (Déposez ici vos Cahiers des charges).
+*   **Défi** : Si le substrat est pauvre, la croissance de l'IA sera limitée.
 
 ### Phase 2 : La Traduction (Humain → IA)
 *   **Action** : Transformer le besoin en instructions strictes.
-*   **Outil** : **`docs/DNA_GENOTYPE/v1.0/PromptRuler_Workflow.md`**
-*   **Pourquoi ?** : Pour éviter que chacun parle "son propre langage" à l'IA. On utilise des templates standardisés pour garantir le résultat.
+*   **Outil** : **`docs/COGNITIVE_CORE/v1.0/PromptRuler_Workflow.md`**
+*   **Pourquoi ?** : Pour garantir que l'IA respecte le protocole binaire (XML + MD).
 
 ### Phase 3 : L'Exécution Guidée (IA)
-*   **Action** : L'IA génère le code.
-*   **Outil** : **`docs/PROJECT_PHENOTYPE/FrontendPromptProtocolPackDNA_v1.1.md`**
-*   **Fonctionnement** : L'IA lit ce fichier ("Le Cerveau du Projet") *avant* d'écrire une seule ligne. Elle y trouve nos règles (Pas de `any`, CSS Modules, etc.). Sans ce fichier, l'IA coderait "à la moyenne d'internet", pas "selon nos standards".
+*   **Action** : L'IA génère le code en respectant l'épigénétique.
+*   **Outil** : **`docs/DEVELOPMENT_EPIGENETICS/FrontendPromptProtocolPackDNA_v1.1.md`**
+*   **Fonctionnement** : L'IA lit ce fichier pour adapter le noyau universel au contexte local.
 
 ### Phase 4 : La Review & Validation (Humain)
-*   **Action** : Vous relisez le code. Vous ne faites **jamais** confiance aveuglément.
-*   **Checklist** :
-    *   Le code compile-t-il ?
-    *   Les types TypeScript sont-ils stricts ?
-    *   L'IA a-t-elle halluciné des librairies qu'on n'utilise pas ?
+*   **Action** : Vérification de la conformité génétique (Types, Architecture).
 
-### Phase 5 : La Capitalisation (Boucle de Retour)
-*   **Action** : Si vous avez résolu un problème complexe, on ne doit pas perdre cette information.
-*   **Outil** : **`docs/PROJECT_PHENOTYPE/ValidatedTaskSequences.md`**
-*   **Concept** : On "sauvegarde la partie". La prochaine fois, l'IA lira ce fichier et saura déjà comment résoudre ce problème spécifique.
+### Phase 5 : La Capitalisation (Récolte)
+*   **Action** : Enregistrer les "Gènes de Succès".
+*   **Outil** : **`docs/DEVELOPMENT_EPIGENETICS/ValidatedTaskSequences.md`**
+*   **Concept** : On prépare la prochaine génération de graines.
 
 ---
 

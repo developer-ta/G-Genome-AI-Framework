@@ -1,9 +1,11 @@
 <prompt_ruler version="1.0">
 
 <identity_setup>
+
 # 📏 Prompt Ruler: Guide de Collaboration Standard Équipe/IA
+
 > **Définition du Standard** : "Un bon prompt n'est pas long. C'est un prompt qui est **Processus**, **Formaté**, et **Auto-vérifié**."
-</identity_setup>
+> </identity_setup>
 
 <principles>
 ## 🏗️ Les 5 Piliers d'un Prompt "RenovÉnergie"
@@ -15,14 +17,15 @@
 </principles>
 
 <workflow_templates>
+
 ## 🔄 Le Workflow Standard (Copier-Coller)
 
 <template id="SESSION_START">
 ### Etape 1 : 🚀 Démarrage de Session (Context Injection)
 **Prompt :**
 ```text
-Lance le protocole <DNA_BOOTSTRAP> en lisant le fichier 
-`/docs/DNA_GENOTYPE/v1.0/SEED_BOOTSTRAP_PROTOCOL.md`.
+Lance le protocole <G-GENOME_BOOTSTRAP> en lisant le fichier 
+`/docs/COGNITIVE_CORE/v1.0/SEED_BOOTSTRAP_PROTOCOL.md`.
 Adopte le rôle de 'Controlled Executor'.
 Attends mes instructions après ton rapport d'initialisation.
 ```
@@ -32,7 +35,7 @@ Attends mes instructions après ton rapport d'initialisation.
 ### Etape 2 : ⚡ Exécution d'une Tâche (The Request)
 **Prompt :**
 ```text
-Agis selon le Protocol DNA en vigueur.
+Agis selon le G-Genome Protocol.
 <task_details>
   - Tâche : [Décrivez votre besoin]
   - Pattern ID : [ex: COMPONENT_NEW]
@@ -40,7 +43,8 @@ Agis selon le Protocol DNA en vigueur.
 </task_details>
 
 Livrables : 1. Plan | 2. Code | 3. Validation de contraintes.
-```
+
+````
 </template>
 
 <template id="KNOWLEDGE_HARVEST">
@@ -48,9 +52,10 @@ Livrables : 1. Plan | 2. Code | 3. Validation de contraintes.
 **Prompt :**
 ```text
 La tâche est validée.
-Action : Enregistre cette réussite dans `docs/PROJECT_PHENOTYPE/ValidatedTaskSequences.md`.
+Action : Enregistre cette réussite dans `docs/DEVELOPMENT_EPIGENETICS/ValidatedTaskSequences.md`.
 Identifie le "gène de succès" (la clé technique) pour les futures générations.
-```
+````
+
 </template>
 
 </workflow_templates>

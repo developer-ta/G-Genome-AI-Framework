@@ -1,13 +1,17 @@
 <dna_genotype version="1.0">
 
 <identity_setup>
+
 # 📟 Universal Frontend Prompt DNA (Generic Kernel) v1.1
+
 - **Type**: 🌱 UNIVERSAL FRONTEND SEED (Master Template / Genotype)
 - **Role**: The "Genetic Code" for starting high-quality AI-Assisted Frontend Projects.
-</identity_setup>
+  </identity_setup>
 
 <architectural_contract>
+
 ## 🏛️ PART I — PROMPT PROTOCOL (The Contracts)
+
 - **Architecture**: Clean/Onion, Ports & Adapters.
 - **Technology**: React + TypeScript + TSX.
 - **Process**: Strict "Think -> Plan -> Code" loop.
@@ -19,14 +23,17 @@
 - Communication: Define Ports (interfaces) in Application.
 
 **MUST NOT (Forbidden)**:
+
 - No `.js` or `.jsx` files. No Class Components.
 - No `fetch` calls inside UI components.
 - No Infrastructure imports inside Domain or Presentation layers.
-</constraints>
-</architectural_contract>
+  </constraints>
+  </architectural_contract>
 
 <structural_manifest>
+
 ## 🏗️ PART II — FRONTEND ARCHITECTURE CONTRACT
+
 ```
 src/
 ├── domain/         # Entities, Logic
@@ -42,7 +49,9 @@ Develop UI against local JSON files (`src/data/dtos/*.json`) first. This ensures
 </structural_manifest>
 
 <experience_registry status="upgradable">
+
 ## 📚 PART III — TASK REGISTRY (The "Experience Engine")
+
 <pattern id="REF_REFACTOR_SAFE">
 1. Analyze dependencies. 
 2. Show plan. 
@@ -52,10 +61,12 @@ Develop UI against local JSON files (`src/data/dtos/*.json`) first. This ensures
 </experience_registry>
 
 <lifecycle_instructions>
+
 ## 🔄 PART IV — EVOLUTIONARY PHASES
-- **Instantiation**: Populate local `PROJECT_PHENOTYPE`.
-- **Evolution**: Log new patterns in `ValidatedTaskSequences.md`.
-- **Harvest**: Reverse-transcribe patterns back to this Kernel.
-</lifecycle_instructions>
+
+- **Instantiation**: Merge `COGNITIVE_CORE` with `CONTEXT_SUBSTRATE`.
+- **Evolution**: Log new patterns in `docs/DEVELOPMENT_EPIGENETICS/ValidatedTaskSequences.md`.
+- **Harvest**: Reverse-transcribe patterns into `docs/REVERSE_TRANSCRIPTION/` for future generations.
+  </lifecycle_instructions>
 
 </dna_genotype>
