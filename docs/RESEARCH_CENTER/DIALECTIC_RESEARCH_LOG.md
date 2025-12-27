@@ -75,6 +75,17 @@
     Normalisation des 3 Piliers : Graine (Genotype), Engrais (Substrate), Sol (Life-Support).
   </breakthrough>
 </dialogue_entry>
+<dialogue_entry date="2025-12-27" topic="Les Codons de Croissance (Task Registry)">
+  <human_architect>
+    Nous devons renforcer la gestion des tâches. Dans le framework, une tâche n'est pas juste un ordre, c'est un "Codon de Croissance" qui permet à l'organisme de se développer. On doit séparer ce qui est déjà validé de ce qui est en cours de mutation.
+  </human_architect>
+  <ai_agent>
+    Introduction du **COGNITIVE_TASK_REGISTRY.md**. Chaque tâche devient un "Codon" structuré en 3 parties : **Intention** (But), **Action** (Code), **Validation** (Test de succès). Cela offre un suivi temporel et biologique de l'évolution du projet.
+  </ai_agent>
+  <breakthrough>
+    Conceptualisation du "Codon" comme unité de base de l'ingénierie bio-digitale.
+  </breakthrough>
+</dialogue_entry>
 
 ---
 *"Le code meurt, la pensée évolue."*
