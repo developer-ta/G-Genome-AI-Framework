@@ -15,7 +15,12 @@ Inspiré par les systèmes biologiques, le framework **G-Genome** sépare le cyc
 C'est la "Loi Biologique" du projet. Elle contient les contraintes universelles (Clean Architecture, Protocoles de Sécurité) structurées avec des **Balises XML** pour empêcher la dérive de l'attention de l'IA.
 
 ### B. CONTEXT_SUBSTRATE (Les Nutriments / Le Présent)
-Avant toute construction, l'IA reçoit un "Kit d'Ingénierie Master" contenant la **Graine (DNA)** + le **Substrat (Cahier des charges, maquettes, actifs de marque)**. L'IA ne cherche pas l'intention ; elle *émerge* de l'intention.
+Avant toute construction, l'IA est nourrie par un **"Environnement Fertile"** composé de trois piliers indissociables :
+1.  **La Graine (COGNITIVE_CORE)** : L'intelligence héritée (Clean Architecture, modèles Git).
+2.  **L'Engrais (CONTEXT_SUBSTRATE)** : Les nutriments spécifiques fournis par l'humain (Cahiers des charges, Maquettes, Règles métier).
+3.  **Le Système de Soutien (LIFE_SUPPORT)** : Les protocoles de guidage (Bootstrap) et l'outillage.
+
+L'IA ne cherche pas l'intention ; elle *émerge* de l'intention dès la première seconde.
 
 ### C. REVERSE_TRANSCRIPTION (La Récolte / Le Futur)
 À la fin d'un cycle, le framework extrait automatiquement les "mutations" réussies (nouveaux patterns, fix de bugs) et les réinjecte dans la version suivante du **COGNITIVE_CORE**. Le système apprend de projet en projet sans réentraînement.

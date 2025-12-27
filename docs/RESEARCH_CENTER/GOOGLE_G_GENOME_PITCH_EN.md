@@ -15,7 +15,12 @@ Inspired by biological systems, the **G-Genome** framework treats software devel
 This is the "Biological Law" of the project. It contains the universal templates and architectural constraints (Clean Architecture, Safety Protocols) wrapped in **Binary Semantic Tags (XML + MD)** to prevent attention drift.
 
 ### B. THE CONTEXT_SUBSTRATE (The Nutrients / Present)
-Before any construction begins, the AI is fed a "Master Engineering Kit" containing the **Seed (DNA)** + the **Substrate (Project specifications, mockups, brand assets)**. The AI doesn't search for intent; it *exists* within the intent.
+Before any construction begins, the AI is fed an **"Environnement Fertile"** (Fertile Environment) composed of three indissociable pillars:
+1.  **The Seed (COGNITIVE_CORE)**: Inherited engineering intelligence (Clean Architecture, Git models).
+2.  **The Fertilizer (CONTEXT_SUBSTRATE)**: Project-specific "nutrients" provided by the human (Specs, Mockups, Rules).
+3.  **The Support System (LIFE_SUPPORT)**: Guidance protocols (Bootstrap) and tools.
+
+The AI doesn't search for intent; it *exists* within the intent from the first second.
 
 ### C. REVERSE_TRANSCRIPTION (The Harvest / Future)
 At the end of a cycle, the framework automatically extracts successful "mutations" (innovative patterns, bug fixes) and merges them back into the next version of the **COGNITIVE_CORE**. The system learns across projects without retraining the base model.
