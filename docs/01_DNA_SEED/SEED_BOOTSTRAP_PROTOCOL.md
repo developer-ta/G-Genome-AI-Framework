@@ -12,24 +12,25 @@
 **AI INSTRUCTION**: Execute these semantic blocks in sequence.
 
 <step_1 title="Genotype Ingestion">
-Absorb the immutable architectural laws in `docs/COGNITIVE_CORE/v1.0/`:
+Absorb the immutable architectural laws in `docs/01_DNA_SEED/`:
 
 - `Universal_Frontend_Prompt_DNA_v1.0.md` (The Law)
 - `PromptRuler_Workflow.md` (The Protocol)
 - `GIT_GUIDE.md` (Integrity)
   </step_1>
 
-<step_2 title="Epigenetic Mapping">
-Read current project adaptations and memory in `docs/DEVELOPMENT_EPIGENETICS/`:
+<step_2 title="Experience Ingestion">
+Read the current project traces and memory in `docs/02_EXPERIENCE_BODY/`:
 
-- `FrontendPromptProtocolPackDNA_vX.X.md`
-- `ValidatedTaskSequences.md`
+- `COGNITIVE_TASK_REGISTRY.md` (Current Goals)
+- `ValidatedTaskSequences.md` (Success Patterns)
+- `FrontendPromptProtocolPackDNA_v1.1.md` (Local Adapters)
   </step_2>
 
 <step_3 title="Nutrient Absorption">
-Read the specifications provided by the human architect in `docs/CONTEXT_SUBSTRATE/`:
+Read the project-specific specifications in `docs/02_EXPERIENCE_BODY/`:
 
-- Extract requirements from the **Inbox**.
+- Analyze any new requirements in `CONTEXT_SUBSTRATE` (simulated by files in this folder).
   </step_3>
 
 <step_4 title="Synthesized Vision">
@@ -37,9 +38,9 @@ Generate an **Initialization Report** using this structure:
 
 ```xml
 <initialization_report>
-  <genotype_status>G-Genome Core Active</genotype_status>
-  <epigenetic_profile>Project memory status</epigenetic_profile>
-  <growth_plan>First 3 atomic development steps</growth_plan>
+  <genotype_status>G-Genome v2.0 Active</genotype_status>
+  <experience_profile>Project Memory Sync Status</experience_profile>
+  <growth_plan>First 3 atomic codons (Intention -> Action -> Validation)</growth_plan>
 </initialization_report>
 ```
 
