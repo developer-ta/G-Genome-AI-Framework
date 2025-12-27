@@ -56,6 +56,14 @@
     Transition de la "Prompt Engineering" vers la "Bio-Digital Engineering". Le kit master inclut désormais le GENOME_KERNEL (DNA) et le CONTEXT_SUBSTRATE (Nutriments).
   </breakthrough>
 </dialogue_entry>
+<dialogue_entry date="2025-12-27" topic="G-Genome Master Kit & 5-Stage Lifecycle">
+  <human_architect>
+    Nous avons besoin d'un dossier "Kit" qui agit comme une boîte à outils. On y met tout ce qui concerne le nouveau projet (Graine + Engrais) pour que l'IA puisse démarrer instantanément. Le cycle de vie doit être clair : Ingénierie, Plantation, Croissance, Récolte, Régénération. C'est du "Bio-Digital Engineering".
+  </human_architect>
+  <ai_agent>
+    C'est la formalisation industrielle du framework. Création du dossier `G_GENOME_MASTER_KIT` et du document de référence sur le cycle de vie en 5 étapes. Cette structure rend le framework "Plug & Play" pour n'importe quel nouvel environnement ou équipe.
+  </ai_agent>
+</dialogue_entry>
 
 ---
 *"Le code meurt, la pensée évolue."*
