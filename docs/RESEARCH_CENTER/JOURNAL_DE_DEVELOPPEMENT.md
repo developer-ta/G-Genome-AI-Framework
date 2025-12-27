@@ -52,9 +52,23 @@ Nous avons décidé d'industrialiser notre relation avec l'IA. Nous ne codons pl
 
 ---
 
-## 📍 État Actuel (Snapshot)
-Aujourd'hui, ce projet n'est plus juste une Web App. C'est un **Système Hybride** (Code + Connaissance).
+## 🛰️ Chapitre 5 : La Structuration Binaire & Le Kit de Téléportation
+*Date : 26-27 Décembre 2025*
 
-*   Si tu veux coder : Lis `FrontendPromptProtocolPackDNA_v1.1.md`.
-*   Si tu veux comprendre le passé : Lis ce Journal.
-*   Si tu veux lancer un nouveau projet : Prends le `Universal_Frontend_Prompt_DNA_v1.0.md`.
+**Le Déclencheur** :
+Le risque de "dérive" (Model Drift) et d'amnésie. L'IA finit par ignorer les instructions textuelles simples au bout d'un certain temps.
+
+**La Décision** :
+Passage à une architecture de prompt **Binaire (XML + Markdown)**.
+*   **Action** : Migration de tous les protocoles vers un format balisé (XML).
+*   **Innovation** : Création du `SEED_BOOTSTRAP_PROTOCOL` pour permettre une "téléportation" immédiate de l'intelligence dans un nouveau projet via le `DNA_GENOTYPE`.
+
+---
+
+## 📍 État Actuel (Snapshot)
+Aujourd'hui, ce projet est un véritable **Laboratoire de Recherche IA**.
+
+*   **Pour le noyau universel** : Dossier `docs/DNA_GENOTYPE/`.
+*   **Pour l'exécution locale** : Dossier `docs/PROJECT_PHENOTYPE/`.
+*   **Pour comprendre la philosophie** : `docs/RESEARCH_CENTER/DIALECTIC_RESEARCH_LOG.md`.
+*   **Pour démarrer une session** : Lancer le `SEED_BOOTSTRAP_PROTOCOL`.
