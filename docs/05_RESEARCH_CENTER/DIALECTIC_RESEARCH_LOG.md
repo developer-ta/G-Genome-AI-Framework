@@ -153,6 +153,17 @@ Organisation du framework comme une suite de versions évolutives (Releases) plu
     Séparation claire des rôles et mise en place d'un cycle de validation de tâches pour une efficacité industrielle.
   </breakthrough>
 </dialogue_entry>
+<dialogue_entry date="2025-12-28" topic="Le Métabolisme des Intentions (Accessibilité Universelle)">
+  <human_architect>
+    Le framework ne doit pas être réservé aux experts en prompt. Un débutant doit pouvoir écrire "Je veux changer la couleur" et l'IA doit traduire cela en une tâche d'ingénierie structurée. On a besoin d'un pont entre le langage naturel "brut" et les Codons d'exécution.
+  </human_architect>
+  <ai_agent>
+    Création du **Protocole de Métabolisme des Intentions** et de l'**Intention Inbox**. L'IA assume désormais le rôle de "Synthétiseur Cognitif". Elle "digère" le vrac, comble les manques et propose des drafts structurés dans le registre. C'est la fin de la barrière technique pour utiliser l'IA en ingénierie.
+  </ai_agent>
+  <breakthrough>
+    Démocratisation du framework via une interface de langage naturel transformée en structures déterministes.
+  </breakthrough>
+</dialogue_entry>
 
 ---
 *"Le code meurt, la pensée évolue par paliers."*

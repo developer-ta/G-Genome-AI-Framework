@@ -1,5 +1,6 @@
 # 🚀 G-GENOME INDUSTRIAL QUICK START (v1.2)
 > **Objectif** : Initialiser votre projet de manière certifiée et traçable.
+> **Note pour les débutants** : Pas besoin d'être un expert en Prompt. Écrivez en langage naturel dans l'Inbox, l'IA s'occupe de la structure.
 
 Le pack G-Genome v1.2 est une unité d'ingénierie certifiée. Suivez ces 3 étapes pour démarrer.
 

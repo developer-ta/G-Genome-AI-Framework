@@ -7,7 +7,7 @@
 | Entité | Responsabilité Majeure | État d'Esprit |
 | :--- | :--- | :--- |
 | **Humain (Architecte)** | Validation des intentions, Revue de sécurité, Déclenchement des Releases. | **Gouvernance & Audit** |
-| **IA (Agent G-Genome)** | Génération de la liste de tâches, Exécution du code, Auto-test, Logging de traçabilité. | **Exécution & Rigueur** |
+| **IA (Agent G-Genome)** | **Synthèse Cognitive** (Traduction du langage naturel), Exécution, Auto-test, Logging. | **Exécution & Rigueur** |
 
 ---
 
