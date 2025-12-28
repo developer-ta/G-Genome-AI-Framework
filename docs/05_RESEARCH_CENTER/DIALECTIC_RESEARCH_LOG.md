@@ -178,6 +178,17 @@ Organisation du framework comme une suite de versions évolutives (Releases) plu
     Positionnement du G-Genome comme un "Pare-feu de Fiabilité" entre l'intention humaine brute et l'exécution machine.
   </breakthrough>
 </dialogue_entry>
+<dialogue_entry date="2025-12-28" topic="L'Absorption des Règles d'Or de Collaboration">
+  <human_architect>
+    J'ai trouvé un protocole de collaboration avec l'IA. Il parle de règles d'or comme la validation humaine explicite, le formatage strict (JSON), le Few-Shot prompting et les seuils de confiance. On doit intégrer cela pour monter encore d'un niveau.
+  </human_architect>
+  <ai_agent>
+    Intégration immédiate dans le DNA : création du fichier **COLLABORATION_GOLDEN_RULES.md**. Le framework supporte désormais le concept de `confidence_score` et impose le Few-Shot pour les tâches complexes. Mise à jour du Protocole de Bootstrap pour que ces règles soient "infusées" dès le démarrage de chaque projet.
+  </ai_agent>
+  <breakthrough>
+    Fusion des standards industriels de sécurité (QA) avec la structure biologique du G-Genome.
+  </breakthrough>
+</dialogue_entry>
 
 ---
 *"Le code meurt, la pensée évolue par paliers."*
