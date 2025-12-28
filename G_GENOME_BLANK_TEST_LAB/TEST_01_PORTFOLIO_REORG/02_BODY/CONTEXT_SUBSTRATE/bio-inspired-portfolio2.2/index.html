@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architecte de solutions Bio-Inspirées & Web</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: 'class', // Activation du mode sombre par classe
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'dark-bg': '#0F172A', /* Updated to Slate 900 per reference */
+                        'dark-card': '#1E293B', /* Updated to Slate 800 per reference */
+                        'brand-orange': '#F97316', /* Updated to match reference primary */
+                        'brand-cyan': '#06B6D4', /* Updated to match reference secondary */
+                        'brand-purple': '#8A2BE2',
+                        'brand-green': '#22C55E',
+                        'brand-indigo': '#6366F1',
+                        'brand-yellow': '#FFD43B',
+                        'light-text': '#F3F4F6',
+                        'medium-text': '#94A3B8',
+                    },
+                    boxShadow: {
+                        'glow-cyan': '0 0 15px 5px rgba(6, 182, 212, 0.15), 0 0 5px 1px rgba(6, 182, 212, 0.2)',
+                        'glow-orange': '0 0 15px 5px rgba(249, 115, 22, 0.15), 0 0 5px 1px rgba(249, 115, 22, 0.2)',
+                        'glow-purple': '0 0 15px 5px rgba(138, 43, 226, 0.15), 0 0 5px 1px rgba(138, 43, 226, 0.2)',
+                    },
+                    backgroundImage: {
+                         'radial-glow': 'radial-gradient(ellipse at center, rgba(30, 41, 59, 0.5) 0%, rgba(15, 23, 42, 0) 70%)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Styles par défaut (Mode Clair) */
+        body {
+            background-color: #F1F5F9; /* slate-100 */
+            color: #0F172A; /* slate-900 */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        /* Styles pour le Mode Sombre */
+        html.dark body {
+            background-color: #0F172A; /* dark-bg */
+            color: #F3F4F6; /* light-text */
+        }
+        /* Custom scrollbar for tech stack */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
