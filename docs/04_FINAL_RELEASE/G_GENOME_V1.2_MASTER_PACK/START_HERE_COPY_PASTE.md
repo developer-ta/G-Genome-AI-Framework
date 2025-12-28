@@ -1,45 +1,39 @@
-# 🚀 G-GENOME QUICK START GUIDE (v1.2)
+# 🚀 G-GENOME INDUSTRIAL QUICK START (v1.2)
+> **Objectif** : Initialiser votre projet de manière certifiée et traçable.
 
-> **Objectif** : Initialiser votre projet de 0 à 100 en 3 phrases.
-
-Bienvenue dans le cockpit de votre projet assisté par IA. Suivez ces étapes simples pour "réveiller" l'intelligence du framework.
-
----
-
-## 🔘 Étape 1 : Préparation (1 minute)
-
-1. Copiez ce répertoire `docs/` à la racine de votre nouveau projet.
-2. Déposez vos fichiers (Cahier des charges, PDF, Maquettes) dans `docs/02_EXPERIENCE_BODY/CONTEXT_SUBSTRATE/`.
+Le pack G-Genome v1.2 est une unité d'ingénierie certifiée. Suivez ces 3 étapes pour démarrer.
 
 ---
 
-## 🔘 Étape 2 : Le Prompt de Lancement (Copiez-Collez)
-
-Copiez-collez le texte suivant dans votre interface IA (Gemini, ChatGPT, Claude) :
-
-```text
-Active le G-GENOME ENGINE en lisant le fichier :
-`/docs/01_DNA_SEED/SEED_BOOTSTRAP_PROTOCOL.md`.
-
-Analyse le substrat dans :
-`/docs/02_EXPERIENCE_BODY/CONTEXT_SUBSTRATE/`.
-
-Rapport attendu : État du DNA + Plan de croissance du prototype.
+## 🔘 Étape 1 : Déployer le Pack
+Copiez le répertoire `G_GENOME_V1.2_MASTER_PACK/docs/` à la racine de votre projet.
+```bash
+cp -r G_GENOME_V1.2_MASTER_PACK/docs/ .
 ```
 
 ---
 
-## 🔘 Étape 3 : Pilotage (Le Codon)
-
-Une fois le projet initialisé, utilisez toujours ce format pour vos demandes :
-
-```text
-AGIS SELON LE PROTOCOLE G-GENOME.
-Mission : [Décrivez votre tâche ici]
-Context : [Fichier ou composant concerné]
-Objectif : Terminer le Codon (Intention -> Action -> Validation).
+## 🔘 Étape 2 : Vérifier l'Intégrité
+Vérifiez que la graine (DNA) n'a pas été corrompue et lisez les métadonnées.
+```bash
+# Vérification visuelle des métadonnées
+cat docs/04_FINAL_RELEASE/G_GENOME_V1.2_MASTER_PACK/pack-metadata.json
 ```
+*(Optionnel : Lancez `./scripts/verify_pack.sh` si disponible).*
 
 ---
 
-_Félicitations. Votre IA est désormais sur des rails. Elle ne peut plus oublier._
+## 🔘 Étape 3 : Initialiser l'IA (Copiez-Collez)
+Lancez ce prompt pour injecter le DNA dans votre session de développement :
+
+```text
+INITIALISE G-GENOME ENGINE v1.2.0.
+Seed ID: [Vérifier pack-metadata.json]
+
+1. Lis le protocole de démarrage : `/docs/01_DNA/SEED_BOOTSTRAP_PROTOCOL.md`.
+2. Confirme la traçabilité du pack (Provenance & Parents).
+3. Prépare le premier CODON dans le Registre des tâches.
+```
+
+---
+*Certification : G-Genome Master Pack Validated.*
