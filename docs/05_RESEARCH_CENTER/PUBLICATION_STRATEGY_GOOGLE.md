@@ -3,11 +3,25 @@
 
 ---
 
-## 💎 Étape 1 : Validation de la Proposition de Valeur
-**Pourquoi Google devrait écouter ?**
-1. **Économie de Tokens** : L'IA ne tourne pas en rond. Elle va droit au but grâce aux "Codons" (Intention -> Action -> Validation).
-2. **Standardisation** : Vous offrez un langage universel (XML Tags) pour que n'importe quelle IA (Gemini, Claude, GPT) travaille de la même façon.
-3. **Mémoire Ininterrompue** : Vous résolvez la "Context Fatigue".
+## 🧪 Phase 0 : La Preuve de Fiabilité (Dual-Project Proof)
+Avant toute publication, nous validons le framework via deux "Tests Blancs" (Blind Tests) :
+
+1. **Test 01 : La Restructuration Structurelle** (Portfolio)
+   - Prove que le Master Pack peut remettre de l'ordre dans un projet "chaos" avec une intervention humaine minimale.
+   - **Status** : En cours dans `G_GENOME_BLANK_TEST_LAB/TEST_01`.
+
+2. **Test 02 : L'Injection de Savoir Expert** (Domaine Médical ou BTP)
+   - Prouve que le "Métabolisme des Intentions" peut transformer une réglementation complexe en un ADN de code industrialisable.
+   - **Status** : Planification.
+
+---
+
+## 💎 Étape 1 : Proposition de Valeur "Mature"
+**Le "Plus" que Google n'a pas encore proposé :**
+Google fournit les **Modèles (Neurones)**, mais pas le **Nervous System (Context Engineering)**. 
+1. **Économie de Tokens** : L'IA ne tourne pas en rond. Elle va droit au but grâce aux "Codons".
+2. **Standardisation Industrielle** : Un langage universel (XML Tags) pour la traçabilité.
+3. **Constitution Cognitive** : Une règle "Plan -> Validation -> Action" qui rend l'IA de production sûre (SRE for AI).
 
 ---
 
