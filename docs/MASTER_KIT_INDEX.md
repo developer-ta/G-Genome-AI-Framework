@@ -1,31 +1,37 @@
-# 🎒 MASTER KIT INDEX (G-Genome Evolution)
+# 💎 G-GENOME MASTER KIT INDEX (Industrial-Bio Standard)
 
-> **Objectif** : Piloter l'évolution de la connaissance projet par projet.
-
-Pour utiliser ce framework, suivez la progression naturelle des cycles ci-dessous :
-
-## 📂 Organisation des Cycles :
-
-### 🔘 Cycle 1 : La Graine (DNA_SEED)
-
-- **Localisation** : `docs/01_DNA_SEED/`
-- **Utilisation** : Contient le protocole de démarrage (`SEED_BOOTSTRAP_PROTOCOL.md`) et les lois immuables. C'est l'intelligence héritée du passé.
-
-### 🔘 Cycle 2 : L'Expérience (EXPERIENCE_BODY)
-
-- **Localisation** : `docs/02_EXPERIENCE_BODY/`
-- **Utilisation** : Votre espace de travail quotidien. Ajoutez vos specs dans `CONTEXT_SUBSTRATE` et pilotez vos tâches via le `COGNITIVE_TASK_REGISTRY.md`.
-
-### 🔘 Cycle 3 : Versions Intermédiaires (INTERMEDIATE_VERSIONS)
-
-- **Localisation** : `docs/03_INTERMEDIATE_VERSIONS/`
-- **Utilisation** : Stockez ici vos "Releases" (v1.2, v1.5...) lorsque vous estimez qu'un palier d'intelligence a été franchi pendant le développement.
-
-### 🔘 Cycle 4 : Le Master Kit Final (FINAL_RELEASE)
-
-- **Localisation** : `docs/04_FINAL_RELEASE/`
-- **Utilisation** : La destination finale. Contient le kit universel purifié (v2.1), prêt à être utilisé pour un nouveau départ.
+Bienvenue dans l'unité centrale du framework G-Genome. Cette structure est conçue pour réconcilier la **bio-inspiration** et la **rigueur technique**.
 
 ---
 
-**Instruction IA** : Pour commencer, lis ce `MASTER_KIT_INDEX.md` et attends le signal de "Fertilisation" du développeur.
+## 📂 Architecture des Dossiers
+
+### 🧬 [01_GENOME_DNA_CORE](./01_GENOME_DNA_CORE/)
+> **Le Génotype**. Contient les lois de structure, les schémas JSON et la constitution du projet.
+- `Schema_Genome_Core.json` : Le contrat d'intelligence central.
+- `Universal_Frontend_Prompt_DNA_v1.0.md` : Les règles Clean Architecture.
+
+### 🌿 [02_PHENOTYPE_RUNTIME](./02_PHENOTYPE_RUNTIME/)
+> **Le Phénotype**. L'espace de vie et de croissance du projet actuel.
+- `INTENTION_INBOX.md` : Votre point d'entrée langage naturel.
+- `COGNITIVE_TASK_REGISTRY.md` : Le registre de traçabilité des tâches.
+- `CONTEXT_SUBSTRATE/` : Vos spécifications et ressources.
+
+### 📜 [03_GENETIC_RELEASES](./03_GENETIC_RELEASES/)
+> **L'Héritage**. Stockage des snapshots intermédiaires pour la continuité du savoir.
+
+### 📦 [04_MASTER_HERITAGE_PACK](./04_MASTER_HERITAGE_PACK/)
+> **La Transmission**. Version finale certifiée prête pour le prochain projet.
+
+### 🔬 [05_RESEARCH_CENTER](./05_RESEARCH_CENTER/)
+> **L'Évolution**. Documentation scientifique, pitchs Google et journal dialectique.
+
+---
+
+## 🚀 Démarrage Rapide
+1. Allez dans `01_GENOME_DNA_CORE/`.
+2. Lancez le `SEED_BOOTSTRAP_PROTOCOL.md` avec votre IA.
+3. Commencez à "nourrir" l'organisme via l'Inbox dans `02_PHENOTYPE_RUNTIME/`.
+
+---
+*G-Genome Industrial Alpha v1.2.1 — Certification: Trusted Intelligence.*

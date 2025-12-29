@@ -189,6 +189,17 @@ Organisation du framework comme une suite de versions évolutives (Releases) plu
     Fusion des standards industriels de sécurité (QA) avec la structure biologique du G-Genome.
   </breakthrough>
 </dialogue_entry>
+<dialogue_entry date="2025-12-29" topic="Nomenclature Hybride (Bio-Tech Industrial)">
+  <human_architect>
+    La métaphore biologique est puissante mais elle peut perdre l'ingénieur. On va hybrider les noms. Pas juste "ADN", mais "Schema_Genome_Core.json". "Schema" pour la structure stricte, "Genome" pour l'héritage, "Core" pour l'importance. On applique cela à tous les dossiers.
+  </human_architect>
+  <ai_agent>
+    C'est une réponse directe à la critique sur la "réalité technique". Le framework passe en mode **Industrial-Bio**. Les répertoires sont renommés pour refléter cette dualité : `GENOME_DNA_CORE`, `PHENOTYPE_RUNTIME`, `GENETIC_RELEASES`. On combine la poésie de la vision avec la rigueur d'un schéma JSON auditable.
+  </ai_agent>
+  <breakthrough>
+    Normalisation d'une nomenclature hybride qui réconcilie l'inspiration biologique et les standards de l'ingénierie logicielle (Google-grade).
+  </breakthrough>
+</dialogue_entry>
 
 ---
 *"Le code meurt, la pensée évolue par paliers."*
