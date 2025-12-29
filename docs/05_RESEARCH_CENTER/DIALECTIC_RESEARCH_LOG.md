@@ -189,15 +189,15 @@ Organisation du framework comme une suite de versions évolutives (Releases) plu
     Fusion des standards industriels de sécurité (QA) avec la structure biologique du G-Genome.
   </breakthrough>
 </dialogue_entry>
-<dialogue_entry date="2025-12-29" topic="Nomenclature Hybride (Bio-Tech Industrial)">
+<dialogue_entry date="2025-12-29" topic="Nomenclature Industrielle Hybride (Tech_Bio_Role)">
   <human_architect>
-    La métaphore biologique est puissante mais elle peut perdre l'ingénieur. On va hybrider les noms. Pas juste "ADN", mais "Schema_Genome_Core.json". "Schema" pour la structure stricte, "Genome" pour l'héritage, "Core" pour l'importance. On applique cela à tous les dossiers.
+    La métaphore seule est une faille. Nous devons la rendre "effaçable" tout en gardant sa puissance. On adopte la formule : **[Tech]_[Bio]_[Role]**. Si on retire le mot "Bio", le système technique doit rester impeccable.
   </human_architect>
   <ai_agent>
-    C'est une réponse directe à la critique sur la "réalité technique". Le framework passe en mode **Industrial-Bio**. Les répertoires sont renommés pour refléter cette dualité : `GENOME_DNA_CORE`, `PHENOTYPE_RUNTIME`, `GENETIC_RELEASES`. On combine la poésie de la vision avec la rigueur d'un schéma JSON auditable.
+    Passage à la v1.2.2. L'IA dispose désormais d'un **Registry_Codon_Tasks** et d'un **Cache_Epigenetic_Context**. On introduit également la boucle de rétroaction avec le script **Parser_Transcript_Update.py**. C'est le passage d'une "méthode" à un "produit d'ingénierie".
   </ai_agent>
   <breakthrough>
-    Normalisation d'une nomenclature hybride qui réconcilie l'inspiration biologique et les standards de l'ingénierie logicielle (Google-grade).
+    Invention de la nomenclature tri-partite (Tech_Bio_Role). Introduction des concepts de **Homeostasie** (sécurité) et de **Transcript** (apprentissage) qui comblent les failles d'amnésie et de dérive des LLM.
   </breakthrough>
 </dialogue_entry>
 
