@@ -47,12 +47,36 @@ def harvest_experience():
         ]
         print(f"PATTERNS DÉTECTÉS (Gènes de succès) : {success_patterns}")
 
-        # [SYNTAXE] Impression (logging) de l'action de mise à jour dans la console système.
-        # [RÔLE] Informe l'architecte que l'intelligence locale est en train d'être gravée dans le DNA central du framework.
-        print(f"MISE À JOUR DU GÉNOME (DNA CORE) : {genome_path}")
+        # [SYNTAXE] Vérification de l'existence du fichier DNA avant modification.
+        # [RÔLE] Évite les erreurs si le schéma n'a pas encore été initialisé.
+        if os.path.exists(genome_path):
+            # [SYNTAXE] Ouverture du fichier JSON en mode lecture/écriture ('r+').
+            # [RÔLE] Permet de charger, modifier et persister le DNA en une seule opération.
+            with open(genome_path, "r+", encoding="utf-8") as f:
+                genome = json.load(f)
+
+                # [SYNTAXE] Ajout d'une nouvelle clé 'learned_patterns' dans le dictionnaire JSON.
+                # [RÔLE] Grave l'expérience du projet actuel dans le DNA pour transmission aux futurs projets.
+                if "learned_patterns" not in genome:
+                    genome["learned_patterns"] = []
+
+                genome["learned_patterns"].extend(success_patterns)
+
+                # [SYNTAXE] Réinitialisation du curseur de fichier à la position 0.
+                # [RÔLE] Prépare l'écriture complète du JSON mis à jour.
+                f.seek(0)
+                json.dump(genome, f, indent=2, ensure_ascii=False)
+                f.truncate()
+
+            print(f"✅ MISE À JOUR DU GÉNOME RÉUSSIE : {genome_path}")
+        else:
+            print(f"⚠️  Schéma DNA introuvable. Transcription annulée.")
 
         # Note technique : C'est ici que l'intelligence devient cumulative.
         # Le prochain projet héritera de ces "success_patterns" automatiquement.
+
+    else:
+        print(f"⚠️  Aucune expérience trouvée dans : {cache_path}")
 
     print(
         f"--- [TRANSCRIPTION TERMINÉE : DNA v1.2.2 EST PRÊT POUR LA TRANSMISSION] ---"
