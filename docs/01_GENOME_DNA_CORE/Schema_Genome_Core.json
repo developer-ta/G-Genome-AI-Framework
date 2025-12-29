@@ -1,18 +1,31 @@
 {
+  "_contrat_commentaire": "Règle G-Genome : Chaque bloc doit expliciter la [SYNTAXE] et le [RÔLE].",
   "version": "1.2.1",
   "metadata": {
     "genome_id": "SHA256-GENOME-ALPHA-01-V1",
     "status": "INDUSTRIAL_DRAFT",
-    "nomenclature": "HYBRID_BIO_TECH"
+    "nomenclature": "HYBRID_BIO_TECH",
+    "_info": {
+      "syntaxe": "Métadonnées de versioning au format String.",
+      "role": "Permet la traçabilité du pack DNA à travers les générations de projets (Héritage)."
+    }
   },
   "constraints": {
     "architecture": "CLEAN_ONION",
     "enforcement_level": "STRICT",
-    "validation_cycle": "PLAN_V_EXECUTE"
+    "validation_cycle": "PLAN_V_EXECUTE",
+    "_info": {
+      "syntaxe": "Enumérations définissant les lois de construction.",
+      "role": "Force l'IA à adopter un cycle de validation rigoureux pour éviter les erreurs de structure."
+    }
   },
   "mapping": {
     "genotype": "01_GENOME_DNA_CORE",
     "phenotype": "02_PHENOTYPE_RUNTIME",
-    "heritage": "03_GENETIC_RELEASES"
+    "heritage": "03_GENETIC_RELEASES",
+    "_info": {
+      "syntaxe": "Mapping de répertoires physiques.",
+      "role": "Définit les zones sémantiques du projet (DNA, Vie, Mémoire) pour l'IA."
+    }
   }
 }

@@ -24,29 +24,31 @@ import os
 def harvest_experience():
     """
     Fonction principale de 'Récolte'.
-    Elle simule le mécanisme de rétroaction (Feedback Loop) essentiel
-    pour que l'IA ne soit plus amnésique entre deux projets.
+    Simule le mécanisme de rétroaction (Feedback Loop) essentiel.
     """
-    # Chemins vers les fichiers de mémoire
+
+    # [SYNTAXE] Définition des variables de chemin de fichiers (Strings) pointant vers les ressources locales.
+    # [RÔLE] Identifie la source de la mémoire (Cache) et la destination de la loi (Genome) pour l'opération de transcription.
     cache_path = "docs/02_PHENOTYPE_RUNTIME/Cache_Epigenetic_Context.md"
     genome_path = "docs/01_GENOME_DNA_CORE/Schema_Genome_Core.json"
 
     print(f"--- [DEBUT DE LA TRANSCRIPTION INVERSE] ---")
 
-    # Étape 1 : Vérification de l'existence de la mémoire (Phénotype)
+    # [SYNTAXE] Utilise 'os.path.exists()' pour vérifier la présence physique du fichier sur le disque avant toute lecture.
+    # [RÔLE] S'assure qu'une expérience (Phénotype) a bien été vécue et enregistrée avant de tenter d'en extraire des leçons.
     if os.path.exists(cache_path):
         print(f"LECTURE DE L'EXPÉRIENCE : {cache_path}")
 
-        # Simulation d'extraction sémantique :
-        # Dans une version future, un LLM extraira les patterns réels du texte.
+        # [SYNTAXE] Création d'une liste de chaînes de caractères simulant les données extraites par une analyse sémantique.
+        # [RÔLE] Représente les "Gènes de succès" (Best Practices) que l'IA a validés durant le projet actuel.
         success_patterns = [
             "Application de la Clean Architecture",
             "Découplage des Hooks React (useHeader)",
         ]
         print(f"PATTERNS DÉTECTÉS (Gènes de succès) : {success_patterns}")
 
-        # Étape 2 : Mise à jour du Schéma (Génotype)
-        # On grave l'expérience dans le DNA pour le prochain démarrage.
+        # [SYNTAXE] Impression (logging) de l'action de mise à jour dans la console système.
+        # [RÔLE] Informe l'architecte que l'intelligence locale est en train d'être gravée dans le DNA central du framework.
         print(f"MISE À JOUR DU GÉNOME (DNA CORE) : {genome_path}")
 
         # Note technique : C'est ici que l'intelligence devient cumulative.
@@ -57,5 +59,6 @@ def harvest_experience():
     )
 
 if __name__ == "__main__":
-    # Point d'entrée sécurisé pour l'exécution directe
+    # [SYNTAXE] Bloc standard Python vérifiant si le script est exécuté directement (et non importé comme module).
+    # [RÔLE] Point d'entrée sécurisé pour déclencher la récolte manuellement par le développeur.
     harvest_experience()

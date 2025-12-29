@@ -1,24 +1,32 @@
 {
-  "_comment_bio": "HOMEOSTASIS : Capacité d'un système à maintenir son équilibre interne face aux modifications extérieures.",
-  "_comment_tech": "CHECKER STATUS : Ce fichier sert de 'Health Check' déterministe pour valider l'alignement architectural.",
+  "_contrat_commentaire": "Règle G-Genome : Chaque bloc doit expliciter la [SYNTAXE] et le [RÔLE].",
 
   "system_integrity": {
     "status": "HOMEOSTASIS_ACTIVE",
-    "description": "Le système est dans un état d'équilibre. Les règles DNA sont respectées.",
     "last_check": "2025-12-29T21:10:00Z",
-    "deviation_threshold": 0.15
+    "deviation_threshold": 0.15,
+    "_info": {
+      "syntaxe": "Valeurs numériques et énumérations définissant l'état du système.",
+      "role": "Maintien de l'équilibre interne (Homéostasie) en vérifiant que les dérives ne dépassent pas le seuil de 15%."
+    }
   },
 
   "architectural_alignment": {
     "target": "CLEAN_ONION_v1.0",
-    "explanation": "L'architecture cible est le modèle Clean (Oignon). Toute déviation crée une alerte.",
     "current_compliance": 1.0,
-    "violations": []
+    "violations": [],
+    "_info": {
+      "syntaxe": "Tableau de chaînes (violations) et flottant (compliance).",
+      "role": "Garantir que le code produit respecte strictement la structure en oignon (Clean Architecture)."
+    }
   },
 
   "cognitive_stability": {
     "context_retention_score": 0.98,
     "intention_drift": "NONE",
-    "note": "Score de rétention du contexte. Proche de 1.0 = L'IA n'a pas perdu le fil du projet."
+    "_info": {
+      "syntaxe": "Score de probabilité (0.0 à 1.0) et énumération de dérive.",
+      "role": "Mesure l'alignement de l'IA avec l'intention initiale du projet pour éviter l'amnésie contextuelle."
+    }
   }
 }
