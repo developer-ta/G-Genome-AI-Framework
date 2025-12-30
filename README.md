@@ -79,7 +79,7 @@ python docs/scripts/Governor_Audit_Engine.py
 ### For Decision Makers
 - 📄 **[Executive Summary](./docs/05_RESEARCH_CENTER/EXECUTIVE_SUMMARY_GOOGLE.md)** (10 min read)
 - 📄 **[Response to Critique](./docs/05_RESEARCH_CENTER/RESPONSE_TO_GOOGLE_CRITIQUE.md)** (Technical validation)
-- 📰 **[Read the Full Story on Medium](https://medium.com/@ntparis9/g-genome-how-i-solved-googles-10m-amnestic-agent-problem-using-biology-DRAFT)** (Link to be updated after publication)
+- 📰 **[Read the Full Story on Medium](https://medium.com/@ntparis9/g-genome-how-i-solved-the-amnestic-agent-problem-using-biology-a313d8904daa)** (Official Release)
 
 ### For Engineers
 - 📄 **[Quick Start Guide](./QUICKSTART_GOOGLE.md)** (30 min validation)
