@@ -27,8 +27,8 @@ Google's AI agents suffer from:
 
 ### Run the Governor (Autonomous Validation)
 ```bash
-git clone [YOUR_REPO_URL]
-cd renovénergie-mini-projet_15
+git clone https://github.com/developer-ta/G-Genome-AI-Framework.git
+cd G-Genome-AI-Framework
 python docs/scripts/Governor_Audit_Engine.py
 ```
 

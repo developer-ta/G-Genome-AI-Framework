@@ -236,9 +236,9 @@ G-Genome is available on GitHub with:
 - ✅ 2 validated test cases
 - ✅ Quick Start Guide (30 minutes to validation)
 
-**Repository**: [Your GitHub URL]
+**Repository**: [https://github.com/developer-ta/G-Genome-AI-Framework](https://github.com/developer-ta/G-Genome-AI-Framework)
 
-**For Google Engineers**: Start with `QUICKSTART_GOOGLE.md`
+**For Google Engineers**: [Direct Link to Quick Start Guide](https://github.com/developer-ta/G-Genome-AI-Framework/blob/main/QUICKSTART_GOOGLE.md)
 
 ---
 

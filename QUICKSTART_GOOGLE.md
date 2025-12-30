@@ -21,8 +21,8 @@ G-Genome solves Google's **"Amnestic Agent Problem"** with:
 
 ### Clone the Repository
 ```bash
-git clone [YOUR_GITHUB_URL]
-cd renovénergie-mini-projet_15
+git clone https://github.com/developer-ta/G-Genome-AI-Framework.git
+cd G-Genome-AI-Framework
 ```
 
 ### Run the Governor (Autonomous Validation Test)
@@ -215,8 +215,8 @@ If you see:
 4. **Week 4**: Decide on full adoption or partnership
 
 ### Contact Information:
-- **GitHub**: [Repository URL]
-- **Email**: [Your contact]
+- **GitHub**: [https://github.com/developer-ta/G-Genome-AI-Framework](https://github.com/developer-ta/G-Genome-AI-Framework)
+- **Email**: ntparis9@gmail.com
 - **LinkedIn**: [Your profile]
 
 ---

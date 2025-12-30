@@ -10,8 +10,8 @@ authors:
     email: "ntparis9@gmail.com"
     orcid: "https://orcid.org/0000-0000-0000-0000"
     affiliation: "Independent Interdisciplinary Researcher"
-repository-code: "https://github.com/developer-ta/paris-renovation-energetique"
-url: "https://github.com/developer-ta/paris-renovation-energetique"
+repository-code: "https://github.com/developer-ta/G-Genome-AI-Framework"
+url: "https://github.com/developer-ta/G-Genome-AI-Framework"
 abstract: >-
   G-Genome is the first bio-inspired framework that provides persistent 
   architectural DNA and autonomous immune system for AI agents. It solves 
@@ -41,7 +41,7 @@ preferred-citation:
       email: "ntparis9@gmail.com"
   year: 2025
   version: 1.2.2
-  url: "https://github.com/developer-ta/paris-renovation-energetique"
+  url: "https://github.com/developer-ta/G-Genome-AI-Framework"
   notes: >-
     Original research combining medical knowledge (genetics, epigenetics, 
     immunology) with software engineering to solve the Amnestic Agent Problem 

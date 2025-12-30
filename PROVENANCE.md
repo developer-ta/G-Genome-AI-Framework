@@ -16,7 +16,7 @@ All rights reserved under international copyright law. This work is protected by
 - **French Intellectual Property Code** (Code de la propriété intellectuelle)
 
 **First Publication Date**: December 30, 2025  
-**Repository**: https://github.com/developer-ta/paris-renovation-energetique
+**Repository**: https://github.com/developer-ta/G-Genome-AI-Framework
 
 ---
 
@@ -116,7 +116,7 @@ This is not theoretical research. The framework has been **empirically validated
 The complete development history is preserved in Git:
 - **First commit**: [Date of first commit]
 - **Final commit**: December 30, 2025
-- **Repository**: https://github.com/developer-ta/paris-renovation-energetique
+- **Repository**: https://github.com/developer-ta/G-Genome-AI-Framework
 
 This provides **irrefutable evidence** of creation date and authorship.
 
@@ -182,7 +182,7 @@ If a corporation attempts to patent G-Genome concepts, this document and the Git
 - **Specialization**: Bio-Inspired AI Systems, Context Engineering
 - **Affiliation**: Independent (Open to academic or corporate collaboration)
 - **Contact**: ntparis9@gmail.com
-- **Repository**: https://github.com/developer-ta/paris-renovation-energetique
+- **Repository**: https://github.com/developer-ta/G-Genome-AI-Framework
 
 ### Academic Credentials
 
@@ -254,7 +254,7 @@ I, **Tayierjiang Tayier**, hereby declare that:
 Tayierjiang Tayier  
 December 30, 2025
 
-**Repository**: https://github.com/developer-ta/paris-renovation-energetique  
+**Repository**: https://github.com/developer-ta/G-Genome-AI-Framework  
 **Email**: ntparis9@gmail.com
 
 ---
