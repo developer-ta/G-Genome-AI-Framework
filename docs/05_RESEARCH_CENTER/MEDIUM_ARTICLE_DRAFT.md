@@ -287,6 +287,8 @@ Now it's up to Google (and the broader AI community) to decide: **Are we ready t
 
 If you're working on AI agent reliability, context management, or bio-inspired systems, I'd love to hear from you.
 
+> **Professional Note**: I am open to research collaborations and professional opportunities regarding the implementation of G-GENOME in large-scale agentic systems. For inquiries: ntparis9@gmail.com
+
 ---
 
 *NT PARI is a software engineer with a medical background, specializing in bio-inspired AI systems. G-Genome v1.2.2 is his first major framework, combining principles from genetics, epigenetics, and immunology with industrial-grade software engineering.*

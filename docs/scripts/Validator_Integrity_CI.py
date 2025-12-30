@@ -12,7 +12,7 @@ Ce script valide l'intégrité complète du G-Genome pack avant déploiement.
 Il vérifie la validité JSON, la cohérence des références, et la conformité
 XML des protocoles. C'est le "système de QA" du framework.
 
-AUTEUR : ARCHITECTE & IA_AGENT
+AUTEUR : Tayierjiang Tayier
 ==============================================
 """
 

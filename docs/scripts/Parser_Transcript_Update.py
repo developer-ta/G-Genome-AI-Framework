@@ -14,7 +14,7 @@ est gravée dans le patrimoine génétique (DNA). Ici, le script lit les
 succès enregistrés dans le "Cache Epigenetic" pour mettre à jour la
 loi centrale du projet (Schema Genome Core).
 
-AUTEUR : ARCHITECTE & IA_AGENT
+AUTEUR : Tayierjiang Tayier
 ==============================================
 """
 

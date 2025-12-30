@@ -2,7 +2,7 @@
 🧬 G-GENOME : DNA LINTER (v1.2.2)
 ==============================================
 
-NOMENCLATURE HYBRIDE : 
+NOMENCLATURE HYBRIDE :
 - [Tech] : Linter      (Validation statique de code)
 - [Bio]  : DNA         (Vérification de conformité génétique)
 - [Role] : Enforcer    (Application stricte des lois)
@@ -12,7 +12,7 @@ Ce script scanne le code généré pour détecter les violations de la
 Clean Architecture. Il met à jour le Checker_Homeostas_Status.json
 avec le score réel de conformité (compliance dynamique).
 
-AUTEUR : ARCHITECTE & IA_AGENT
+AUTEUR : Tayierjiang Tayier
 ==============================================
 """
 

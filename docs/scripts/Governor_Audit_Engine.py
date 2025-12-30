@@ -2,7 +2,7 @@
 🛡️ G-GENOME : GOVERNOR AUDIT ENGINE (v1.2.2)
 ==============================================
 
-NOMENCLATURE HYBRIDE : 
+NOMENCLATURE HYBRIDE :
 - [Tech] : Governor     (Système de gouvernance et validation)
 - [Bio]  : Audit        (Inspection immunitaire type leucocytes)
 - [Role] : Engine       (Moteur d'exécution automatique)
@@ -13,7 +13,7 @@ en état DRAFT, les compare au DNA Core, et décide automatiquement si
 elles peuvent être auto-validées (GOVERNOR_SIGNED) ou nécessitent une
 validation humaine (NEED_HUMAN_SIGNATURE).
 
-AUTEUR : ARCHITECTE & IA_AGENT
+AUTEUR : Tayierjiang Tayier
 ==============================================
 """
 
