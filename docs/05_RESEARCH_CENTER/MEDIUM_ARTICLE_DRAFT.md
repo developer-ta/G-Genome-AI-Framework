@@ -1,4 +1,4 @@
-# G-Genome: How I Solved Google's $10M Amnestic Agent Problem Using Biology
+# G-Genome: How I Solved the Amnestic Agent Problem Using Biology
 
 ## A Medical Student's Journey from DNA to AI Context Engineering
 
@@ -6,15 +6,18 @@
 
 ---
 
-## The Problem That Haunts Google
+## The Problem: When Gemini Forgets
 
-Imagine spending two weeks teaching an AI agent to build a complex application. The agent learns your coding style, understands your architecture, and becomes incredibly productive. Then the session ends.
+We all know the power of Large Language Models like **Google Gemini** or GPT-4. They are brilliant reasoning engines. But they suffer from a fundamental flaw in long-term projects: **Context Amnesia**.
 
-**The next day, it remembers nothing.**
+Even with **Gemini's massive 1M+ token context window**, there is a limit. When a session ends, the "working memory" is wiped. The architectural decisions, the coding style nuances, the project's "soul"—all gone.
 
-This is Google's "Amnestic Agent Problem," and it's costing them millions of dollars in wasted work. Every new session starts from zero. Every architectural decision must be re-explained. Every mistake is repeated.
+As a developer, this creates three critical bottlenecks:
+1.  **LLM Stability & Drift**: The model starts hallucinating non-existent patterns.
+2.  **Inference Efficiency**: We waste millions of tokens re-explaining the same rules.
+3.  **Lack of Governance**: There is no "immune system" to stop bad code from being generated.
 
-I solved it using principles from my medical training in China. Here's how.
+I didn't set out to fix Google's problem. I set out to fix *my* problem as an independent researcher. But the solution I found—inspired by my medical background—turns out to be exactly what **Agentic Frameworks** are missing.
 
 ---
 
