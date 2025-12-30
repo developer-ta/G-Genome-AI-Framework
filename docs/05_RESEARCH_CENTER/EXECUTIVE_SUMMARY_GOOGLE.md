@@ -1,6 +1,8 @@
 # 🧬 G-GENOME : EXECUTIVE SUMMARY FOR GOOGLE
 ## Context Engineering Framework for Reliable AI Agents
 
+![G-Genome Banner](../../assets/g_genome_banner.png)
+
 > **Author**: NT PARI (Medical Background → Software Engineering)  
 > **Date**: December 30, 2025  
 > **Version**: 1.2.2 (Industrial-Grade)  

@@ -1,6 +1,8 @@
 # 🧬 G-GENOME v1.2.2
 ## Bio-Inspired Context Engineering Framework for Reliable AI Agents
 
+![G-Genome Banner](docs/assets/g_genome_banner.png)
+
 [![Production Ready](https://img.shields.io/badge/status-production--ready-green)]()
 [![Tests Passed](https://img.shields.io/badge/tests-2%2F2%20passed-brightgreen)]()
 [![Google Problem](https://img.shields.io/badge/solves-amnestic%20agent%20problem-blue)]()
