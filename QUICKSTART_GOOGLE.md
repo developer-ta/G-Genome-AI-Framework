@@ -1,5 +1,7 @@
 # 🚀 G-GENOME : QUICK START GUIDE FOR GOOGLE ENGINEERS
 
+![G-Genome Banner](docs/assets/g_genome_banner.png)
+
 > **Time to first result**: 10 minutes  
 > **Prerequisites**: Python 3.8+, Git  
 > **Goal**: Understand and validate the framework in 30 minutes

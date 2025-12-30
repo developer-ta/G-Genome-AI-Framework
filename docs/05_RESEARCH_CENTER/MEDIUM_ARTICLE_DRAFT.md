@@ -1,5 +1,7 @@
 # G-Genome: How I Solved the Amnestic Agent Problem Using Biology
 
+![G-Genome Banner](../../assets/g_genome_banner.png)
+
 ## A Medical Student's Journey from DNA to AI Context Engineering
 
 *By NT PARI | December 30, 2025 | 12 min read*
