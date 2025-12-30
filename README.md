@@ -143,8 +143,8 @@ G-GENOME FRAMEWORK
 ## 📞 Contact & Collaboration
 
 ### For Google DeepMind
-- 📧 **Email**: [Your contact]
-- 💼 **LinkedIn**: [Your profile]
+- 📧 **Email**: ntparis9@gmail.com
+- 💼 **LinkedIn**: [https://www.linkedin.com/in/tayier-dev-ai-data/](https://www.linkedin.com/in/tayier-dev-ai-data/)
 - 📂 **Full Documentation**: See `/docs` folder
 
 ### Recommended Next Steps

@@ -217,7 +217,7 @@ If you see:
 ### Contact Information:
 - **GitHub**: [https://github.com/developer-ta/G-Genome-AI-Framework](https://github.com/developer-ta/G-Genome-AI-Framework)
 - **Email**: ntparis9@gmail.com
-- **LinkedIn**: [Your profile]
+- **LinkedIn**: [https://www.linkedin.com/in/tayier-dev-ai-data/](https://www.linkedin.com/in/tayier-dev-ai-data/)
 
 ---
 

@@ -284,9 +284,9 @@ Now it's up to Google (and the broader AI community) to decide: **Are we ready t
 
 ## Connect With Me
 
-- **GitHub**: [Your repository]
-- **LinkedIn**: [Your profile]
-- **Email**: [Your contact]
+- **GitHub**: [https://github.com/developer-ta/G-Genome-AI-Framework](https://github.com/developer-ta/G-Genome-AI-Framework)
+- **LinkedIn**: [https://www.linkedin.com/in/tayier-dev-ai-data/](https://www.linkedin.com/in/tayier-dev-ai-data/)
+- **Email**: ntparis9@gmail.com
 
 If you're working on AI agent reliability, context management, or bio-inspired systems, I'd love to hear from you.
 
