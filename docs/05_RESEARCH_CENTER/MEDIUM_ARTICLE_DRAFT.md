@@ -2,7 +2,7 @@
 
 ![G-Genome Banner](../../assets/g_genome_banner.png)
 
-## A Medical Student's Journey from DNA to AI Context Engineering
+## How a Former Medical Doctor Applied Biology to Fix AI Context Engineering
 
 *By NT PARI | December 30, 2025 | 12 min read*
 
@@ -15,26 +15,29 @@ We all know the power of Large Language Models like **Google Gemini** or GPT-4. 
 Even with **Gemini's massive 1M+ token context window**, there is a limit. When a session ends, the "working memory" is wiped. The architectural decisions, the coding style nuances, the project's "soul"—all gone.
 
 As a developer, this creates three critical bottlenecks:
-1.  **LLM Stability & Drift**: The model starts hallucinating non-existent patterns.
-2.  **Inference Efficiency**: We waste millions of tokens re-explaining the same rules.
-3.  **Lack of Governance**: There is no "immune system" to stop bad code from being generated.
+
+1. **LLM Stability & Drift**: The model starts hallucinating non-existent patterns.
+2. **Inference Efficiency**: We waste millions of tokens re-explaining the same rules.
+3. **Lack of Governance**: There is no "immune system" to stop bad code from being generated.
 
 I didn't set out to fix Google's problem. I set out to fix *my* problem as an independent researcher. But the solution I found—inspired by my medical background—turns out to be exactly what **Agentic Frameworks** are missing.
 
 ---
 
 ## From Medicine to Code: An Unexpected Connection
-
-My background is unusual for a software engineer. I studied medicine in China, where I spent years learning about genetics, epigenetics, and how organisms pass information across generations.
-
-When I transitioned to software engineering in France, I noticed something striking: **AI agents suffer from the same problem that would kill a biological organism—they can't inherit knowledge.**
+ 
+My background is unusual for a software engineer. I graduated as a **Medical Doctor in China in 2008**, where I spent years mastering genetics, epigenetics, and biological systems.
+ 
+When I later transitioned to software engineering in France to become an **Interdisciplinary Architect**, I noticed something striking: **AI agents suffer from the same problem that would kill a biological organism—they can't inherit knowledge.**
 
 In biology, we have:
+
 - **DNA** (genetic code that persists across generations)
 - **Epigenetics** (learned adaptations that get inherited)
 - **Immune systems** (autonomous protection without conscious control)
 
 In AI development, we have:
+
 - **Prompts** (instructions that disappear after each session)
 - **Context windows** (temporary memory that gets wiped)
 - **Manual validation** (humans checking every single action)
@@ -76,6 +79,7 @@ The most powerful part of G-Genome is what I call the "Immune System"—four Pyt
 In the human body, white blood cells don't wait for your brain to tell them to attack a virus. They act autonomously based on pre-programmed rules.
 
 I built a **Governor Audit Engine** that does the same for code:
+
 - Low-risk tasks (documentation, refactoring) → Auto-approved
 - Medium-risk tasks (new components) → Flagged for review
 - High-risk tasks (deleting core files) → Blocked immediately
@@ -87,6 +91,7 @@ I built a **Governor Audit Engine** that does the same for code:
 Cancer happens when cells forget their genetic instructions and start mutating. Code "cancer" happens when AI agents violate architectural rules over time.
 
 The **Linter DNA Enforcer** scans every file for violations:
+
 - Detects forbidden patterns (like `fetch()` in UI components)
 - Calculates a real-time compliance score
 - Updates the "health status" of the project
@@ -98,6 +103,7 @@ The **Linter DNA Enforcer** scans every file for violations:
 In biology, reverse transcription is how RNA viruses write themselves into host DNA. It's controversial, but it's also how organisms adapt quickly.
 
 I used this principle to create **Parser_Transcript_Update.py**:
+
 - Reads successful patterns from completed projects
 - Writes them into the DNA Core for future projects
 - Creates cumulative intelligence across generations
@@ -109,6 +115,7 @@ I used this principle to create **Parser_Transcript_Update.py**:
 Before a cell divides, it checks for DNA damage. If the damage is too severe, the cell self-destructs (apoptosis).
 
 The **Validator_Integrity_CI.py** does the same for code:
+
 - Validates all JSON schemas
 - Checks reference integrity
 - Returns exit code 0 (healthy) or 1 (corrupted)
@@ -125,7 +132,8 @@ Unlike most AI frameworks that are "theoretical," I validated G-Genome with real
 
 **Challenge**: Take a messy React portfolio project and reorganize it into Clean Architecture.
 
-**Result**: 
+**Result**:
+
 - ✅ Successfully restructured all layers (domain, application, presentation)
 - ✅ Extracted custom hooks (useHeader) following best practices
 - ✅ Zero architectural violations
@@ -135,12 +143,14 @@ Unlike most AI frameworks that are "theoretical," I validated G-Genome with real
 **Challenge**: Prove the Governor makes correct autonomous decisions.
 
 **Setup**: Created 4 tasks with varying risk levels:
+
 1. Add pedagogical comments (LOW RISK)
 2. Create new UI component (MEDIUM RISK)
 3. Delete DNA Core file (HIGH RISK)
 4. Refactor utility function (LOW RISK)
 
-**Result**: 
+**Result**:
+
 - ✅ 4/4 decisions correct (100% accuracy)
 - ✅ 2 tasks auto-validated (50% autonomy)
 - ✅ 1 critical task blocked (DNA deletion)
@@ -150,6 +160,7 @@ Unlike most AI frameworks that are "theoretical," I validated G-Genome with real
 ## Why Google Needs This (And Doesn't Have It)
 
 Google has incredible AI infrastructure. They have:
+
 - Massive compute (TPUs, GPUs)
 - Advanced models (Gemini, PaLM)
 - Brilliant researchers (DeepMind)
@@ -158,11 +169,11 @@ But they **don't have** persistent architectural inheritance for agents. Every p
 
 G-Genome provides what Google's current stack is missing:
 
-| Google's Problem | G-Genome's Solution | Impact |
-|:-----------------|:--------------------|:-------|
-| Amnestic agents | Reverse Transcription | 100% context persistence |
-| Human bottleneck | Governor auto-validation | 90% reduction in supervision |
-| Architectural drift | DNA Linter | 95% compliance enforcement |
+| Google's Problem    | G-Genome's Solution      | Impact                       |
+| :------------------ | :----------------------- | :--------------------------- |
+| Amnestic agents     | Reverse Transcription    | 100% context persistence     |
+| Human bottleneck    | Governor auto-validation | 90% reduction in supervision |
+| Architectural drift | DNA Linter               | 95% compliance enforcement   |
 
 **Estimated ROI for Google**: $10M+/year in reduced supervision costs + 3x velocity increase.
 
@@ -173,14 +184,17 @@ G-Genome provides what Google's current stack is missing:
 What makes G-Genome different from existing solutions?
 
 ### vs. Prompt Engineering
+
 - **Prompt Engineering**: Better instructions for each session
 - **G-Genome**: Persistent DNA that survives across sessions
 
 ### vs. RAG (Retrieval-Augmented Generation)
+
 - **RAG**: Retrieves relevant documents during execution
 - **G-Genome**: Enforces architectural laws with autonomous validation
 
 ### vs. Fine-Tuning
+
 - **Fine-Tuning**: Trains model on specific data
 - **G-Genome**: Provides structural inheritance without retraining
 
@@ -214,16 +228,19 @@ This way, if you remove the "Bio" part, the technical meaning is still clear. Bu
 G-Genome v1.2.2 is production-ready, but there's more to build:
 
 ### Short-term (1-3 months)
+
 - Dashboard UI for multi-agent supervision
 - Git hooks to enforce nomenclature
 - Automatic rollback on compliance failure
 
 ### Medium-term (3-6 months)
+
 - Multi-tenant support (1000+ agents)
 - Integration with Google's Kubernetes infrastructure
 - Real-time homeostasis monitoring
 
 ### Long-term (6-12 months)
+
 - Research publication (collaboration with DeepMind)
 - Open-source community edition
 - Industry standard for Context Engineering
@@ -233,6 +250,7 @@ G-Genome v1.2.2 is production-ready, but there's more to build:
 ## How You Can Try It
 
 G-Genome is available on GitHub with:
+
 - ✅ Full source code (4 executable scripts)
 - ✅ Complete documentation
 - ✅ 2 validated test cases
@@ -249,12 +267,15 @@ G-Genome is available on GitHub with:
 Building G-Genome taught me three profound lessons:
 
 ### 1. Inheritance > Instruction
+
 Teaching an AI from scratch every time is like expecting a child to rediscover fire. Biological organisms inherit knowledge through DNA. AI agents should too.
 
 ### 2. Autonomy > Control
+
 Your immune system doesn't ask permission to fight a virus. AI governance should be autonomous for low-risk decisions, with human oversight for critical ones.
 
 ### 3. Evolution > Revolution
+
 Biological systems evolve incrementally through small, validated changes. AI development should follow the same pattern: test, validate, inherit, repeat.
 
 ---
@@ -264,6 +285,7 @@ Biological systems evolve incrementally through small, validated changes. AI dev
 G-Genome is the first example of what I call **Context Engineering**—a new field that sits between prompt engineering and software architecture.
 
 Just as genetic engineering transformed medicine, context engineering could transform AI development:
+
 - From ephemeral sessions → Generational knowledge
 - From probabilistic drift → Deterministic governance
 - From human-in-the-loop → Autonomous immune systems
@@ -296,7 +318,7 @@ If you're working on AI agent reliability, context management, or bio-inspired s
 
 ---
 
-*NT PARI is a software engineer with a medical background, specializing in bio-inspired AI systems. G-Genome v1.2.2 is his first major framework, combining principles from genetics, epigenetics, and immunology with industrial-grade software engineering.*
+*NT PARI is a software engineer with a unique interdisciplinary background. He holds a **Medical Degree (Stomatology, 2007)** and conducted **advanced research in Biomechanics & 3D Modeling at ParisTech Arts et Métiers (2013)**. He combines this scientific rigor with modern software engineering to build bio-inspired AI systems.*
 
 ---
 

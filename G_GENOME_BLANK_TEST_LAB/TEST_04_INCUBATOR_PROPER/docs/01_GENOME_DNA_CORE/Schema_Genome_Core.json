@@ -1,0 +1,64 @@
+{
+  "project_identity": {
+    "name": "G-GENOME INCUBATOR GUI",
+    "version": "1.0.0",
+    "dna_type": "BIO-INSPIRED-PYTHON-GUI",
+    "description": "Interface graphique native (PyQt6) construite selon l'Architecture G-Genome stricte. Clone architectural du Dashboard Web React."
+  },
+  "architecture_layers": {
+    "domain": {
+      "role": "BRAIN (Business Logic)",
+      "allowed_imports": [],
+      "structure": [
+        "models",
+        "repositories",
+        "services"
+      ]
+    },
+    "application": {
+      "role": "NERVOUS SYSTEM (Use Cases)",
+      "allowed_imports": ["domain"],
+      "structure": [
+        "use_cases",
+        "interfaces"
+      ]
+    },
+    "infrastructure": {
+      "role": "SKELETON (File System / OS)",
+      "allowed_imports": ["domain", "application"],
+      "structure": [
+        "file_system",
+        "qt_adapters"
+      ]
+    },
+    "presentation": {
+      "role": "SKIN (UI - PyQt6)",
+      "allowed_imports": ["application", "domain"],
+      "structure": [
+        "bodies",
+        "components",
+        "config",
+        "hooks",
+        "layouts",
+        "pages",
+        "router",
+        "sections"
+      ]
+    }
+  },
+  "design_system_dna": {
+    "colors": {
+      "primary": "#6EA8FF",
+      "background_gradient": ["#EFF7FF", "#E6F2FF"],
+      "card_bg": "#FFFFFF"
+    },
+    "typography": {
+      "main_font": "Segoe UI"
+    },
+    "shapes": {
+      "radius_lg": "32px",
+      "radius_card": "24px",
+      "radius_btn": "12px"
+    }
+  }
+}

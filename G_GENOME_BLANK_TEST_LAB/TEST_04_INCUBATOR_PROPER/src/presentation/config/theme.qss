@@ -1,0 +1,117 @@
+/* 🧬 G-GENOME EXACT CLONE THEME (React -> PyQt6) */
+
+/* === GLOBAL === */
+QMainWindow {
+    /* React: background: linear-gradient(180deg, #EFF7FF 0%, #E6F2FF 100%); */
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #EFF7FF, stop:1 #E6F2FF);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+QWidget {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333333; /* --text-main */
+}
+
+/* === SIDEBAR (Structure identical to DashboardLayout.css) === */
+QFrame#Sidebar {
+    /* React: bg-background/80 backdrop-blur-sm */
+    background-color: rgba(239, 247, 255, 0.85); 
+    border-top-right-radius: 32px; /* --radius-lg */
+    border-bottom-right-radius: 32px;
+    border-right: 1px solid rgba(255, 255, 255, 0.6); /* --border-soft */
+    margin: 16px; /* Floating look like in CSS top: 16px left: 16px */
+}
+
+QLabel#BrandName {
+    /* Cloned from React .brand-name */
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    font-size: 20px;
+    font-weight: 800; /* Extra Bold for impact */
+    color: #6EA8FF; /* --primary */
+    padding-left: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* === NAVIGATION BUTTONS (Exact Replica of .nav-item) === */
+QPushButton[class='NavButton'] {
+    text-align: left;
+    background-color: transparent;
+    border-radius: 16px; /* Slightly less rounded than full capsule for modern look */
+    padding: 14px 24px;  /* More breathing room */
+    color: #5c5c7b;      /* --text-subtle by default */
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 8px; /* Spacing between items */
+}
+
+QPushButton[class='NavButton']:hover {
+    background-color: rgba(110, 168, 255, 0.08); /* Faint blue hover */
+    color: #6EA8FF;
+}
+
+QPushButton[class='NavButton']:checked {
+    /* React: .nav-item.active */
+    background-color: rgba(110, 168, 255, 0.15); /* Stronger blue bg */
+    color: #2563EB; /* Deep Blue Active Text */
+    font-weight: 700;
+    border-left: 4px solid #6EA8FF; /* The "Active Bar" visual trick */
+}
+
+/* === CARDS (.card CSS) === */
+QFrame#Card {
+    background-color: white;
+    border-radius: 24px;
+    /* React Box Shadow: 0 4px 6px -1px rgba(0,0,0,0.1) */
+    /* Qt Border trick for shadow feel */
+    border: 1px solid #f1f5f9; 
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* === TYPOGRAPHY === */
+QLabel#Title {
+    /* .card-title equivalent */
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+QLabel#Subtitle {
+    color: #5c5c7b; /* --text-subtle */
+    font-size: 14px;
+}
+
+/* === PRIMARY BUTTONS (.btn-primary) === */
+QPushButton {
+    /* --primary: #6EA8FF */
+    background-color: #6EA8FF; 
+    color: white;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:hover {
+    background-color: #5b92e5;
+}
+
+QPushButton:disabled {
+    background-color: #cbd5e1;
+    color: #94a3b8;
+}
+
+/* === INPUTS === */
+QLineEdit {
+    background-color: white;
+    border: 1px solid rgba(209, 228, 255, 0.6); /* --border-soft */
+    border-radius: 12px;
+    padding: 10px 16px;
+    selection-background-color: #6EA8FF;
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border: 2px solid #6EA8FF; /* --primary */
+}
