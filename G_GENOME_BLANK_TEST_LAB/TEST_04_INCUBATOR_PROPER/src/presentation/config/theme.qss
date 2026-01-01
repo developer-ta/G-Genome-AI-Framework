@@ -1,117 +1,175 @@
-/* 🧬 G-GENOME EXACT CLONE THEME (React -> PyQt6) */
+/* 🧬 G-GENOME BIO-TECH DARK MODE (v1.6) */
 
 /* === GLOBAL === */
 QMainWindow {
-    /* React: background: linear-gradient(180deg, #EFF7FF 0%, #E6F2FF 100%); */
-    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #EFF7FF, stop:1 #E6F2FF);
-    font-family: 'Segoe UI', sans-serif;
+    background-color: #0D1117;
+    font-family: 'Segoe UI', 'Outfit', sans-serif;
 }
 
 QWidget {
     font-family: 'Segoe UI', sans-serif;
-    color: #333333; /* --text-main */
+    color: #C9D1D9; /* --text-main-dark */
 }
 
-/* === SIDEBAR (Structure identical to DashboardLayout.css) === */
+/* === SIDEBAR === */
 QFrame#Sidebar {
-    /* React: bg-background/80 backdrop-blur-sm */
-    background-color: rgba(239, 247, 255, 0.85); 
-    border-top-right-radius: 32px; /* --radius-lg */
+    background-color: #161B22; 
+    border-top-right-radius: 32px;
     border-bottom-right-radius: 32px;
-    border-right: 1px solid rgba(255, 255, 255, 0.6); /* --border-soft */
-    margin: 16px; /* Floating look like in CSS top: 16px left: 16px */
+    border-right: 1px solid #30363D;
+    margin: 16px;
 }
 
 QLabel#BrandName {
-    /* Cloned from React .brand-name */
     font-family: 'Poppins', 'Segoe UI', sans-serif;
     font-size: 20px;
-    font-weight: 800; /* Extra Bold for impact */
-    color: #6EA8FF; /* --primary */
+    font-weight: 800;
+    color: #00A3FF; /* --neon-blue */
     padding-left: 10px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
-/* === NAVIGATION BUTTONS (Exact Replica of .nav-item) === */
+/* === NAVIGATION BUTTONS === */
 QPushButton[class='NavButton'] {
     text-align: left;
     background-color: transparent;
-    border-radius: 16px; /* Slightly less rounded than full capsule for modern look */
-    padding: 14px 24px;  /* More breathing room */
-    color: #5c5c7b;      /* --text-subtle by default */
-    font-size: 15px;
+    border-radius: 12px;
+    padding: 12px 20px;
+    color: #8B949E;
+    font-size: 14px;
     font-weight: 600;
     border: none;
-    margin-bottom: 8px; /* Spacing between items */
+    margin-bottom: 4px;
 }
 
 QPushButton[class='NavButton']:hover {
-    background-color: rgba(110, 168, 255, 0.08); /* Faint blue hover */
-    color: #6EA8FF;
+    background-color: rgba(0, 163, 255, 0.1);
+    color: #00A3FF;
 }
 
 QPushButton[class='NavButton']:checked {
-    /* React: .nav-item.active */
-    background-color: rgba(110, 168, 255, 0.15); /* Stronger blue bg */
-    color: #2563EB; /* Deep Blue Active Text */
+    background-color: rgba(0, 163, 255, 0.2);
+    color: #58A6FF;
     font-weight: 700;
-    border-left: 4px solid #6EA8FF; /* The "Active Bar" visual trick */
+    border-left: 4px solid #00A3FF;
 }
 
-/* === CARDS (.card CSS) === */
+/* === CARDS === */
 QFrame#Card {
-    background-color: white;
+    background-color: #161B22;
     border-radius: 24px;
-    /* React Box Shadow: 0 4px 6px -1px rgba(0,0,0,0.1) */
-    /* Qt Border trick for shadow feel */
-    border: 1px solid #f1f5f9; 
-    border-bottom: 2px solid #e2e8f0;
+    border: 1px solid #30363D;
 }
 
-/* === TYPOGRAPHY === */
+/* === COMPONENTS === */
 QLabel#Title {
-    /* .card-title equivalent */
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    color: #1e293b;
+    color: #F0F6FC;
 }
 
 QLabel#Subtitle {
-    color: #5c5c7b; /* --text-subtle */
+    color: #8B949E;
     font-size: 14px;
 }
 
-/* === PRIMARY BUTTONS (.btn-primary) === */
-QPushButton {
-    /* --primary: #6EA8FF */
-    background-color: #6EA8FF; 
-    color: white;
+/* === TEXT EDITORS (THE CORTEX) === */
+QTextEdit, QLineEdit {
+    background-color: #0D1117;
+    border: 1px solid #30363D;
     border-radius: 12px;
+    padding: 12px;
+    color: #C9D1D9;
+    selection-background-color: #00A3FF;
+}
+
+QTextEdit:focus, QLineEdit:focus {
+    border: 2px solid #00A3FF;
+}
+
+/* === BUTTONS === */
+QPushButton#ActionButton {
+    background-color: #00A3FF;
+    color: #FFFFFF;
+    border-radius: 8px;
     padding: 12px 24px;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 14px;
     border: none;
+    letter-spacing: 1px;
 }
 
-QPushButton:hover {
-    background-color: #5b92e5;
+QPushButton#ActionButton:hover {
+    background-color: #1F6FEB;
+    box-shadow: 0 0 15px rgba(0, 163, 255, 0.4);
 }
 
-QPushButton:disabled {
-    background-color: #cbd5e1;
-    color: #94a3b8;
+QPushButton#ActionButton:disabled {
+    background-color: #21262D;
+    color: #484F58;
 }
 
-/* === INPUTS === */
-QLineEdit {
-    background-color: white;
-    border: 1px solid rgba(209, 228, 255, 0.6); /* --border-soft */
-    border-radius: 12px;
-    padding: 10px 16px;
-    selection-background-color: #6EA8FF;
-    color: #333333;
+/* Secondary Button style (The "Browse" buttons) */
+QPushButton, QPushButton#SecondaryButton {
+    background-color: #30363D;
+    color: #F0F6FC;
+    border: 1px solid #8B949E;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 600;
 }
 
-QLineEdit:focus {
-    border: 2px solid #6EA8FF; /* --primary */
+QPushButton:hover, QPushButton#SecondaryButton:hover {
+    background-color: #484F58;
+    border: 1px solid #00A3FF;
+}
+
+/* === TASK LIST (THE IMMUNE SYSTEM) === */
+QListWidget {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+QListWidget::item {
+    background-color: #21262D;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 10px;
+    color: #C9D1D9;
+}
+
+QListWidget::item:selected {
+    border: 1px solid #00A3FF;
+    background-color: #21262D;
+}
+
+/* === TERMINAL (THE NERVOUS SYSTEM) === */
+QPlainTextEdit#Terminal {
+    background-color: #010409;
+    color: #00FF94; /* Emerald Terminal Color */
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 13px;
+    border: 1px solid #30363D;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* === BADGES === */
+QLabel#BadgeLow {
+    background-color: rgba(0, 255, 148, 0.1);
+    color: #00FF94;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QLabel#BadgeHigh {
+    background-color: rgba(255, 77, 77, 0.1);
+    color: #FF4D4D;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: bold;
 }

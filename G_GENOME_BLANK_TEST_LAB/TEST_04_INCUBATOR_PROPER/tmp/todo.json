@@ -1,0 +1,17 @@
+[
+  {
+    "risk": "HIGH",
+    "id": "B1",
+    "name": "Implement DNA Encryption layer"
+  },
+  {
+    "risk": "LOW",
+    "id": "B2",
+    "name": "Create Hospital Connector interface"
+  },
+  {
+    "risk": "MEDIUM",
+    "id": "B3",
+    "name": "Setup IPFS storage for records"
+  }
+]
