@@ -1,74 +1,96 @@
-# 🧬 G-GENOME v1.8.0
-## Bio-Inspired Context Engineering Framework for Reliable AI Agents
+# 🧬 G-GENOME v2.0 SOVEREIGN RELEASE
+## Framework d'Immunité Cognitive pour Agents IA
 
 ![G-Genome Banner](docs/assets/g_genome_banner.png)
 
-[![Release](https://img.shields.io/badge/status-alpha--v1.8-blue)]()
-[![Orchestrator](https://img.shields.io/badge/UI-Orchestrator%20v1.8-emerald)]()
-[![Google Problem](https://img.shields.io/badge/solves-context%20dilution%20problem-blue)]()
+[![Release](https://img.shields.io/badge/status-sovereign--v2.0-emerald)]()
+[![Framework](https://img.shields.io/badge/type-cognitive--immunity-blue)]()
+[![Google Ready](https://img.shields.io/badge/google-deepmind--ready-blue)]()
 
-> **"Solving the 2025 AI Context Dilution Problem by applying Biological Principles to Software Architecture."**
+> **"Le Premier Système d'Exploitation Cognitif qui résout l'Amnésie des Agents IA"**
 
----
-
-## 🚀 The Orchestrator (New in v1.8)
-Le **G-Genome Orchestrator** est une interface graphique Python (PyQt6) qui agit comme le "Cortex" de votre projet. Il élimine le goulot d'étranglement humain par :
-1.  **Gestation** : Métabolisation des idées brutes en spécifications structurées.
-2.  **Audit** : Exécution automatique des scripts du système immunitaire.
-3.  **Pont** : Génération d'un Master Prompt en un clic pour les Agents IA.
+📌 **Nouveau ici ?** Voir [GETTING_STARTED.md](./GETTING_STARTED.md) pour navigation guidée selon votre rôle.
 
 ---
 
-## 🏗️ Architecture Maîtresse (v1.2.2 Standard)
-G-Genome organise l'information selon les noms de quadrants historiques pour garantir la compatibilité :
+## ⚡ QUICK START (5 MINUTES)
 
-```
-G-GENOME FRAMEWORK
-│
-├── 01_GENOME_DNA_CORE/          # Lois architecturales & Protocoles (Genotype)
-│   ├── LAWS/                    # Schema_Genome_Core.json (Le Contrat)
-│   ├── PROTOCOLS/               # Workflows opérationnels
-│   └── GUIDES/                  # Guides Utilisateurs & Développeurs
-│
-├── 02_PHENOTYPE_RUNTIME/        # Exécution active du projet (Metabolism)
-│   ├── Registry_Codon_Tasks.md  # Mémoire en temps réel
-│   └── CONTEXT_SUBSTRATE/       # Spécifications générées
-│
-├── 03_GENETIC_RELEASES/         # Système Immunitaire (Immunity)
-│   ├── Governor_Audit_Engine.py # [Tech]_[Bio]_[Role] Standard
-│   └── Linter_DNA_Enforcer.py   # Detection des dérives
-│
-└── 04_MASTER_HERITAGE_PACK/     # Releases certifiées & Paquets Maîtres
-    └── RELEASE_V1.8_ORCHESTRATOR.md
-```
-
----
-
-## ⚡ Quick Start (10 Minutes)
-
-### Lancer l'Orchestrateur
+### **Installation**
 ```bash
-# Validation du Test 04 (Incubator Proper)
-cd G_GENOME_BLANK_TEST_LAB/TEST_04_INCUBATOR_PROPER
+# 1. Cloner le repository
+git clone https://github.com/developer-ta/paris-renovation-energetique.git
+cd paris-renovation-energetique
+
+# 2. Installer les dépendances
+pip install -r requirements.txt
+
+# 3. Lancer l'Orchestrator
+cd docs/04_MASTER_HERITAGE_PACK/G_GENOME_V2.0_SOVEREIGN_RELEASE/ORCHESTRATOR
 python main.py
 ```
 
-### Pour les Ingénieurs Google
-📄 **[RELEASE_V1.8_ORCHESTRATOR.md](./docs/04_MASTER_HERITAGE_PACK/RELEASE_V1.8_ORCHESTRATOR.md)** ← Rapport d'intégration technique.
+**👉 Guide détaillé** : Voir [QUICKSTART.md](./QUICKSTART.md) (première fois) ou [TECHNICAL_ARCHITECTURE.md](./TECHNICAL_ARCHITECTURE.md) (approfondi)
 
 ---
 
-## 🛡️ Les 4 Piliers de l'Immunité
-| Script | Fonction | Métrique |
-|:-------|:---------|:-------|
-| **Governor_Audit_Engine** | Valide auto les tâches à faible risque | 70% autonomie |
-| **Linter_DNA_Enforcer** | Détecte les violations architecturales | 0.95 compliance |
-| **Boot Integrity Check** | Vérifie la présence de l'ADN au démarrage | 100% Fiabilité |
+## 🎯 CE REPOSITORY : FRAMEWORK G-GENOME v2.0
+
+Ce repository héberge le **G-GENOME Framework** - un Système d'Exploitation Cognitif pour Agents IA.
+
+### **FRAMEWORK** (dans `docs/`)
+Un Framework d'Immunité Cognitive résolvant les 3 problèmes de Google DeepMind :
+- ❌ **Amnésie** → ✅ Mémoire persistante via Codons
+- ❌ **Goulot Humain** → ✅ Gouverneur autonome (50%+ auto-validation)
+- ❌ **Usine à Gaz** → ✅ Architecture 4-Quadrants immuable
+
+**👉 Pour démarrer** : Voir `docs/04_MASTER_HERITAGE_PACK/G_GENOME_V2.0_SOVEREIGN_RELEASE/`
+
+### **EXEMPLES** (dans `examples/`)
+Des projets réels qui ont validé le Framework :
+- **TEST_00** : Dashboard React Rénovation Énergétique (Le "Patient Zéro")
+- **TEST_01 à TEST_04** : Tests de validation (Portfolio, Governor, GUI, Orchestrator)
+
+**👉 Pour voir les preuves** : `cd examples/TEST_00_ORIGINAL_DASHBOARD_REACT`
+
+---
+
+## 🚀 Quick Start : G-GENOME FRAMEWORK
+
+### **Option 1 : Utiliser la Release Souveraine (Recommandé)**
+```bash
+cd docs/04_MASTER_HERITAGE_PACK/G_GENOME_V2.0_SOVEREIGN_RELEASE
+cd ORCHESTRATOR
+python main.py
+```
+
+### **Option 2 : Explorer les Preuves de Concept**
+```bash
+cd examples/proof_of_concept/G_GENOME_TEST_LAB
+# Voir les 4 tests de validation (TEST_01 à TEST_04)
+```
+
+---
+
+## 📚 Documentation Framework
+
+- 📜 **[Contrat de Gouvernance](./FINAL_GENOME_CHARTER.md)** - Les lois fondamentales
+- 📖 **[Manifeste de Transition](./docs/04_MASTER_HERITAGE_PACK/MANIFESTO_TRANSITION_V2.0.md)** - L'évolution v1→v2
+- 🔬 **[Release v2.0](./docs/04_MASTER_HERITAGE_PACK/G_GENOME_V2.0_SOVEREIGN_RELEASE/)** - Le Framework complet
+
+---
+
+## 🛡️ Pour Google DeepMind
+
+Ce Framework a été conçu pour résoudre vos problèmes d'**Amnésie des Agents** et de **Scalabilité**.
+
+📊 **Preuves Empiriques** : 4/4 tests validés (100% succès)  
+📧 **Contact Technique** : ntparis9@gmail.com  
+💼 **LinkedIn** : [https://www.linkedin.com/in/tayier-dev-ai-data/](https://www.linkedin.com/in/tayier-dev-ai-data/)
 
 ---
 
 ## 🎓 Auteur : NT PARI
 - **Origine** : Médecine (Chine) → Ingénierie Logicielle (France)
-- **Innovation** : Application de l'épigénétique au management du contexte IA.
+- **Innovation** : Application de l'épigénétique au management du contexte IA
 
 **Prêt pour Google DeepMind | Janvier 2026**
