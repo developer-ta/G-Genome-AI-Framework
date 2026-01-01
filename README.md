@@ -73,9 +73,20 @@ cd examples/proof_of_concept/G_GENOME_TEST_LAB
 
 ## 📚 Documentation Framework
 
-- 📜 **[Contrat de Gouvernance](./FINAL_GENOME_CHARTER.md)** - Les lois fondamentales
-- 📖 **[Manifeste de Transition](./docs/04_MASTER_HERITAGE_PACK/MANIFESTO_TRANSITION_V2.0.md)** - L'évolution v1→v2
-- 🔬 **[Release v2.0](./docs/04_MASTER_HERITAGE_PACK/G_GENOME_V2.0_SOVEREIGN_RELEASE/)** - Le Framework complet
+### 🔥 **Documents Essentiels (Start Here)**
+- ⭐ **[EXECUTIVE_SUMMARY.md](./EXECUTIVE_SUMMARY.md)** (1 page) - Pour décideurs (CTO, VP R&D)
+- 📊 **[METRICS_BENCHMARK.md](./METRICS_BENCHMARK.md)** - Métriques quantitatives + Benchmark vs RAG/Fine-tuning
+- 🔬 **[WORKFLOW_EXAMPLE.md](./WORKFLOW_EXAMPLE.md)** - Cas d'usage complet (Jour 1 → Jour 14)
+
+### 📖 **Documentation Technique**
+- 📋 **[GETTING_STARTED.md](./GETTING_STARTED.md)** - Navigation guidée par rôle
+- ⚡ **[QUICKSTART.md](./QUICKSTART.md)** (5 min) - Premier test rapide
+- 🏗️ **[TECHNICAL_ARCHITECTURE.md](./TECHNICAL_ARCHITECTURE.md)** - Architecture détaillée
+- 📄 **[RD_SYNTHESIS.md](./RD_SYNTHESIS.md)** (2 pages) - Synthèse pour chercheurs
+
+### 📜 **Gouvernance**
+- 🛡️ **[FINAL_GENOME_CHARTER.md](./FINAL_GENOME_CHARTER.md)** - Contrat de souveraineté (5 articles)
+- 📖 **[MANIFESTO_TRANSITION_V2.0.md](./docs/04_MASTER_HERITAGE_PACK/MANIFESTO_TRANSITION_V2.0.md)** - Évolution v1→v2
 
 ---
 
