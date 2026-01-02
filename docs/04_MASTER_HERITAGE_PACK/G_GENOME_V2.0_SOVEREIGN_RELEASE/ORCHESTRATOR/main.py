@@ -67,6 +67,7 @@ class IncubatorApp(QMainWindow):
         self.dashboard.add_page(self._view_library())  # Index 3
         self.dashboard.add_page(self._view_logs())  # Index 4
         self.dashboard.add_page(self._view_success())  # Index 5
+        self.dashboard.add_page(self._view_genesis())  # Index 6
 
         # 6. Vérification d'Intégrité (Sécurité G-Genome)
         self._verify_integrity()
@@ -120,28 +121,48 @@ class IncubatorApp(QMainWindow):
 
         # COLUMN 1: Introduction
         intro_card = Card(width=580, height=580, title="🧬 G-GENOME ORCHESTRATOR")
-        intro_card.set_help(
-            "Bienvenue. G-Genome est un framework bio-inspiré conçu pour éliminer l'hallucination de l'IA."
-        )
+
+        # [SYNTAXE] Titre plus explicite pour le Dashboard
+        intro_card.set_help("Bienvenue. Choisissez votre mode de démarrage ci-dessous.")
 
         subtitle = QLabel("Artificial Intelligence Context Engineering")
         subtitle.setObjectName("Subtitle")
+
+        # [SYNTAXE] Zone de boutons d'action rapide (Quick Actions)
+        # [RÔLE] Guide l'utilisateur vers les différents modes d'initialisation (Genesis vs Injector).
+        actions_frame = QFrame()
+        actions_layout = QVBoxLayout(actions_frame)
+
+        btn_genesis = QPushButton("🚀 START WITH RAW IDEA (GENESIS)")
+        btn_genesis.setObjectName("ActionButton")
+        btn_genesis.setFixedHeight(50)
+        btn_genesis.clicked.connect(
+            lambda: self.dashboard.switch_view(6)
+        )  # Index 6 = Genesis Lab
+
+        btn_manual = QPushButton("💉 MANUAL INJECTION")
+        btn_manual.setObjectName("SecondaryButton")
+        btn_manual.setFixedHeight(40)
+        btn_manual.clicked.connect(
+            lambda: self.dashboard.switch_view(1)
+        )  # Index 1 = Injector
+
+        actions_layout.addWidget(btn_genesis)
+        actions_layout.addWidget(btn_manual)
 
         intro_text = QLabel(
             "Transformation d'idées brutes en architectures logicielles validées.\n\n"
             "Centralise la gestion de l'ADN (Lois) et du Phénotype (État réel)."
         )
         intro_text.setWordWrap(True)
-        intro_text.setStyleSheet("font-size: 15px; color: #C9D1D9; line-height: 1.6;")
+        intro_text.setStyleSheet(
+            "font-size: 15px; color: #C9D1D9; line-height: 1.6; margin-bottom: 20px;"
+        )
 
         intro_card.add_child(subtitle)
         intro_card.add_child(intro_text)
+        intro_card.add_child(actions_frame)
 
-        btn_start = QPushButton("🧬 ACCÉDER À L'INJECTEUR")
-        btn_start.setObjectName("ActionButton")
-        btn_start.setFixedHeight(50)
-        btn_start.clicked.connect(lambda: self.dashboard.switch_view(1))
-        intro_card.add_child(btn_start)
         dash_layout.addWidget(intro_card)
 
         # COLUMN 2: Guide
@@ -149,13 +170,105 @@ class IncubatorApp(QMainWindow):
         lifecycle_content = QTextBrowser()
         lifecycle_content.setStyleSheet("background: transparent; border: none;")
         lifecycle_content.setHtml(
-            "<h3>Phase 1 : DNA Injection</h3><p>Créez le squelette.</p><h3>Phase 2 : Gestation</h3><p>Métabolisez votre idée.</p>"
+            "<h3>Phase 0 : Genesis</h3><p>Transformez une idée vague en ADN solide grâce à l'Architecte IA.</p>"
+            "<h3>Phase 1 : DNA Injection</h3><p>Créez le squelette.</p>"
+            "<h3>Phase 2 : Gestation</h3><p>Métabolisez votre idée.</p>"
         )
         guide_card.add_child(lifecycle_content)
         dash_layout.addWidget(guide_card)
 
         layout.addLayout(dash_layout)
         return page
+
+    def _view_genesis(self):
+        # [SYNTAXE] Vue dédiée au 'Genesis Lab' (Zone de conception initiale).
+        # [RÔLE] Permet à l'utilisateur de générer son ADN de projet via un prompt expert (Bootstrap d'immunité).
+        page = QWidget()
+        layout = QVBoxLayout(page)
+
+        card = Card(width=900, height=600, title="🧪 GENESIS LAB (Idea Incubator)")
+        card.set_help(
+            "GENESIS MODE :\n\n- Step 1: Décrivez votre projet ici.\n- Step 2: Cliquez 'Generate Prompt'.\n- Step 3: Collez le résultat dans votre Agent IA (ChatGPT/Copilot) pour obtenir votre ADN."
+        )
+
+        # Input Zone
+        lbl_input = QLabel("1. DESCRIBE YOUR PROJECT IDEA:")
+        lbl_input.setStyleSheet("color: #8B949E; font-weight: bold; margin-top: 10px;")
+
+        self.genesis_input = QTextEdit()
+        self.genesis_input.setPlaceholderText(
+            "Example: 'I want a secure extensive E-Commerce platform for B2B shoes with Python Backend...'"
+        )
+        self.genesis_input.setStyleSheet(
+            "background-color: #0D1117; color: #C9D1D9; border: 1px solid #30363D; padding: 10px;"
+        )
+
+        # Action Button
+        btn_gen = QPushButton("✨ GENERATE IMMUNITY PROMPT")
+        btn_gen.setObjectName("ActionButton")
+        btn_gen.setFixedHeight(50)
+        btn_gen.clicked.connect(self._action_generate_genesis_prompt)
+
+        # Output/Instruction Zone
+        lbl_output = QLabel("2. YOUR ARCHITECT PROMPT (Ready to Copy):")
+        lbl_output.setStyleSheet("color: #8B949E; font-weight: bold; margin-top: 20px;")
+
+        self.genesis_output = QTextEdit()
+        self.genesis_output.setReadOnly(True)
+        self.genesis_output.setStyleSheet(
+            "background-color: #010409; color: #58A6FF; font-family: 'Consolas'; border: 1px dashed #30363D;"
+        )
+
+        btn_copy = QPushButton("📋 COPY TO CLIPBOARD")
+        btn_copy.setObjectName("SecondaryButton")
+        btn_copy.clicked.connect(self._copy_genesis_clipboard)
+
+        card.add_child(lbl_input)
+        card.add_child(self.genesis_input)
+        card.add_child(btn_gen)
+        card.add_child(lbl_output)
+        card.add_child(self.genesis_output)
+        card.add_child(btn_copy)
+
+        layout.addWidget(card)
+        layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        return page
+
+    def _action_generate_genesis_prompt(self):
+        # [SYNTAXE] Lecture du Template Maître et injection de l'idée utilisateur.
+        # [RÔLE] Crée le prompt final que l'utilisateur donnera à son LLM.
+        user_idea = self.genesis_input.toPlainText()
+        if not user_idea.strip():
+            QMessageBox.warning(
+                self, "Input Empty", "Please describe your project first."
+            )
+            return
+
+        # Load Template
+        template_path = os.path.join(
+            self.master_path,
+            "docs/01_GENOME_DNA_CORE/PROTOCOLS/GENESIS_PROMPT_MASTER.md",
+        )
+        if os.path.exists(template_path):
+            with open(template_path, "r", encoding="utf-8") as f:
+                template = f.read()
+                # Inject User Idea at the end
+                final_prompt = template.replace(
+                    '[DÉCRIVEZ VOTRE PROJET ICI : "Je veux créer une app de..." ]',
+                    user_idea,
+                )
+                self.genesis_output.setPlainText(final_prompt)
+        else:
+            self.genesis_output.setPlainText(
+                "ERROR: GENESIS_PROMPT_MASTER.md not found."
+            )
+
+    def _copy_genesis_clipboard(self):
+        clipboard = QApplication.clipboard()
+        clipboard.setText(self.genesis_output.toPlainText())
+        QMessageBox.information(
+            self, "Copied", "Genesis Prompt copied! Paste it into your AI Agent now."
+        )
 
     def _view_injector(self):
         page = QWidget()
