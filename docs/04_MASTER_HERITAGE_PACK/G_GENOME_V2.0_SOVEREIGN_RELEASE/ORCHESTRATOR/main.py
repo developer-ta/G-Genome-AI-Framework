@@ -1,8 +1,6 @@
 import sys
 import os
 import json
-import ctypes  # [NATIVE] Pour appels système Windows (User32)
-import time  # [NATIVE] Pour délais de frappe
 from PyQt6.QtWidgets import (
     QApplication,
     QMainWindow,
@@ -23,6 +21,97 @@ from PyQt6.QtWidgets import (
     QComboBox,
     QTextBrowser,
 )
+
+# ... (Previous imports)
+
+# ...
+
+    # --- VIEWS (Les Phénotypes) ---
+
+    def _view_home(self):
+        # ... (HOME VIEW REMAINS UNCHANGED)
+        return page
+
+    def _view_genesis(self):
+        # [SYNTAXE] Vue dédiée au 'Genesis Lab' (Zone de conception initiale).
+        # [RÔLE] Permet à l'utilisateur de générer son ADN de projet via un prompt expert (Bootstrap d'immunité).
+        page = QWidget()
+        layout = QVBoxLayout(page)
+
+        card = Card(width=900, height=600, title="🧪 GENESIS LAB (Idea Incubator)")
+        card.set_help(
+            "GENESIS MODE :\n\n- Step 1: Décrivez votre projet ici.\n- Step 2: Cliquez 'Generate Prompt'.\n- Step 3: Collez le résultat dans votre Agent IA (ChatGPT/Copilot) pour obtenir votre ADN."
+        )
+
+        # Input Zone
+        lbl_input = QLabel("1. DESCRIBE YOUR PROJECT IDEA:")
+        lbl_input.setStyleSheet("color: #8B949E; font-weight: bold; margin-top: 10px;")
+
+        self.genesis_input = QTextEdit()
+        self.genesis_input.setPlaceholderText(
+            "Example: 'I want a secure extensive E-Commerce platform for B2B shoes with Python Backend...'"
+        )
+        self.genesis_input.setStyleSheet(
+            "background-color: #0D1117; color: #C9D1D9; border: 1px solid #30363D; padding: 10px;"
+        )
+
+        # Action Button
+        btn_gen = QPushButton("✨ GENERATE IMMUNITY PROMPT")
+        btn_gen.setObjectName("ActionButton")
+        btn_gen.setFixedHeight(50)
+        btn_gen.clicked.connect(self._action_generate_genesis_prompt)
+
+        # Output/Instruction Zone
+        lbl_output = QLabel("2. YOUR ARCHITECT PROMPT (Ready to Copy):")
+        lbl_output.setStyleSheet("color: #8B949E; font-weight: bold; margin-top: 20px;")
+        
+        self.genesis_output = QTextEdit()
+        self.genesis_output.setReadOnly(True)
+        self.genesis_output.setStyleSheet(
+            "background-color: #010409; color: #58A6FF; font-family: 'Consolas'; border: 1px dashed #30363D;"
+        )
+
+        btn_copy = QPushButton("📋 COPY TO CLIPBOARD")
+        btn_copy.setObjectName("SecondaryButton")
+        btn_copy.clicked.connect(self._copy_genesis_clipboard)
+
+        card.add_child(lbl_input)
+        card.add_child(self.genesis_input)
+        card.add_child(btn_gen)
+        card.add_child(lbl_output)
+        card.add_child(self.genesis_output)
+        card.add_child(btn_copy)
+
+        layout.addWidget(card)
+        layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        return page
+
+    # ... (INJECTOR VIEW)
+
+    def _view_cortex(self):
+        page = QWidget()
+        layout = QVBoxLayout(page)
+
+        top_layout = QHBoxLayout()
+
+        # A. Cortex
+        cortex_card = Card(width=600, height=450, title="🧠 THE CORTEX")
+        cortex_card.set_help(
+            "ZONE D'INTENTION :\n\n- Tapez ou dictez votre idée ici (Win+H).\n- 🌱 GÉNÉRER SUBSTRAT : L'IA transforme votre texte en documentation structurée (Cahier des charges)."
+        )
+
+        self.cortex_input = QTextEdit()
+        self.cortex_input.setPlaceholderText("Type your chaotic idea here...")
+        cortex_card.add_child(self.cortex_input)
+
+        btn_gen = QPushButton("🌱 GENERATE SUBSTRATE")
+        btn_gen.setObjectName("ActionButton")
+        btn_gen.clicked.connect(self._action_generate_substrate)
+        cortex_card.add_child(btn_gen)
+        top_layout.addWidget(cortex_card)
+
+        # B. Immune
+        immune_card = Card(width=400, height=450, title="🛡️ IMMUNE SYSTEM")
 from PyQt6.QtCore import Qt, QFile, QTextStream, QTimer
 from PyQt6.QtGui import QIcon, QFont
 
@@ -48,26 +137,29 @@ class IncubatorApp(QMainWindow):
         [FONCTION] : Simule l'appui simultané sur Win + H.
         [RÔLE] : Lance l'outil de dictée native de Windows pour l'utilisateur.
         """
-        try:
-            user32 = ctypes.windll.user32
-            VK_LWIN = 0x5B
-            VK_H = 0x48
-            KEYEVENTF_KEYUP = 0x0002
+        QMessageBox.information(
+            self, "Voice Input", "Voice Input (Win+H) simulated (Debug Mode)."
+        )
+        # try:
+        #     user32 = ctypes.windll.user32
+        #     VK_LWIN = 0x5B
+        #     VK_H = 0x48
+        #     KEYEVENTF_KEYUP = 0x0002
 
-            # Press
-            user32.keybd_event(VK_LWIN, 0, 0, 0)
-            user32.keybd_event(VK_H, 0, 0, 0)
-            time.sleep(0.05)
-            # Release
-            user32.keybd_event(VK_H, 0, KEYEVENTF_KEYUP, 0)
-            user32.keybd_event(VK_LWIN, 0, KEYEVENTF_KEYUP, 0)
+        #     # Press
+        #     user32.keybd_event(VK_LWIN, 0, 0, 0)
+        #     user32.keybd_event(VK_H, 0, 0, 0)
+        #     time.sleep(0.05)
+        #     # Release
+        #     user32.keybd_event(VK_H, 0, KEYEVENTF_KEYUP, 0)
+        #     user32.keybd_event(VK_LWIN, 0, KEYEVENTF_KEYUP, 0)
 
-            # Focus info (Optional)
-            self.terminal.appendPlainText("🎤 Voice Input Triggered (Win+H)")
-        except Exception as e:
-            QMessageBox.warning(
-                self, "Voice Error", f"Could not trigger voice input: {e}"
-            )
+        #     # Focus info (Optional)
+        #     self.terminal.appendPlainText("🎤 Voice Input Triggered (Win+H)")
+        # except Exception as e:
+        #     QMessageBox.warning(
+        #         self, "Voice Error", f"Could not trigger voice input: {e}"
+        #     )
 
         # ... (Views follow) ...
         self.resize(1200, 850)
