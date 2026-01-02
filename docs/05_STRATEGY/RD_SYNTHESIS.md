@@ -24,6 +24,8 @@ Les Agents IA actuels (Gemini, GPT, Claude) souffrent de trois problèmes critiq
 ### **Principe Fondamental**
 Appliquer des concepts biologiques (épigénétique, immunité) à l'architecture logicielle pour créer un **Système d'Exploitation Cognitif** indépendant du LLM.
 
+> **"We do not attempt to fix LLM memory. We eliminate the need for it."**
+
 ### **Architecture (4 Quadrants)**
 
 ```
@@ -160,6 +162,6 @@ response = llm.generate(prompt=user_input, system=context)
 
 ---
 
-**Status** : `R&D_SYNTHESIS_v2.0`  
+**Status** : `R&D_SYNTHESIS_v2.5`  
 **Audience** : Équipes Recherche (Google Brain, Microsoft Research, OpenAI, Labs indépendants)  
 **Date** : 02 Janvier 2026
