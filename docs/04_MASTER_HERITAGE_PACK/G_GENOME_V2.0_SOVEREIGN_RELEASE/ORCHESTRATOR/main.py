@@ -412,11 +412,7 @@ class IncubatorApp(QMainWindow):
         for label, path in docs:
             btn = QPushButton(label)
             # [SYNTAXE] Utilisation d'une lambda 'p=path' pour capturer le chemin au moment de la création du bouton.
-            abs_path = os.path.join(
-                self.master_path,
-                "G_GENOME_BLANK_TEST_LAB/TEST_04_INCUBATOR_PROPER",
-                path,
-            )
+            abs_path = os.path.join(self.master_path, path)
             btn.clicked.connect(lambda checked, p=abs_path: self._load_doc(p))
             nav_layout.addWidget(btn)
 
@@ -438,6 +434,8 @@ class IncubatorApp(QMainWindow):
                 self.library_browser.setHtml(
                     f"<style>h1, h2 {{ color: #00A3FF; }}</style>{html}"
                 )
+        else:
+            self.library_browser.setHtml(f"<h1>⚠️ Document Not Found</h1><p>{path}</p>")
 
     def _view_success(self):
         page = QWidget()
@@ -569,7 +567,7 @@ class IncubatorApp(QMainWindow):
     def _refresh_logs(self):
         registry_path = os.path.join(
             self.master_path,
-            "G_GENOME_BLANK_TEST_LAB/TEST_04_INCUBATOR_PROPER/docs/02_PHENOTYPE_RUNTIME/Registry_Codon_Tasks.md",
+            "docs/02_PHENOTYPE_RUNTIME/Registry_Codon_Tasks.md",
         )
         if os.path.exists(registry_path):
             with open(registry_path, "r", encoding="utf-8") as f:
