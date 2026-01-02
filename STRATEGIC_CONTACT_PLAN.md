@@ -121,7 +121,64 @@ Avant d'envoyer le premier message, assurez-vous d'avoir :
 
 ---
 
-## 4. LA VISION LONG TERME (TRAJECTOIRE)
+---
+
+## 5. OPTIMISATION PROFIL LINKEDIN (PERSONAL BRANDING)
+
+Votre profil doit crier "Ingénieur R&D", pas "Étudiant".
+
+### **A. Le Titre (Headline)**
+*Ne mettez pas "Recherche stage". Mettez la valeur que vous apportez.*
+
+> **Option A (Focus R&D)** :
+> AI R&D Engineer | Solving Context Amnesia in Agents | Creator of G-Genome Framework
+>
+> **Option B (Focus Software)** :
+> Software Engineer | Building Autonomous Agent Architectures | Python & AI Governance
+
+### **B. La Section Info (About)**
+*Racontez votre histoire unique : Médecine → Tech → Biologie appliquée à l'IA.*
+
+> "Les Agents IA actuels (Gemini, ChatGPT) souffrent d'une pathologie critique : l'amnésie contextuelle. Ils oublient les décisions architecturales d'une session à l'autre.
+>
+> Venant d'un background médical, j'ai approché ce problème sous un angle biologique. Si l'on ne peut pas changer le cerveau (LLM), il faut changer l'environnement (Architecture).
+>
+> J'ai développé **G-Genome**, un framework expérimental qui :
+> 1. Découple la mémoire du modèle (Persistance disque 100%).
+> 2. Intègre un 'Système Immunitaire' autonome (Gouverneur) qui valide les tâches.
+> 3. Réduit de 50% le temps de validation humaine sur les projets IA.
+>
+> Je cherche aujourd'hui à pousser cette recherche plus loin au sein d'une équipe R&D ou d'une entreprise innovante."
+
+### **C. La Section Expérience**
+*Comment lister ce projet ? Ne le mettez pas en "Projet", mettez-le en "Expérience". C'est du travail réel.*
+
+> **Rôle** : Independent AI Researcher & Architect
+> **Entreprise** : G-Genome Project (Open Source)
+> **Dates** : 2025 - Présent
+> **Description** :
+> Conception et développement d'un framework d'encadrement pour Agents IA (Python).
+> *   **Problème** : Résolution de la perte de contexte et de la dérive architecturale sur les projets longs (>6 mois).
+> *   **Solution** : Architecture bio-inspirée "4-Quadrants" séparant le Noyau (Lois) du Runtime (Tâches).
+> *   **Tech** : Implémentation d'un Orchestrateur GUI (PyQt6) et d'un Moteur d'Audit (Governor).
+> *   **Résultat** : Validation sur 4 projets pilotes. Code disponible sur GitHub.
+
+### **D. Le Post d'Annonce (Activité)**
+*Une fois le profil à jour, publiez ceci :*
+
+> "J'ai passé les 6 derniers mois à résoudre un problème frustrant : pourquoi mon Agent IA oublie-t-il les consignes de la veille ?
+>
+> Plutôt que d'attendre GPT-5, j'ai construit **G-Genome**, un 'Système d'Exploitation pour Agents' inspiré de la biologie.
+>
+> C'est open-source, c'est testé, et ça permet de garder 100% du contexte sans payer de fine-tuning.
+>
+> Je cherche des critiques techniques de la part de la communauté R&D. Le code et les métriques sont ici : [Lien GitHub]
+>
+> #AI #MachineLearning #OpenSource #DeepMind #Research"
+
+---
+
+## 6. LA VISION LONG TERME (TRAJECTOIRE)
 
 **Ce projet n'est pas une fin en soi.** C'est un **véhicule de crédibilité**.
 
