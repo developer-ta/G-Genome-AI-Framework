@@ -43,10 +43,15 @@ class Sidebar(QFrame):
         # Définition du Menu (Données)
         menu_items = [
             ("📊 Dashboard", 0),
+            ("🚀 Genesis Lab", 6),
             ("💉 DNA Injector", 1),
             ("🧠 The Cortex", 2),
-            ("📚 Bio-Library", 3),
+            ("📚 Library (Guides)", 3),
             ("🛡️ Immunity Logs", 4),
+            (
+                "❓ Help / About",
+                0,
+            ),  # Redirige vers Dashboard pour l'instant (ou nouvelle vue 7 si créée)
         ]
 
         for label, index in menu_items:
