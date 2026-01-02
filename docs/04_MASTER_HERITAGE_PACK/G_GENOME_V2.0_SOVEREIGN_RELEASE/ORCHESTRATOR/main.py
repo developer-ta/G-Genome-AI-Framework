@@ -1,6 +1,8 @@
 import sys
 import os
 import json
+import ctypes  # [NATIVE] Pour appels système Windows (User32)
+import time  # [NATIVE] Pour délais de frappe
 from PyQt6.QtWidgets import (
     QApplication,
     QMainWindow,
@@ -37,6 +39,37 @@ class IncubatorApp(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("G-GENOME ORCHESTRATOR v1.7")
+
+    # ... (Previous Init Code remains implicitly same until we reach logic methods) ...
+
+    # [AJOUT] Fonction système pour déclencher la dictée Windows
+    def _trigger_voice_typing(self):
+        """
+        [FONCTION] : Simule l'appui simultané sur Win + H.
+        [RÔLE] : Lance l'outil de dictée native de Windows pour l'utilisateur.
+        """
+        try:
+            user32 = ctypes.windll.user32
+            VK_LWIN = 0x5B
+            VK_H = 0x48
+            KEYEVENTF_KEYUP = 0x0002
+
+            # Press
+            user32.keybd_event(VK_LWIN, 0, 0, 0)
+            user32.keybd_event(VK_H, 0, 0, 0)
+            time.sleep(0.05)
+            # Release
+            user32.keybd_event(VK_H, 0, KEYEVENTF_KEYUP, 0)
+            user32.keybd_event(VK_LWIN, 0, KEYEVENTF_KEYUP, 0)
+
+            # Focus info (Optional)
+            self.terminal.appendPlainText("🎤 Voice Input Triggered (Win+H)")
+        except Exception as e:
+            QMessageBox.warning(
+                self, "Voice Error", f"Could not trigger voice input: {e}"
+            )
+
+        # ... (Views follow) ...
         self.resize(1200, 850)
 
         # 1. Chemins des Synapses (Communication Filesystem)
@@ -217,6 +250,14 @@ class IncubatorApp(QMainWindow):
             "background-color: #0D1117; color: #C9D1D9; border: 1px solid #30363D; padding: 10px;"
         )
 
+        # [AJOUT] Voice Button
+        btn_voice = QPushButton("🎤 VOICE INPUT (Win+H)")
+        btn_voice.setFixedHeight(30)
+        btn_voice.setStyleSheet(
+            "background-color: #21262D; color: #8B949E; border: 1px solid #30363D;"
+        )
+        btn_voice.clicked.connect(self._trigger_voice_typing)
+
         # Action Button
         btn_gen = QPushButton("✨ GENERATE IMMUNITY PROMPT")
         btn_gen.setObjectName("ActionButton")
@@ -239,6 +280,7 @@ class IncubatorApp(QMainWindow):
 
         card.add_child(lbl_input)
         card.add_child(self.genesis_input)
+        card.add_child(btn_voice)
         card.add_child(btn_gen)
         card.add_child(lbl_output)
         card.add_child(self.genesis_output)
@@ -338,6 +380,15 @@ class IncubatorApp(QMainWindow):
         self.cortex_input = QTextEdit()
         self.cortex_input.setPlaceholderText("Type your chaotic idea here...")
         cortex_card.add_child(self.cortex_input)
+
+        # [AJOUT] Voice Button for Cortex
+        btn_voice_cortex = QPushButton("🎤 VOICE INPUT (Win+H)")
+        btn_voice_cortex.setFixedHeight(30)
+        btn_voice_cortex.setStyleSheet(
+            "background-color: #21262D; color: #8B949E; border: 1px solid #30363D;"
+        )
+        btn_voice_cortex.clicked.connect(self._trigger_voice_typing)
+        cortex_card.add_child(btn_voice_cortex)
 
         btn_gen = QPushButton("🌱 GENERATE SUBSTRATE")
         btn_gen.setObjectName("ActionButton")
