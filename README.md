@@ -18,8 +18,8 @@
 ### **Installation**
 ```bash
 # 1. Cloner le repository
-git clone https://github.com/developer-ta/paris-renovation-energetique.git
-cd paris-renovation-energetique
+git clone https://github.com/developer-ta/G-Genome-AI-Framework.git
+cd G-Genome-AI-Framework
 
 # 2. Installer les dépendances
 pip install -r requirements.txt
@@ -105,3 +105,4 @@ Ce Framework a été conçu pour résoudre vos problèmes d'**Amnésie des Agent
 - **Innovation** : Application de l'épigénétique au management du contexte IA
 
 **Prêt pour Google DeepMind | Janvier 2026**
+

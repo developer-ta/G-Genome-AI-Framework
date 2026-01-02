@@ -100,7 +100,7 @@ Les Agents IA (Gemini, GPT, Claude) souffrent de **3 pathologies critiques** :
 ## 📞 NEXT STEPS
 
 **Contact Immédiat** : ntparis9@gmail.com  
-**Démo Interactive** : [GitHub](https://github.com/developer-ta/paris-renovation-energetique)  
+**Démo Interactive** : [GitHub](https://github.com/developer-ta/G-Genome-AI-Framework)  
 **Quick Start** : 5 min avec `QUICKSTART.md`
 
 **Pour R&D Teams** : Voir `RD_SYNTHESIS.md` (2 pages techniques)  
@@ -116,3 +116,4 @@ Les Agents IA (Gemini, GPT, Claude) souffrent de **3 pathologies critiques** :
 **Audience** : CTO, VP R&D, Senior Research Leads  
 **Date** : 01 Janvier 2026  
 **Auteur** : NT PARI (ntparis9@gmail.com)
+

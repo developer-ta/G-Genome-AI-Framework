@@ -16,8 +16,8 @@
 
 ```bash
 # Cloner le repository
-git clone https://github.com/developer-ta/paris-renovation-energetique.git
-cd paris-renovation-energetique
+git clone https://github.com/developer-ta/G-Genome-AI-Framework.git
+cd G-Genome-AI-Framework
 
 # Installer les dépendances (Python 3.10+)
 pip install PyQt6
@@ -148,3 +148,4 @@ response = genai.generate(
 **Status** : `QUICK_START_v2.0`  
 **Durée Totale** : 5 minutes  
 **Prochaine Étape** : Lire `TECHNICAL_ARCHITECTURE.md`
+

@@ -198,8 +198,8 @@ response = openai.ChatCompletion.create(
 ### **Installation**
 ```bash
 # 1. Cloner le Framework
-git clone https://github.com/developer-ta/paris-renovation-energetique.git
-cd paris-renovation-energetique
+git clone https://github.com/developer-ta/G-Genome-AI-Framework.git
+cd G-Genome-AI-Framework
 
 # 2. Installer les dépendances
 pip install PyQt6
@@ -249,3 +249,4 @@ python main.py
 **Status** : `TECHNICAL_REFERENCE_v2.0`  
 **Audience** : Ingénieurs, Chercheurs, Équipes R&D  
 **Date** : 01 Janvier 2026
+

@@ -68,7 +68,7 @@ python tests/test_framework.py
 ## 📂 STRUCTURE DU REPOSITORY
 
 ```
-paris-renovation-energetique/
+G-Genome-AI-Framework/
 ├── QUICKSTART.md              ← ⭐ Guide 5 minutes
 ├── RD_SYNTHESIS.md            ← ⭐ Synthèse R&D
 ├── TECHNICAL_ARCHITECTURE.md  ← Documentation complète
@@ -109,3 +109,4 @@ paris-renovation-energetique/
 
 **Status** : `NAVIGATION_GUIDE_v2.0`  
 **Mise à jour** : 01 Janvier 2026
+
