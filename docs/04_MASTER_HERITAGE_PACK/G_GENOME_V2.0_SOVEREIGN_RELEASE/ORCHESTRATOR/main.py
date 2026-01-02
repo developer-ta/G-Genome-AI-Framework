@@ -137,6 +137,9 @@ class IncubatorApp(QMainWindow):
         status_layout.addWidget(create_badge("GOVERNOR", "ACTIVE"))
         status_layout.addWidget(create_badge("DNA LAWS", "12 LOADED", "#00A3FF"))
         status_layout.addWidget(create_badge("AUDIT", "SECURE", "#F1C40F"))
+        status_layout.addWidget(
+            create_badge("DNA CORE", "🔒 LOCKED / READ-ONLY", "#FF4D4D")
+        )
         status_layout.addStretch()
 
         subtitle = QLabel("AI SYSTEMS GOVERNED BY DESIGN")
@@ -156,10 +159,10 @@ class IncubatorApp(QMainWindow):
         btn_bootstrap.clicked.connect(lambda: self.dashboard.switch_view(6))
 
         btn_desc = QLabel(
-            "Initialize a governed project with enforced DNA laws and audit trail."
+            "⚠️ This action initializes immutable DNA laws and creates a governed audit trail."
         )
         btn_desc.setStyleSheet(
-            "font-size: 12px; color: #8B949E; margin-top: -5px; margin-bottom: 10px; margin-left: 5px;"
+            "font-size: 11px; color: #FF4D4D; font-weight: bold; margin-top: -5px; margin-bottom: 10px; margin-left: 5px;"
         )
 
         btn_manual = QPushButton("💉 MANUAL INJECTION (EXPERT)")
@@ -195,11 +198,17 @@ class IncubatorApp(QMainWindow):
         )
         intro_text.setWordWrap(True)
         intro_text.setStyleSheet(
-            "font-size: 15px; color: #C9D1D9; line-height: 1.6; margin-bottom: 20px;"
+            "font-size: 15px; color: #C9D1D9; line-height: 1.6; margin-bottom: 5px;"
+        )
+
+        next_action = QLabel("👉 Next Action: Bootstrap a governed AI project.")
+        next_action.setStyleSheet(
+            "font-size: 13px; color: #00FF94; font-weight: bold; margin-bottom: 20px;"
         )
 
         intro_card.add_child(subtitle)
         intro_card.add_child(intro_text)
+        intro_card.add_child(next_action)
         intro_card.add_child(actions_frame)
 
         dash_layout.addWidget(intro_card)

@@ -1,15 +1,15 @@
-# 🧬 G-GENOME v2.1 | Sovereign Cognitive Framework
+# 🧬 G-GENOME v2.5 | Governed & Audited Framework
 
 > **"This is a framework demonstrated through a concrete reference orchestrator."**
 
-[![Release](https://img.shields.io/badge/status-sovereign--v2.1-emerald)]()
-[![Framework](https://img.shields.io/badge/type-cognitive--immunity-blue)]()
-[![Google Ready](https://img.shields.io/badge/google-deepmind--grade-blue)]()
+[![Release](https://img.shields.io/badge/status-sovereign--v2.5-emerald)]()
+[![Framework](https://img.shields.io/badge/type-governed--architecture-blue)]()
+[![DeepMind Aligned](https://img.shields.io/badge/research-deepmind--aligned-blue)]()
 
 ---
 
 ## ⚡ 1-MINUTE START
-G-Genome solves the **Amnesia** and **Architectural Drift** of AI Agents by anchoring memory in a disk-based "DNA Registry".
+G-Genome provides **Immutability by Design**. It solves the **Amnesia** and **Architectural Drift** of AI Agents by anchoring memory in a disk-based "DNA Registry".
 
 ```bash
 # 1. Install dependencies
