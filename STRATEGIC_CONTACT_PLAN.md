@@ -24,7 +24,45 @@
 
 ---
 
-## 2. LE KIT DE CONTACT (SCRIPTS)
+---
+
+## 2. CIBLAGE : COMMENT TROUVER LES BONNES PERSONNES (Methodology)
+
+Ne tirez pas au hasard. Vous cherchez des profils spécifiques.
+
+### **A. Les Mots-Clés Magiques (Recherche LinkedIn / X)**
+Utilisez ces combinaisons dans la barre de recherche :
+*   `"AI Agent Architecture"`
+*   `"Context Window Management"`
+*   `"Large Language Model Reasoning"`
+*   `"AI Governance Framework"`
+*   `"Research Scientist DeepMind"`
+*   `"Technical Staff OpenAI"`
+
+### **B. Les Rôles à Cibler (Hiérarchie)**
+1.  **🥇 Le Graal : Research Scientist / Research Engineer**
+    *   *Pourquoi eux ?* Ils comprennent le problème technique (Amnésie). Ils cherchent des solutions nouvelles.
+    *   *Où ?* Google DeepMind, OpenAI, Anthropic, Microsoft Research.
+2.  **🥈 L'Allié : Technical Product Manager (TPM) - AI Platform**
+    *   *Pourquoi eux ?* Ils cherchent des outils pour leurs équipes.
+    *   *Où ?* Startups IA (Cohere, Mistral), Google Cloud AI.
+3.  **🥉 Le Mentor : Senior Software Engineer (AI focus)**
+    *   *Pourquoi eux ?* Ils sont accessibles et peuvent faire remonter l'info.
+
+### **C. La Méthode d'Approche par Canal**
+
+#### **Sur LinkedIn (Le Professionnel)**
+*   **Stratégie** : Connexion + Note (Toujours ajouter une note).
+*   **La Note (300 caractères)** : *"Bonjour [Prénom], je travaille sur un framework expérimental pour résoudre l'oubli contextuel des Agents IA. J'aimerais beaucoup avoir votre critique technique sur mon approche architecturale. Cdt, NT PARI"*
+
+#### **Sur X / Twitter (Le Scientifique)**
+*   **Stratégie** : Reply pertinent sous un thread.
+*   **Action** : Cherchez un thread où ils parlent de "LLM limitations" ou "Memory".
+*   **Le Reply** : *"Interesting take. I faced the same memory drift issue and built a biological-inspired framework (G-Genome) to decouple context from the LLM. It achieved 100% persistency in my tests. Would love your thoughts on the architecture: [Lien GitHub]"*
+
+---
+
+## 3. LE KIT DE CONTACT (SCRIPTS)
 
 ### **Cible : Chercheur Senior / Lead R&D**
 *(Exemple : Personne travaillant sur "AI Memory" ou "Agentic Frameworks")*
