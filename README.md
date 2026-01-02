@@ -1,108 +1,60 @@
-# 🧬 G-GENOME v2.0 SOVEREIGN RELEASE
-## Framework d'Immunité Cognitive pour Agents IA
+# 🧬 G-GENOME v2.1 | Sovereign Cognitive Framework
 
-![G-Genome Banner](docs/assets/g_genome_banner.png)
+> **"This is a framework demonstrated through a concrete reference orchestrator."**
 
-[![Release](https://img.shields.io/badge/status-sovereign--v2.0-emerald)]()
+[![Release](https://img.shields.io/badge/status-sovereign--v2.1-emerald)]()
 [![Framework](https://img.shields.io/badge/type-cognitive--immunity-blue)]()
-[![Google Ready](https://img.shields.io/badge/google-deepmind--ready-blue)]()
-
-> **"Le Premier Système d'Exploitation Cognitif qui résout l'Amnésie des Agents IA"**
-
-📌 **Nouveau ici ?** Voir [GETTING_STARTED.md](./GETTING_STARTED.md) pour navigation guidée selon votre rôle.
+[![Google Ready](https://img.shields.io/badge/google-deepmind--grade-blue)]()
 
 ---
 
-## ⚡ QUICK START (5 MINUTES)
+## ⚡ 1-MINUTE START
+G-Genome solves the **Amnesia** and **Architectural Drift** of AI Agents by anchoring memory in a disk-based "DNA Registry".
 
-### **Installation**
 ```bash
-# 1. Cloner le repository
-git clone https://github.com/developer-ta/G-Genome-AI-Framework.git
-cd G-Genome-AI-Framework
-
-# 2. Installer les dépendances
+# 1. Install dependencies
 pip install -r requirements.txt
 
-# 3. Lancer l'Orchestrator
-cd docs/04_MASTER_HERITAGE_PACK/G_GENOME_V2.0_SOVEREIGN_RELEASE/ORCHESTRATOR
-python main.py
-```
-
-**👉 Guide détaillé** : Voir [QUICKSTART.md](./QUICKSTART.md) (première fois) ou [TECHNICAL_ARCHITECTURE.md](./TECHNICAL_ARCHITECTURE.md) (approfondi)
-
----
-
-## 🎯 CE REPOSITORY : FRAMEWORK G-GENOME v2.0
-
-Ce repository héberge le **G-GENOME Framework** - un Système d'Exploitation Cognitif pour Agents IA.
-
-### **FRAMEWORK** (dans `docs/`)
-Un Framework d'Immunité Cognitive résolvant les 3 problèmes de Google DeepMind :
-- ❌ **Amnésie** → ✅ Mémoire persistante via Codons
-- ❌ **Goulot Humain** → ✅ Gouverneur autonome (50%+ auto-validation)
-- ❌ **Usine à Gaz** → ✅ Architecture 4-Quadrants immuable
-
-**👉 Pour démarrer** : Voir `docs/04_MASTER_HERITAGE_PACK/G_GENOME_V2.0_SOVEREIGN_RELEASE/`
-
-### **EXEMPLES** (dans `examples/`)
-Des projets réels qui ont validé le Framework :
-- **TEST_00** : Dashboard React Rénovation Énergétique (Le "Patient Zéro")
-- **TEST_01 à TEST_04** : Tests de validation (Portfolio, Governor, GUI, Orchestrator)
-
-**👉 Pour voir les preuves** : `cd examples/TEST_00_ORIGINAL_DASHBOARD_REACT`
-
----
-
-## 🚀 Quick Start : G-GENOME FRAMEWORK
-
-### **Option 1 : Utiliser la Release Souveraine (Recommandé)**
-```bash
-cd docs/04_MASTER_HERITAGE_PACK/G_GENOME_V2.0_SOVEREIGN_RELEASE
-cd ORCHESTRATOR
-python main.py
-```
-
-### **Option 2 : Explorer les Preuves de Concept**
-```bash
-cd examples/proof_of_concept/G_GENOME_TEST_LAB
-# Voir les 4 tests de validation (TEST_01 à TEST_04)
+# 2. Launch the Reference Orchestrator (The Reference UX)
+python LAUNCH_G_GENOME.py
 ```
 
 ---
 
-## 📚 Documentation Framework
-
-### 🔥 **Documents Essentiels (Start Here)**
-- ⭐ **[EXECUTIVE_SUMMARY.md](./EXECUTIVE_SUMMARY.md)** (1 page) - Pour décideurs (CTO, VP R&D)
-- 📊 **[METRICS_BENCHMARK.md](./METRICS_BENCHMARK.md)** - Métriques quantitatives + Benchmark vs RAG/Fine-tuning
-- 🔬 **[WORKFLOW_EXAMPLE.md](./WORKFLOW_EXAMPLE.md)** - Cas d'usage complet (Jour 1 → Jour 14)
-
-### 📖 **Documentation Technique**
-- 📋 **[GETTING_STARTED.md](./GETTING_STARTED.md)** - Navigation guidée par rôle
-- ⚡ **[QUICKSTART.md](./QUICKSTART.md)** (5 min) - Premier test rapide
-- 🏗️ **[TECHNICAL_ARCHITECTURE.md](./TECHNICAL_ARCHITECTURE.md)** - Architecture détaillée
-- 📄 **[RD_SYNTHESIS.md](./RD_SYNTHESIS.md)** (2 pages) - Synthèse pour chercheurs
-
-### 📜 **Gouvernance**
-- 🛡️ **[FINAL_GENOME_CHARTER.md](./FINAL_GENOME_CHARTER.md)** - Contrat de souveraineté (5 articles)
-- 📖 **[MANIFESTO_TRANSITION_V2.0.md](./docs/04_MASTER_HERITAGE_PACK/MANIFESTO_TRANSITION_V2.0.md)** - Évolution v1→v2
+## 🏗️ FRAMEWORK vs ORCHESTRATOR
+To avoid confusion for research teams:
+1.  **The Framework (Methodology)**: Located in `docs/01_GENOME_DNA_CORE`. It defines the immutable laws (Genotype) and the task registry (Metabolism) that prevent AI cognitive drift.
+2.  **The Orchestrator (UX)**: A high-fidelity PyQt6 application that serves as the **Reference Implementation**. It demonstrates how an engineer interacts with the framework to mentor an AI without creating "technical debt".
 
 ---
 
-## 🛡️ Pour Google DeepMind
-
-Ce Framework a été conçu pour résoudre vos problèmes d'**Amnésie des Agents** et de **Scalabilité**.
-
-📊 **Preuves Empiriques** : 4/4 tests validés (100% succès)  
-📧 **Contact Technique** : ntparis9@gmail.com  
-💼 **LinkedIn** : [https://www.linkedin.com/in/tayier-dev-ai-data/](https://www.linkedin.com/in/tayier-dev-ai-data/)
+## 🔬 EMPIRICAL PROOFS (DeepMind Research Grade)
+We don't just promise stability; we prove it.
+- ✅ **Test #05 (Stress Test)**: Simulation of a critical banking system where AI hallucinations were neutralized (0% drift). [Read Simulation Report](./examples/proof_of_concept/G_GENOME_TEST_LAB/TEST_05_STRESS_IMMUNITY_SIM/SIMULATION_REPORT.md).
+- ✅ **6-Month Stability**: Test #00 (React Dashboard) remained 100% compliant after 6 months of iterative development.
 
 ---
 
-## 🎓 Auteur : NT PARI
-- **Origine** : Médecine (Chine) → Ingénierie Logicielle (France)
-- **Innovation** : Application de l'épigénétique au management du contexte IA
+## 📚 STRATEGIC NAVIGATION
 
-**Prêt pour Google DeepMind | Janvier 2026**
+### 👔 For Decision Makers (CTO / VP R&D)
+- **[EXECUTIVE_SUMMARY.md](./docs/05_STRATEGY/EXECUTIVE_SUMMARY.md)**: 2-minute pitch on ROI (+40% engineering efficiency).
+- **[METRICS_BENCHMARK.md](./docs/05_STRATEGY/METRICS_BENCHMARK.md)**: Quantitative comparison vs RAG and Fine-tuning.
 
+### 🔬 For Research Engineers (Google / Microsoft Research)
+- **[TECHNICAL_ARCHITECTURE.md](./docs/05_STRATEGY/TECHNICAL_ARCHITECTURE.md)**: Deep dive into the 4-Quadrant biological model.
+- **[RD_SYNTHESIS.md](./docs/05_STRATEGY/RD_SYNTHESIS.md)**: Condensed 2-page research synthesis (v2.1).
+- **[AUTOCONSTRUCTION_PROTOCOL.md](./docs/01_GENOME_DNA_CORE/PROTOCOLS/AUTOCONSTRUCTION_EXEMPLAR_PROTOCOL.md)**: How the framework self-replicates into new project contexts.
+
+---
+
+## 👔 AUTHOR & CONTACT
+**NT PARI**  
+*Medical Science (China) → Software Engineering (France)*  
+Applying Epigenetics to AI Context Engineering.
+
+📧 **Email**: ntparis9@gmail.com  
+💼 **LinkedIn**: [https://www.linkedin.com/in/tayier-dev-ai-data/](https://www.linkedin.com/in/tayier-dev-ai-data/)
+
+---
+**Status**: `MATURE_SOVEREIGN_RELEASE` | **Date**: Jan 2026

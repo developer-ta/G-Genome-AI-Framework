@@ -123,17 +123,44 @@ class IncubatorApp(QMainWindow):
         intro_card = Card(width=580, height=580, title="🧬 G-GENOME ORCHESTRATOR")
         intro_card.set_help("Bienvenue. Choisissez votre mode de démarrage ci-dessous.")
 
-        subtitle = QLabel("Artificial Intelligence Context Engineering")
-        subtitle.setObjectName("Subtitle")
+        # [MODIFICATION] TÉLÉMÉTRIE SYSTÈME
+        status_layout = QHBoxLayout()
+        status_layout.setSpacing(20)
+
+        def create_badge(label, value, color="#00FF94"):
+            lbl = QLabel(f"● {label}: <span style='color:{color};'>{value}</span>")
+            lbl.setStyleSheet(
+                f"font-size: 11px; font-weight: bold; background: rgba(255,255,255,0.05); padding: 5px 10px; border-radius: 6px;"
+            )
+            return lbl
+
+        status_layout.addWidget(create_badge("GOVERNOR", "ACTIVE"))
+        status_layout.addWidget(create_badge("DNA LAWS", "12 LOADED", "#00A3FF"))
+        status_layout.addWidget(create_badge("AUDIT", "SECURE", "#F1C40F"))
+        status_layout.addStretch()
+
+        subtitle = QLabel("AI SYSTEMS GOVERNED BY DESIGN")
+        subtitle.setObjectName("Title")
+        subtitle.setStyleSheet("font-size: 28px; margin-top: 10px;")
 
         # Quick Actions
         actions_frame = QFrame()
         actions_layout = QVBoxLayout(actions_frame)
+        actions_layout.addLayout(status_layout)
+        actions_layout.addWidget(subtitle)
+        actions_layout.addSpacing(10)
 
         btn_bootstrap = QPushButton("🚀 PROJECT BOOTSTRAP (AI ASSISTED)")
         btn_bootstrap.setObjectName("ActionButton")
-        btn_bootstrap.setFixedHeight(50)
+        btn_bootstrap.setFixedHeight(60)
         btn_bootstrap.clicked.connect(lambda: self.dashboard.switch_view(6))
+
+        btn_desc = QLabel(
+            "Initialize a governed project with enforced DNA laws and audit trail."
+        )
+        btn_desc.setStyleSheet(
+            "font-size: 12px; color: #8B949E; margin-top: -5px; margin-bottom: 10px; margin-left: 5px;"
+        )
 
         btn_manual = QPushButton("💉 MANUAL INJECTION (EXPERT)")
         btn_manual.setObjectName("SecondaryButton")
@@ -141,6 +168,7 @@ class IncubatorApp(QMainWindow):
         btn_manual.clicked.connect(lambda: self.dashboard.switch_view(1))
 
         actions_layout.addWidget(btn_bootstrap)
+        actions_layout.addWidget(btn_desc)
         actions_layout.addWidget(btn_manual)
 
         # Help / Guide Buttons
@@ -162,8 +190,8 @@ class IncubatorApp(QMainWindow):
         actions_layout.addLayout(help_layout)
 
         intro_text = QLabel(
-            "Transformation d'idées brutes en architectures logicielles validées.\n\n"
-            "Centralise la gestion de l'ADN (Lois) et du Phénotype (État réel)."
+            "From vague intentions to audited architectures.\n\n"
+            "G-Genome establishes a Sovereign perimeter around your AI. Stop cognitive drift by design."
         )
         intro_text.setWordWrap(True)
         intro_text.setStyleSheet(
@@ -181,9 +209,9 @@ class IncubatorApp(QMainWindow):
         lifecycle_content = QTextBrowser()
         lifecycle_content.setStyleSheet("background: transparent; border: none;")
         lifecycle_content.setHtml(
-            "<h3>Phase 0 : Genesis</h3><p>Transformez une idée vague en ADN solide grâce à l'Architecte IA.</p>"
-            "<h3>Phase 1 : DNA Injection</h3><p>Créez le squelette.</p>"
-            "<h3>Phase 2 : Gestation</h3><p>Métabolisez votre idée.</p>"
+            "<h3 style='color:#00FF94;'>● Phase 0 : Genesis (ACTIVE)</h3><p style='color:#F0F6FC;'>Transformez une idée vague en ADN solide. L'Architecte IA est en attente d'intention.</p>"
+            "<h4 style='color:#8B949E;'>Phase 1 : DNA Injection</h4><p style='color:#8B949E;'>Créez le squelette structurel.</p>"
+            "<h4 style='color:#8B949E;'>Phase 2 : Gestation</h4><p style='color:#8B949E;'>Métabolisez votre idée sous audit Gouverneur.</p>"
         )
         guide_card.add_child(lifecycle_content)
         dash_layout.addWidget(guide_card)

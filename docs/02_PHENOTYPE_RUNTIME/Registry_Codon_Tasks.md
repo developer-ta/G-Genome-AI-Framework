@@ -10,6 +10,8 @@
 | **C-001** | Initialisation DNA Core | `VALIDATED` | `HUMAN_SIGNED` | DNA lu, Homeostasis stable. | docs/ |
 | **C-002** | Test Blanc Portfolio | `VALIDATED` | `HUMAN_SIGNED` | Structure ordonnée, Types OK. | src/ |
 | **C-003** | Audit Nomenclature v1.2.2 | `VALIDATED` | `GOVERNOR_SIGNED` | Tech_Bio_Role appliquée. | docs/ |
+| **C-004** | System_Purification_Simulation | `VALIDATED` | `HUMAN_SIGNED` | Racine propre, Exemplaire v2.1 stable. | ROOT/ |
+| **C-005** | Autoconstruction_Exemplar_Protocol | `VALIDATED` | `HUMAN_SIGNED` | Capacité de réplication par imitation. | dna/ |
 
 ---
 

@@ -180,11 +180,19 @@ class GovernorAuditEngine:
                     status_pattern, r"\1`GOVERNOR_SIGNED`\2", registry_content
                 )
                 auto_validated += 1
+            elif risk_level == "MEDIUM_RISK":
+                print(
+                    f"   ⚠️  AVERTISSEMENT : Risque Modéré. Mise en attente de clarification."
+                )
+                status_pattern = rf"(\|\s*\*\*{re.escape(task['id'])}\*\*\s*\|\s*{re.escape(task['name'])}\s*\|\s*)`DRAFT`(\s*\|)"
+                registry_content = re.sub(
+                    status_pattern, r"\1`PENDING_CLARIFICATION`\2", registry_content
+                )
+                blocked += 1
             else:
                 print(
                     f"   🚫 BLOCAGE : Validation humaine requise (Risque {risk_level})."
                 )
-                # [SYNTAXE] Utilise re.sub pour marquer la tâche comme nécessitant une signature humaine.
                 status_pattern = rf"(\|\s*\*\*{re.escape(task['id'])}\*\*\s*\|\s*{re.escape(task['name'])}\s*\|\s*)`DRAFT`(\s*\|)"
                 registry_content = re.sub(
                     status_pattern, r"\1`NEED_HUMAN_SIGNATURE`\2", registry_content
