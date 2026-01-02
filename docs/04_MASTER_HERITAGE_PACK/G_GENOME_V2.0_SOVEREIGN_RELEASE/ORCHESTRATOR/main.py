@@ -21,97 +21,6 @@ from PyQt6.QtWidgets import (
     QComboBox,
     QTextBrowser,
 )
-
-# ... (Previous imports)
-
-# ...
-
-    # --- VIEWS (Les Phénotypes) ---
-
-    def _view_home(self):
-        # ... (HOME VIEW REMAINS UNCHANGED)
-        return page
-
-    def _view_genesis(self):
-        # [SYNTAXE] Vue dédiée au 'Genesis Lab' (Zone de conception initiale).
-        # [RÔLE] Permet à l'utilisateur de générer son ADN de projet via un prompt expert (Bootstrap d'immunité).
-        page = QWidget()
-        layout = QVBoxLayout(page)
-
-        card = Card(width=900, height=600, title="🧪 GENESIS LAB (Idea Incubator)")
-        card.set_help(
-            "GENESIS MODE :\n\n- Step 1: Décrivez votre projet ici.\n- Step 2: Cliquez 'Generate Prompt'.\n- Step 3: Collez le résultat dans votre Agent IA (ChatGPT/Copilot) pour obtenir votre ADN."
-        )
-
-        # Input Zone
-        lbl_input = QLabel("1. DESCRIBE YOUR PROJECT IDEA:")
-        lbl_input.setStyleSheet("color: #8B949E; font-weight: bold; margin-top: 10px;")
-
-        self.genesis_input = QTextEdit()
-        self.genesis_input.setPlaceholderText(
-            "Example: 'I want a secure extensive E-Commerce platform for B2B shoes with Python Backend...'"
-        )
-        self.genesis_input.setStyleSheet(
-            "background-color: #0D1117; color: #C9D1D9; border: 1px solid #30363D; padding: 10px;"
-        )
-
-        # Action Button
-        btn_gen = QPushButton("✨ GENERATE IMMUNITY PROMPT")
-        btn_gen.setObjectName("ActionButton")
-        btn_gen.setFixedHeight(50)
-        btn_gen.clicked.connect(self._action_generate_genesis_prompt)
-
-        # Output/Instruction Zone
-        lbl_output = QLabel("2. YOUR ARCHITECT PROMPT (Ready to Copy):")
-        lbl_output.setStyleSheet("color: #8B949E; font-weight: bold; margin-top: 20px;")
-        
-        self.genesis_output = QTextEdit()
-        self.genesis_output.setReadOnly(True)
-        self.genesis_output.setStyleSheet(
-            "background-color: #010409; color: #58A6FF; font-family: 'Consolas'; border: 1px dashed #30363D;"
-        )
-
-        btn_copy = QPushButton("📋 COPY TO CLIPBOARD")
-        btn_copy.setObjectName("SecondaryButton")
-        btn_copy.clicked.connect(self._copy_genesis_clipboard)
-
-        card.add_child(lbl_input)
-        card.add_child(self.genesis_input)
-        card.add_child(btn_gen)
-        card.add_child(lbl_output)
-        card.add_child(self.genesis_output)
-        card.add_child(btn_copy)
-
-        layout.addWidget(card)
-        layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        return page
-
-    # ... (INJECTOR VIEW)
-
-    def _view_cortex(self):
-        page = QWidget()
-        layout = QVBoxLayout(page)
-
-        top_layout = QHBoxLayout()
-
-        # A. Cortex
-        cortex_card = Card(width=600, height=450, title="🧠 THE CORTEX")
-        cortex_card.set_help(
-            "ZONE D'INTENTION :\n\n- Tapez ou dictez votre idée ici (Win+H).\n- 🌱 GÉNÉRER SUBSTRAT : L'IA transforme votre texte en documentation structurée (Cahier des charges)."
-        )
-
-        self.cortex_input = QTextEdit()
-        self.cortex_input.setPlaceholderText("Type your chaotic idea here...")
-        cortex_card.add_child(self.cortex_input)
-
-        btn_gen = QPushButton("🌱 GENERATE SUBSTRATE")
-        btn_gen.setObjectName("ActionButton")
-        btn_gen.clicked.connect(self._action_generate_substrate)
-        cortex_card.add_child(btn_gen)
-        top_layout.addWidget(cortex_card)
-
-        # B. Immune
-        immune_card = Card(width=400, height=450, title="🛡️ IMMUNE SYSTEM")
 from PyQt6.QtCore import Qt, QFile, QTextStream, QTimer
 from PyQt6.QtGui import QIcon, QFont
 
@@ -120,48 +29,16 @@ from src.presentation.layouts.DashboardLayout import DashboardLayout
 from src.presentation.components.Card.Card import Card
 from src.domain.services.GenomeInjector import GenomeInjector
 
+
 class IncubatorApp(QMainWindow):
     """
     [ARCHITECTURE] : Entry Point (Main Window)
     [RÔLE] : Orchestrateur G-Genome v1.7.
     """
+
     def __init__(self):
         super().__init__()
         self.setWindowTitle("G-GENOME ORCHESTRATOR v1.7")
-
-    # ... (Previous Init Code remains implicitly same until we reach logic methods) ...
-
-    # [AJOUT] Fonction système pour déclencher la dictée Windows
-    def _trigger_voice_typing(self):
-        """
-        [FONCTION] : Simule l'appui simultané sur Win + H.
-        [RÔLE] : Lance l'outil de dictée native de Windows pour l'utilisateur.
-        """
-        QMessageBox.information(
-            self, "Voice Input", "Voice Input (Win+H) simulated (Debug Mode)."
-        )
-        # try:
-        #     user32 = ctypes.windll.user32
-        #     VK_LWIN = 0x5B
-        #     VK_H = 0x48
-        #     KEYEVENTF_KEYUP = 0x0002
-
-        #     # Press
-        #     user32.keybd_event(VK_LWIN, 0, 0, 0)
-        #     user32.keybd_event(VK_H, 0, 0, 0)
-        #     time.sleep(0.05)
-        #     # Release
-        #     user32.keybd_event(VK_H, 0, KEYEVENTF_KEYUP, 0)
-        #     user32.keybd_event(VK_LWIN, 0, KEYEVENTF_KEYUP, 0)
-
-        #     # Focus info (Optional)
-        #     self.terminal.appendPlainText("🎤 Voice Input Triggered (Win+H)")
-        # except Exception as e:
-        #     QMessageBox.warning(
-        #         self, "Voice Error", f"Could not trigger voice input: {e}"
-        #     )
-
-        # ... (Views follow) ...
         self.resize(1200, 850)
 
         # 1. Chemins des Synapses (Communication Filesystem)
@@ -211,9 +88,7 @@ class IncubatorApp(QMainWindow):
         ]
         missing = []
         for f in critical_files:
-            full_path = os.path.join(
-                self.master_path, "G_GENOME_BLANK_TEST_LAB/TEST_04_INCUBATOR_PROPER", f
-            )
+            full_path = os.path.join(self.master_path, f)
             if not os.path.exists(full_path):
                 missing.append(f)
 
@@ -225,7 +100,9 @@ class IncubatorApp(QMainWindow):
             QMessageBox.warning(self, "🛡️ IMMUNE SYSTEM ALERT", msg)
 
     def _load_theme(self):
-        theme_path = os.path.join(os.path.dirname(__file__), "src/presentation/config/theme.qss")
+        theme_path = os.path.join(
+            os.path.dirname(__file__), "src/presentation/config/theme.qss"
+        )
         qss_file = QFile(theme_path)
         if qss_file.open(QFile.OpenModeFlag.ReadOnly | QFile.OpenModeFlag.Text):
             self.setStyleSheet(
@@ -238,23 +115,18 @@ class IncubatorApp(QMainWindow):
     # --- VIEWS (Les Phénotypes) ---
 
     def _view_home(self):
-        # [SYNTAXE] Utilise un 'QHBoxLayout' pour créer une structure en deux colonnes (Dashboard moderne).
-        # [RÔLE] Présente l'identité du projet et le guide du cycle de vie à l'utilisateur dès l'ouverture.
         page = QWidget()
         layout = QVBoxLayout(page)
         dash_layout = QHBoxLayout()
 
         # COLUMN 1: Introduction
         intro_card = Card(width=580, height=580, title="🧬 G-GENOME ORCHESTRATOR")
-
-        # [SYNTAXE] Titre plus explicite pour le Dashboard
         intro_card.set_help("Bienvenue. Choisissez votre mode de démarrage ci-dessous.")
 
         subtitle = QLabel("Artificial Intelligence Context Engineering")
         subtitle.setObjectName("Subtitle")
 
-        # [SYNTAXE] Zone de boutons d'action rapide (Quick Actions)
-        # [RÔLE] Guide l'utilisateur vers les différents modes d'initialisation (Genesis vs Injector).
+        # Quick Actions
         actions_frame = QFrame()
         actions_layout = QVBoxLayout(actions_frame)
 
@@ -271,7 +143,7 @@ class IncubatorApp(QMainWindow):
         actions_layout.addWidget(btn_bootstrap)
         actions_layout.addWidget(btn_manual)
 
-        # [SYNTAXE] Ajout des boutons d'aide distincts
+        # Help / Guide Buttons
         help_layout = QHBoxLayout()
         btn_guide = QPushButton("📘 OPEN GUIDE")
         btn_guide.setFixedHeight(30)
@@ -321,7 +193,6 @@ class IncubatorApp(QMainWindow):
 
     def _view_genesis(self):
         # [SYNTAXE] Vue dédiée au 'Genesis Lab' (Zone de conception initiale).
-        # [RÔLE] Permet à l'utilisateur de générer son ADN de projet via un prompt expert (Bootstrap d'immunité).
         page = QWidget()
         layout = QVBoxLayout(page)
 
@@ -330,7 +201,6 @@ class IncubatorApp(QMainWindow):
             "GENESIS MODE :\n\n- Step 1: Décrivez votre projet ici.\n- Step 2: Cliquez 'Generate Prompt'.\n- Step 3: Collez le résultat dans votre Agent IA (ChatGPT/Copilot) pour obtenir votre ADN."
         )
 
-        # Input Zone
         lbl_input = QLabel("1. DESCRIBE YOUR PROJECT IDEA:")
         lbl_input.setStyleSheet("color: #8B949E; font-weight: bold; margin-top: 10px;")
 
@@ -342,21 +212,11 @@ class IncubatorApp(QMainWindow):
             "background-color: #0D1117; color: #C9D1D9; border: 1px solid #30363D; padding: 10px;"
         )
 
-        # [AJOUT] Voice Button
-        btn_voice = QPushButton("🎤 VOICE INPUT (Win+H)")
-        btn_voice.setFixedHeight(30)
-        btn_voice.setStyleSheet(
-            "background-color: #21262D; color: #8B949E; border: 1px solid #30363D;"
-        )
-        btn_voice.clicked.connect(self._trigger_voice_typing)
-
-        # Action Button
         btn_gen = QPushButton("✨ GENERATE IMMUNITY PROMPT")
         btn_gen.setObjectName("ActionButton")
         btn_gen.setFixedHeight(50)
         btn_gen.clicked.connect(self._action_generate_genesis_prompt)
 
-        # Output/Instruction Zone
         lbl_output = QLabel("2. YOUR ARCHITECT PROMPT (Ready to Copy):")
         lbl_output.setStyleSheet("color: #8B949E; font-weight: bold; margin-top: 20px;")
 
@@ -372,7 +232,6 @@ class IncubatorApp(QMainWindow):
 
         card.add_child(lbl_input)
         card.add_child(self.genesis_input)
-        card.add_child(btn_voice)
         card.add_child(btn_gen)
         card.add_child(lbl_output)
         card.add_child(self.genesis_output)
@@ -383,8 +242,6 @@ class IncubatorApp(QMainWindow):
         return page
 
     def _action_generate_genesis_prompt(self):
-        # [SYNTAXE] Lecture du Template Maître et injection de l'idée utilisateur.
-        # [RÔLE] Crée le prompt final que l'utilisateur donnera à son LLM.
         user_idea = self.genesis_input.toPlainText()
         if not user_idea.strip():
             QMessageBox.warning(
@@ -392,7 +249,6 @@ class IncubatorApp(QMainWindow):
             )
             return
 
-        # Load Template
         template_path = os.path.join(
             self.master_path,
             "docs/01_GENOME_DNA_CORE/PROTOCOLS/GENESIS_PROMPT_MASTER.md",
@@ -400,7 +256,6 @@ class IncubatorApp(QMainWindow):
         if os.path.exists(template_path):
             with open(template_path, "r", encoding="utf-8") as f:
                 template = f.read()
-                # Inject User Idea at the end
                 final_prompt = template.replace(
                     '[DÉCRIVEZ VOTRE PROJET ICI : "Je veux créer une app de..." ]',
                     user_idea,
@@ -460,27 +315,17 @@ class IncubatorApp(QMainWindow):
     def _view_cortex(self):
         page = QWidget()
         layout = QVBoxLayout(page)
-
         top_layout = QHBoxLayout()
 
         # A. Cortex
         cortex_card = Card(width=600, height=450, title="🧠 THE CORTEX")
         cortex_card.set_help(
-            "ZONE D'INTENTION :\n\n- Tapez ou dictez votre idée ici (Win+H).\n- 🌱 GÉNÉRER SUBSTRAT : L'IA transforme votre texte en documentation structurée (Cahier des charges)."
+            "ZONE D'INTENTION :\n\n- Tapez votre idée ici.\n- 🌱 GÉNÉRER SUBSTRAT : L'IA transforme votre texte en documentation structurée."
         )
 
         self.cortex_input = QTextEdit()
         self.cortex_input.setPlaceholderText("Type your chaotic idea here...")
         cortex_card.add_child(self.cortex_input)
-
-        # [AJOUT] Voice Button for Cortex
-        btn_voice_cortex = QPushButton("🎤 VOICE INPUT (Win+H)")
-        btn_voice_cortex.setFixedHeight(30)
-        btn_voice_cortex.setStyleSheet(
-            "background-color: #21262D; color: #8B949E; border: 1px solid #30363D;"
-        )
-        btn_voice_cortex.clicked.connect(self._trigger_voice_typing)
-        cortex_card.add_child(btn_voice_cortex)
 
         btn_gen = QPushButton("🌱 GENERATE SUBSTRATE")
         btn_gen.setObjectName("ActionButton")
@@ -491,7 +336,7 @@ class IncubatorApp(QMainWindow):
         # B. Immune
         immune_card = Card(width=400, height=450, title="🛡️ IMMUNE SYSTEM")
         immune_card.set_help(
-            "CONTRÔLE DE SÉCURITÉ :\n\n- 🟢 LOW RISK : Tâches validées automatiquement.\n- 🔴 HIGH RISK : Tâches nécessitant une signature humaine.\n- 🚀 LAUNCH : Démarre l'exécution une fois les risques levés."
+            "CONTRÔLE DE SÉCURITÉ :\n\n- 🟢 LOW RISK : Tâches validées.\n- 🔴 HIGH RISK : Tâches nécessitant une signature."
         )
 
         self.task_list = QListWidget()
@@ -508,9 +353,7 @@ class IncubatorApp(QMainWindow):
 
         # C. Nervous System
         nervous_card = Card(width=1000, height=250, title="⚡ NERVOUS SYSTEM")
-        nervous_card.set_help(
-            "MONITEUR D'EXÉCUTION :\n\nAffiche les logs techniques et la progression réelle de la création des fichiers."
-        )
+        nervous_card.set_help("MONITEUR D'EXÉCUTION :\n\nAffiche les logs techniques.")
 
         self.terminal = QPlainTextEdit()
         self.terminal.setObjectName("Terminal")
@@ -524,12 +367,9 @@ class IncubatorApp(QMainWindow):
         return page
 
     def _view_library(self):
-        # [SYNTAXE] Crée une navigation secondaire (Navbar horizontale) couplée à un 'QTextBrowser'.
-        # [RÔLE] Centralise l'accès aux documents de référence (ADN) sans forcer l'utilisateur à naviguer dans les fichiers.
         page = QWidget()
         layout = QVBoxLayout(page)
 
-        # Horizontal Navbar
         navbar_card = QFrame()
         navbar_card.setObjectName("NavbarCard")
         nav_layout = QHBoxLayout(navbar_card)
@@ -554,7 +394,6 @@ class IncubatorApp(QMainWindow):
 
         for label, path in docs:
             btn = QPushButton(label)
-            # [SYNTAXE] Utilisation d'une lambda 'p=path' pour capturer le chemin au moment de la création du bouton.
             abs_path = os.path.join(self.master_path, path)
             btn.clicked.connect(lambda checked, p=abs_path: self._load_doc(p))
             nav_layout.addWidget(btn)
@@ -564,8 +403,6 @@ class IncubatorApp(QMainWindow):
         return page
 
     def _load_doc(self, path):
-        # [SYNTAXE] Lecture 'UTF-8' simple et conversion Markdown brute vers HTML (Tags H1/H2).
-        # [RÔLE] Injecte le contenu textuel d'un document DNA dans l'interface pour consultation immédiate.
         if os.path.exists(path):
             with open(path, "r", encoding="utf-8") as f:
                 content = f.read()
@@ -585,15 +422,12 @@ class IncubatorApp(QMainWindow):
         layout = QVBoxLayout(page)
         layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
         card = Card(width=800, height=600, title="🚀 GENOME READY")
-        card.set_help(
-            "VOTRE MÉTABOLISME EST PRÊT :\n\nL'architecture a été injectée. Le prompt ci-dessous contient toute l'intelligence nécessaire pour que votre agent IA comprenne le projet instantanément."
-        )
+        card.set_help("VOTRE MÉTABOLISME EST PRÊT.")
 
         lbl = QLabel("The biological structure is stable. Direct your Agent now:")
         lbl.setStyleSheet("font-size: 16px; color: #8B949E; margin-bottom: 10px;")
         card.add_child(lbl)
 
-        # The Master Prompt Box
         self.master_prompt = QTextEdit()
         self.master_prompt.setReadOnly(True)
         self.master_prompt.setPlainText(
@@ -615,7 +449,6 @@ class IncubatorApp(QMainWindow):
         self.master_prompt.setFixedHeight(180)
         card.add_child(self.master_prompt)
 
-        # Action Buttons
         btn_layout = QHBoxLayout()
 
         btn_copy = QPushButton("📋 COPY MASTER PROMPT")
@@ -637,11 +470,7 @@ class IncubatorApp(QMainWindow):
     def _copy_prompt(self):
         clipboard = QApplication.clipboard()
         clipboard.setText(self.master_prompt.toPlainText())
-        QMessageBox.information(
-            self,
-            "🧬 BIO-LINK",
-            "Master Prompt copied to clipboard!\nYour AI Agent is now ready.",
-        )
+        QMessageBox.information(self, "🧬 BIO-LINK", "Master Prompt copied!")
 
     # --- LOGIC ---
 
@@ -656,7 +485,6 @@ class IncubatorApp(QMainWindow):
         self.terminal.appendPlainText(f"🧬 Gestation: Ingesting '{raw[:20]}...'")
         self.terminal.appendPlainText("🧠 AI Kernel: Synthesizing Substrate...")
 
-        # Mocking the AI response (todo.json creation)
         mock_tasks = [
             {"id": "G1", "name": "Synthesize DNA Core", "risk": "LOW"},
             {"id": "G2", "name": "Inject Phenotype Layout", "risk": "LOW"},
@@ -688,7 +516,7 @@ class IncubatorApp(QMainWindow):
         layout = QVBoxLayout(page)
         card = Card(width=1000, height=700, title="🛡️ IMMUNITY LOGS (Technical Audit)")
         card.set_help(
-            "LOGS IMMUNITAIRES :\n\nCette section affiche le Registre des tâches et les rapports d'audit technique. C'est ici que vous vérifiez la conformité de l'ADN de votre projet."
+            "LOGS IMMUNITAIRES :\n\nCette section affiche le Registre des tâches."
         )
 
         self.log_browser = QTextBrowser()
