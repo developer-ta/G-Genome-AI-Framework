@@ -51,6 +51,13 @@ Actuellement (v2.0), G-Genome est un système d'exploitation nu. Il fournit la s
 - Un "App Store" des règles IA se crée.
 - Si 1000 dev utilisent la règle "Toujours normaliser les images en 256x256", elle devient un standard universel disponible pour tous.
 
+### **PHASE 4 : AUTO-GOUVERNANCE GÉNÉRATIVE (L'Architecte IA)**
+*Concept : Transformer le Framework de "Gardien" à "Architecte".*
+*   **Entrée** : L'humain dit *"Je veux une API bancaire sécurisée en Python"*.
+*   **Process** : Le Framework scanne le web pour trouver les standards (OWASP, PEP8, ISO 27001).
+*   **Sortie** : Il génère automatiquement le `Schema_Genome_Core.json` avec les meilleures lois.
+*   **Bénéfice** : Un développeur junior démarre avec les règles de gouvernance d'un Expert Senior.
+
 ---
 
 ## 💡 CAS D'USAGE FUTURS
