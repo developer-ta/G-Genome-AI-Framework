@@ -133,22 +133,36 @@ class IncubatorApp(QMainWindow):
         actions_frame = QFrame()
         actions_layout = QVBoxLayout(actions_frame)
 
-        btn_genesis = QPushButton("🚀 START WITH RAW IDEA (GENESIS)")
-        btn_genesis.setObjectName("ActionButton")
-        btn_genesis.setFixedHeight(50)
-        btn_genesis.clicked.connect(
-            lambda: self.dashboard.switch_view(6)
-        )  # Index 6 = Genesis Lab
+        btn_bootstrap = QPushButton("🚀 PROJECT BOOTSTRAP (AI ASSISTED)")
+        btn_bootstrap.setObjectName("ActionButton")
+        btn_bootstrap.setFixedHeight(50)
+        btn_bootstrap.clicked.connect(lambda: self.dashboard.switch_view(6))
 
-        btn_manual = QPushButton("💉 MANUAL INJECTION")
+        btn_manual = QPushButton("💉 MANUAL INJECTION (EXPERT)")
         btn_manual.setObjectName("SecondaryButton")
         btn_manual.setFixedHeight(40)
-        btn_manual.clicked.connect(
-            lambda: self.dashboard.switch_view(1)
-        )  # Index 1 = Injector
+        btn_manual.clicked.connect(lambda: self.dashboard.switch_view(1))
 
-        actions_layout.addWidget(btn_genesis)
+        actions_layout.addWidget(btn_bootstrap)
         actions_layout.addWidget(btn_manual)
+
+        # [SYNTAXE] Ajout des boutons d'aide distincts
+        help_layout = QHBoxLayout()
+        btn_guide = QPushButton("📘 OPEN GUIDE")
+        btn_guide.setFixedHeight(30)
+        btn_guide.clicked.connect(lambda: self.dashboard.switch_view(3))
+
+        btn_help = QPushButton("❓ HELP")
+        btn_help.setFixedHeight(30)
+        btn_help.clicked.connect(
+            lambda: QMessageBox.information(
+                self, "Help", "Select a mode to initialize your project."
+            )
+        )
+
+        help_layout.addWidget(btn_guide)
+        help_layout.addWidget(btn_help)
+        actions_layout.addLayout(help_layout)
 
         intro_text = QLabel(
             "Transformation d'idées brutes en architectures logicielles validées.\n\n"
