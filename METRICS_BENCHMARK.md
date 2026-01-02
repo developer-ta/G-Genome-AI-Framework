@@ -47,7 +47,7 @@ Session 3 ████████████████████ 100% cont
 ```
 
 **Données** :
-- **Projets Testés** : 5 (TEST_00 à TEST_04)
+- **Projets Testés** : 6 (TEST_00 à TEST_05)
 - **Durée Maximale** : 6 mois (TEST_00 Dashboard React)
 - **Taux de Perte Contexte** : **0%** (Registry_Codon_Tasks.md persistant)
 
@@ -198,4 +198,4 @@ G-Genome v2.0 (Prêt à l'emploi)
 
 **Status** : `METRICS_BENCHMARK_v2.0`  
 **Source Données** : Tests Empiriques (TEST_00 à TEST_04)  
-**Date** : 01 Janvier 2026
+**Date** : 02 Janvier 2026
