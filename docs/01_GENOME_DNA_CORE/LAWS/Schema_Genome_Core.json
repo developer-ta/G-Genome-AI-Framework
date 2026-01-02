@@ -1,9 +1,18 @@
 {
   "genome_metadata": {
-    "version": "1.8.0",
-    "codename": "CORTEX-ORCHESTRATOR",
+    "version": "2.1.0",
+    "codename": "CORTEX-ADAPTIVE-FOUNDATION",
     "status": "MASTER_CORE_RELEASE",
-    "last_mutation": "2026-01-01"
+    "last_mutation": "2026-01-02"
+  },
+  "adaptive_context": {
+    "syntax": "Optional Dictionary <String, Boolean>",
+    "role": "Defines active specialized modules (Web, AI, Security) for framework behavior adaptation.",
+    "active_modules": {
+      "web_react_module": false,
+      "ai_pytorch_module": false,
+      "security_high_level": true
+    }
   },
   "architectural_laws": {
     "structure": "4-QUADRANT_ISO_BIO",
