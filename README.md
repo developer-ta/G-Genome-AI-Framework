@@ -1,10 +1,15 @@
 # 🧬 G-GENOME v2.5 | Governed & Audited Framework
 
-> **"This is a framework demonstrated through a concrete reference orchestrator."**
+> **"This is the Structural Skeleton of the framework. The Cognitive Core is reserved."**
 
-[![Release](https://img.shields.io/badge/status-sovereign--v2.5-emerald)]()
-[![Framework](https://img.shields.io/badge/type-governed--architecture-blue)]()
+[![Release](https://img.shields.io/badge/status-public--preview-orange)]()
+[![Type](https://img.shields.io/badge/architecture-open--source-green)]()
 [![DeepMind Aligned](https://img.shields.io/badge/research-deepmind--aligned-blue)]()
+
+> ⚠️ **NOTE TO REVIEWERS:**
+> This repository contains the **Architectural Layer** (DNA Structure & Orchestrator UI).
+> The **Neural Governor Engine** (Autonomous Risk Assessment & Self-Healing Logic) is maintained in a private **Sovereign Edition** to ensure strict AI Safety & Alignment compliance.
+> *See `QUICKSTART_GOOGLE.md` for architecture details.*
 
 ---
 
