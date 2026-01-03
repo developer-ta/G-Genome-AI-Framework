@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use G-Genome in your research or production systems, please cite it as below."
+type: software
+title: "G-Genome: A Bio-Inspired Context Engineering Framework for Reliable AI Agents"
+version: 1.2.2
+date-released: 2025-12-30
+authors:
+  - family-names: "Tayierjiang"
+    given-names: "Tayier"
+    email: "ntparis9@gmail.com"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Independent Interdisciplinary Researcher"
+repository-code: "https://github.com/developer-ta/G-Genome-AI-Framework"
+url: "https://github.com/developer-ta/G-Genome-AI-Framework"
+abstract: >-
+  G-Genome is the first bio-inspired framework that provides persistent 
+  architectural DNA and autonomous immune system for AI agents. It solves 
+  Google's "Amnestic Agent Problem" by implementing epigenetic inheritance, 
+  autonomous governance (Governor), and architectural enforcement (Linter). 
+  The framework combines principles from genetics, epigenetics, and immunology 
+  with industrial-grade software engineering. Empirically validated with 2 
+  test cases achieving 100% success rate.
+keywords:
+  - artificial intelligence
+  - AI agents
+  - context engineering
+  - bio-inspired systems
+  - epigenetics
+  - autonomous governance
+  - architectural enforcement
+  - machine learning
+  - software engineering
+  - interdisciplinary research
+license: Apache-2.0
+preferred-citation:
+  type: software
+  title: "G-Genome: A Bio-Inspired Context Engineering Framework for Reliable AI Agents"
+  authors:
+    - family-names: "Tayierjiang"
+      given-names: "Tayier"
+      email: "ntparis9@gmail.com"
+  year: 2025
+  version: 1.2.2
+  url: "https://github.com/developer-ta/G-Genome-AI-Framework"
+  notes: >-
+    Original research combining medical knowledge (genetics, epigenetics, 
+    immunology) with software engineering to solve the Amnestic Agent Problem 
+    in AI systems. First framework to implement persistent architectural DNA 
+    with autonomous validation and cumulative learning across projects.

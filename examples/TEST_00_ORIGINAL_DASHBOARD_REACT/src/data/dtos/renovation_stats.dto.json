@@ -1,0 +1,142 @@
+[
+  {
+    "district": 1,
+    "private_total": 45000,
+    "private_renovated": 12000,
+    "social_total": 8000,
+    "social_renovated": 3400
+  },
+  {
+    "district": 2,
+    "private_total": 38000,
+    "private_renovated": 15000,
+    "social_total": 6500,
+    "social_renovated": 2800
+  },
+  {
+    "district": 3,
+    "private_total": 42000,
+    "private_renovated": 11000,
+    "social_total": 900,
+    "social_renovated": 4000
+  },
+  {
+    "district": 4,
+    "private_total": 31000,
+    "private_renovated": 9500,
+    "social_total": 5000,
+    "social_renovated": 1200
+  },
+  {
+    "district": 5,
+    "private_total": 48000,
+    "private_renovated": 18000,
+    "social_total": 7200,
+    "social_renovated": 3100
+  },
+  {
+    "district": 6,
+    "private_total": 40000,
+    "private_renovated": 16000,
+    "social_total": 4000,
+    "social_renovated": 1500
+  },
+  {
+    "district": 7,
+    "private_total": 52000,
+    "private_renovated": 21000,
+    "social_total": 3500,
+    "social_renovated": 900
+  },
+  {
+    "district": 8,
+    "private_total": 46000,
+    "private_renovated": 14000,
+    "social_total": 2800,
+    "social_renovated": 800
+  },
+  {
+    "district": 9,
+    "private_total": 49000,
+    "private_renovated": 13000,
+    "social_total": 4500,
+    "social_renovated": 1100
+  },
+  {
+    "district": 10,
+    "private_total": 55000,
+    "private_renovated": 10000,
+    "social_total": 12000,
+    "social_renovated": 4500
+  },
+  {
+    "district": 11,
+    "private_total": 58000,
+    "private_renovated": 9000,
+    "social_total": 15000,
+    "social_renovated": 5200
+  },
+  {
+    "district": 12,
+    "private_total": 51000,
+    "private_renovated": 16000,
+    "social_total": 11000,
+    "social_renovated": 4800
+  },
+  {
+    "district": 13,
+    "private_total": 62000,
+    "private_renovated": 24000,
+    "social_total": 18000,
+    "social_renovated": 8500
+  },
+  {
+    "district": 14,
+    "private_total": 53000,
+    "private_renovated": 19000,
+    "social_total": 13000,
+    "social_renovated": 6000
+  },
+  {
+    "district": 15,
+    "private_total": 75000,
+    "private_renovated": 28000,
+    "social_total": 16000,
+    "social_renovated": 7200
+  },
+  {
+    "district": 16,
+    "private_total": 68000,
+    "private_renovated": 25000,
+    "social_total": 8000,
+    "social_renovated": 2500
+  },
+  {
+    "district": 17,
+    "private_total": 60000,
+    "private_renovated": 18000,
+    "social_total": 9500,
+    "social_renovated": 3800
+  },
+  {
+    "district": 18,
+    "private_total": 59000,
+    "private_renovated": 11000,
+    "social_total": 17000,
+    "social_renovated": 6500
+  },
+  {
+    "district": 19,
+    "private_total": 56000,
+    "private_renovated": 12000,
+    "social_total": 19000,
+    "social_renovated": 9000
+  },
+  {
+    "district": 20,
+    "private_total": 54000,
+    "private_renovated": 13000,
+    "social_total": 21000,
+    "social_renovated": 9500
+  }
+]

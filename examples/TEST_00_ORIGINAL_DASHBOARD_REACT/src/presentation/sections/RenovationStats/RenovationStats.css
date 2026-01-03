@@ -1,0 +1,11 @@
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 0;
+}
+
+.chart-container {
+    height: 500px; /* Increased from 350px to provide sufficient height */
+    width: 100%;
+}

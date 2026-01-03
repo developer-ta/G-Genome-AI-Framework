@@ -1,0 +1,175 @@
+/* 🧬 G-GENOME BIO-TECH DARK MODE (v1.6) */
+
+/* === GLOBAL === */
+QMainWindow {
+    background-color: #0D1117;
+    font-family: 'Segoe UI', 'Outfit', sans-serif;
+}
+
+QWidget {
+    font-family: 'Segoe UI', sans-serif;
+    color: #C9D1D9; /* --text-main-dark */
+}
+
+/* === SIDEBAR === */
+QFrame#Sidebar {
+    background-color: #161B22; 
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-right: 1px solid #30363D;
+    margin: 16px;
+}
+
+QLabel#BrandName {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #00A3FF; /* --neon-blue */
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+
+/* === NAVIGATION BUTTONS === */
+QPushButton[class='NavButton'] {
+    text-align: left;
+    background-color: transparent;
+    border-radius: 12px;
+    padding: 12px 20px;
+    color: #8B949E;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 4px;
+}
+
+QPushButton[class='NavButton']:hover {
+    background-color: rgba(0, 163, 255, 0.1);
+    color: #00A3FF;
+}
+
+QPushButton[class='NavButton']:checked {
+    background-color: rgba(0, 163, 255, 0.2);
+    color: #58A6FF;
+    font-weight: 700;
+    border-left: 4px solid #00A3FF;
+}
+
+/* === CARDS === */
+QFrame#Card {
+    background-color: #161B22;
+    border-radius: 24px;
+    border: 1px solid #30363D;
+}
+
+/* === COMPONENTS === */
+QLabel#Title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #F0F6FC;
+}
+
+QLabel#Subtitle {
+    color: #8B949E;
+    font-size: 14px;
+}
+
+/* === TEXT EDITORS (THE CORTEX) === */
+QTextEdit, QLineEdit {
+    background-color: #0D1117;
+    border: 1px solid #30363D;
+    border-radius: 12px;
+    padding: 12px;
+    color: #C9D1D9;
+    selection-background-color: #00A3FF;
+}
+
+QTextEdit:focus, QLineEdit:focus {
+    border: 2px solid #00A3FF;
+}
+
+/* === BUTTONS === */
+QPushButton#ActionButton {
+    background-color: #00A3FF;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 800;
+    font-size: 14px;
+    border: none;
+    letter-spacing: 1px;
+}
+
+QPushButton#ActionButton:hover {
+    background-color: #1F6FEB;
+    box-shadow: 0 0 15px rgba(0, 163, 255, 0.4);
+}
+
+QPushButton#ActionButton:disabled {
+    background-color: #21262D;
+    color: #484F58;
+}
+
+/* Secondary Button style (The "Browse" buttons) */
+QPushButton, QPushButton#SecondaryButton {
+    background-color: #30363D;
+    color: #F0F6FC;
+    border: 1px solid #8B949E;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 600;
+}
+
+QPushButton:hover, QPushButton#SecondaryButton:hover {
+    background-color: #484F58;
+    border: 1px solid #00A3FF;
+}
+
+/* === TASK LIST (THE IMMUNE SYSTEM) === */
+QListWidget {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+QListWidget::item {
+    background-color: #21262D;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 10px;
+    color: #C9D1D9;
+}
+
+QListWidget::item:selected {
+    border: 1px solid #00A3FF;
+    background-color: #21262D;
+}
+
+/* === TERMINAL (THE NERVOUS SYSTEM) === */
+QPlainTextEdit#Terminal {
+    background-color: #010409;
+    color: #00FF94; /* Emerald Terminal Color */
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 13px;
+    border: 1px solid #30363D;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* === BADGES === */
+QLabel#BadgeLow {
+    background-color: rgba(0, 255, 148, 0.1);
+    color: #00FF94;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+QLabel#BadgeHigh {
+    background-color: rgba(255, 77, 77, 0.1);
+    color: #FF4D4D;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: bold;
+}

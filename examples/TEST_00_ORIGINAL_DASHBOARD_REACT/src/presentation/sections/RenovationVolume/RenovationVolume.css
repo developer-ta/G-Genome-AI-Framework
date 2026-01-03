@@ -1,0 +1,20 @@
+.volume-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.volume-card-content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 0;
+}
+
+@media (min-width: 1024px) {
+    .volume-card-content {
+        flex-direction: row;
+        height: 420px;
+    }
+}
